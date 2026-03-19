@@ -1,0 +1,79 @@
+{"timestamp":"00:00:03.445","source":"Server","level":"LOG","message":""}
+{"timestamp":"00:00:08.320","source":"Server","level":"LOG","message":"○ Compiling / ..."}
+{"timestamp":"00:00:18.218","source":"Browser","level":"INFO","message":"%cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold"}
+{"timestamp":"00:02:15.171","source":"Server","level":"LOG","message":"✓ Compiled in 117ms"}
+{"timestamp":"00:02:17.231","source":"Server","level":"LOG","message":"✓ Compiled in 99ms"}
+{"timestamp":"00:02:17.303","source":"Browser","level":"ERROR","message":"uncaughtError: ReferenceError: Keywords is not defined"}
+{"timestamp":"00:02:17.359","source":"Server","level":"ERROR","message":"[browser] \"\\u001b[31mUncaught ReferenceError: Keywords is not defined\\u001b[39m\\n\\u001b[31m    at HomePage (src/app/page.tsx:86:22)\\u001b[39m\\n  \\u001b[90m84 |\\u001b[0m                     </div>\\n  \\u001b[90m85 |\\u001b[0m\\n\\u001b[31m\\u001b[1m>\\u001b[0m \\u001b[90m86 |\\u001b[0m                     <\\u001b[33mKeywords\\u001b[0m articles={data.articles} />\\n  \\u001b[90m   |\\u001b[0m                      \\u001b[31m\\u001b[1m^\\u001b[0m\\n  \\u001b[90m87 |\\u001b[0m                 </>\\n  \\u001b[90m88 |\\u001b[0m             ) : (\\n  \\u001b[90m89 |\\u001b[0m                 !loading && (\""}
+{"timestamp":"00:02:17.360","source":"Browser","level":"ERROR","message":"\u001b[31mUncaught ReferenceError: Keywords is not defined\u001b[39m\n\u001b[31m    at HomePage (src/app/page.tsx:86:22)\u001b[39m\n  \u001b[90m84 |\u001b[0m                     </div>\n  \u001b[90m85 |\u001b[0m\n\u001b[31m\u001b[1m>\u001b[0m \u001b[90m86 |\u001b[0m                     <\u001b[33mKeywords\u001b[0m articles={data.articles} />\n  \u001b[90m   |\u001b[0m                      \u001b[31m\u001b[1m^\u001b[0m\n  \u001b[90m87 |\u001b[0m                 </>\n  \u001b[90m88 |\u001b[0m             ) : (\n  \u001b[90m89 |\u001b[0m                 !loading && ("}
+{"timestamp":"00:02:42.445","source":"Server","level":"WARN","message":"⚠ Fast Refresh had to perform a full reload due to a runtime error."}
+{"timestamp":"00:02:42.459","source":"Server","level":"LOG","message":"✓ Compiled in 152ms"}
+{"timestamp":"00:02:42.685","source":"Browser","level":"INFO","message":"%cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold"}
+{"timestamp":"00:02:42.792","source":"Browser","level":"ERROR","message":"uncaughtError: ReferenceError: Keywords is not defined"}
+{"timestamp":"00:02:42.793","source":"Server","level":"ERROR","message":"[browser] \"\\u001b[31mUncaught ReferenceError: Keywords is not defined\\u001b[39m\\n\\u001b[31m    at HomePage (src/app/page.tsx:86:22)\\u001b[39m\\n  \\u001b[90m84 |\\u001b[0m                     </div>\\n  \\u001b[90m85 |\\u001b[0m\\n\\u001b[31m\\u001b[1m>\\u001b[0m \\u001b[90m86 |\\u001b[0m                     <\\u001b[33mKeywords\\u001b[0m articles={data.articles} />\\n  \\u001b[90m   |\\u001b[0m                      \\u001b[31m\\u001b[1m^\\u001b[0m\\n  \\u001b[90m87 |\\u001b[0m                 </>\\n  \\u001b[90m88 |\\u001b[0m             ) : (\\n  \\u001b[90m89 |\\u001b[0m                 !loading && (\""}
+{"timestamp":"00:02:42.793","source":"Browser","level":"ERROR","message":"\u001b[31mUncaught ReferenceError: Keywords is not defined\u001b[39m\n\u001b[31m    at HomePage (src/app/page.tsx:86:22)\u001b[39m\n  \u001b[90m84 |\u001b[0m                     </div>\n  \u001b[90m85 |\u001b[0m\n\u001b[31m\u001b[1m>\u001b[0m \u001b[90m86 |\u001b[0m                     <\u001b[33mKeywords\u001b[0m articles={data.articles} />\n  \u001b[90m   |\u001b[0m                      \u001b[31m\u001b[1m^\u001b[0m\n  \u001b[90m87 |\u001b[0m                 </>\n  \u001b[90m88 |\u001b[0m             ) : (\n  \u001b[90m89 |\u001b[0m                 !loading && ("}
+{"timestamp":"00:03:08.674","source":"Server","level":"WARN","message":"⚠ Fast Refresh had to perform a full reload due to a runtime error."}
+{"timestamp":"00:03:08.687","source":"Server","level":"LOG","message":"✓ Compiled in 47ms"}
+{"timestamp":"00:03:08.919","source":"Browser","level":"INFO","message":"%cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold"}
+{"timestamp":"00:03:12.576","source":"Server","level":"LOG","message":"✓ Compiled in 61ms"}
+{"timestamp":"00:05:33.494","source":"Server","level":"LOG","message":"✓ Compiled in 132ms"}
+{"timestamp":"00:06:04.232","source":"Server","level":"LOG","message":"[dotenv@17.3.1] injecting env (0) from .env -- tip: ⚡️ secrets for agents: https://dotenvx.com/as2"}
+{"timestamp":"00:06:04.240","source":"Server","level":"LOG","message":"[dotenv@17.3.1] injecting env (0) from .env -- tip: ⚙️  specify custom .env file path with { path: '/custom/path/.env' }"}
+{"timestamp":"00:06:04.243","source":"Server","level":"LOG","message":"[dotenv@17.3.1] injecting env (0) from .env -- tip: ⚙️  override existing env vars with { override: true }"}
+{"timestamp":"00:06:04.355","source":"Server","level":"LOG","message":"\n[2026-03-19T13:40:30.190Z] Executing Main Pipeline..."}
+{"timestamp":"00:06:04.356","source":"Server","level":"LOG","message":"[Node 1] 🌐 다중 매체(Dev.to, HackerNews, RSS)에서 기사를 혼합하여 가져옵니다..."}
+{"timestamp":"00:06:04.461","source":"Server","level":"LOG","message":"✅ Dev.to 에서 8개 뉴스 수집 완료"}
+{"timestamp":"00:06:05.205","source":"Server","level":"LOG","message":"✅ Hacker News 에서 상위 8개 토픽 병렬 수집 완료"}
+{"timestamp":"00:06:05.780","source":"Server","level":"LOG","message":"✅ Smashing Magazine RSS 에서 최신 4개 뉴스 수집 완료"}
+{"timestamp":"00:06:05.781","source":"Server","level":"LOG","message":"[Node 1] ✨ 총 20개의 통합 글로벌 기사 큐레이팅 성공!"}
+{"timestamp":"00:06:05.782","source":"Server","level":"LOG","message":"[Node 2] Summarizing articles using Google Gemini API in parallel chunks..."}
+{"timestamp":"00:06:05.783","source":"Server","level":"LOG","message":"- Generating chunk 1..."}
+{"timestamp":"00:06:05.784","source":"Server","level":"LOG","message":"- Generating chunk 2..."}
+{"timestamp":"00:06:05.785","source":"Server","level":"LOG","message":"- Generating chunk 3..."}
+{"timestamp":"00:06:05.786","source":"Server","level":"LOG","message":"- Generating chunk 4..."}
+{"timestamp":"00:06:28.136","source":"Server","level":"LOG","message":"[Node 2] Successfully summarized 20 articles in parallel."}
+{"timestamp":"00:06:28.138","source":"Server","level":"LOG","message":"[Success] Pipeline file completed. Output saved to E:\\dayoung\\nwnews\\output\\tech_news_2026-03-19.json"}
+{"timestamp":"00:06:28.138","source":"Server","level":"LOG","message":"[Node 3] Inserting 20 articles into Notion DB (Paralleled Execution)..."}
+{"timestamp":"00:06:35.576","source":"Server","level":"WARN","message":"@notionhq/client warn: \"request fail\" {}"}
+{"timestamp":"00:06:35.576","source":"Server","level":"ERROR","message":"- Failed to insert article: AI 도입이 야기하는 새로운 '기술 부채'의 그림자: MLOps의 중요성 \"API token is invalid.\""}
+{"timestamp":"00:06:35.592","source":"Server","level":"WARN","message":"@notionhq/client warn: \"request fail\" {}"}
+{"timestamp":"00:06:35.593","source":"Server","level":"ERROR","message":"- Failed to insert article: 속보: 코드 실행 플랫폼 Astral, OpenAI에 전격 합류 공식 발표 \"API token is invalid.\""}
+{"timestamp":"00:06:35.595","source":"Server","level":"WARN","message":"@notionhq/client warn: \"request fail\" {}"}
+{"timestamp":"00:06:35.595","source":"Server","level":"ERROR","message":"- Failed to insert article: 25년 베테랑 개발자의 '코드베이스 접근 전 사고 프레임워크' \"API token is invalid.\""}
+{"timestamp":"00:06:35.601","source":"Server","level":"WARN","message":"@notionhq/client warn: \"request fail\" {}"}
+{"timestamp":"00:06:35.601","source":"Server","level":"ERROR","message":"- Failed to insert article: Vitest 4.1, 'Fast-Forward' 모드 도입으로 타이머 기반 테스트 즉시 완료 \"API token is invalid.\""}
+{"timestamp":"00:06:35.606","source":"Server","level":"WARN","message":"@notionhq/client warn: \"request fail\" {}"}
+{"timestamp":"00:06:35.607","source":"Server","level":"ERROR","message":"- Failed to insert article: 유튜브 데이터 API 할당량 제한 우회: 비공식 스크래핑 전략으로 무제한 데이터 확보 \"API token is invalid.\""}
+{"timestamp":"00:06:35.608","source":"Server","level":"WARN","message":"@notionhq/client warn: \"request fail\" {}"}
+{"timestamp":"00:06:35.608","source":"Server","level":"ERROR","message":"- Failed to insert article: 이란발 에너지 충격: 화석 연료 의존 탈피 가속화, 친환경 기술 전환 해법은? \"API token is invalid.\""}
+{"timestamp":"00:06:35.610","source":"Server","level":"WARN","message":"@notionhq/client warn: \"request fail\" {}"}
+{"timestamp":"00:06:35.610","source":"Server","level":"ERROR","message":"- Failed to insert article: 래퍼 아프로맨, 자택 수색 경찰 명예훼손 소송 승소: 디지털 콘텐츠의 법적 경계선 재조명 \"API token is invalid.\""}
+{"timestamp":"00:06:35.619","source":"Server","level":"WARN","message":"@notionhq/client warn: \"request fail\" {}"}
+{"timestamp":"00:06:35.620","source":"Server","level":"ERROR","message":"- Failed to insert article: Duolingo 클론 앱 개발 실패기: Hugging Face Spaces 기반 Onelingo MVP 포스트모템 \"API token is invalid.\""}
+{"timestamp":"00:06:35.621","source":"Server","level":"WARN","message":"@notionhq/client warn: \"request fail\" {}"}
+{"timestamp":"00:06:35.622","source":"Server","level":"ERROR","message":"- Failed to insert article: 100개 AI 코드베이스 분석 결과: 보안 취약점 및 주요 인사이트 \"API token is invalid.\""}
+{"timestamp":"00:06:35.627","source":"Server","level":"WARN","message":"@notionhq/client warn: \"request fail\" {}"}
+{"timestamp":"00:06:35.628","source":"Server","level":"ERROR","message":"- Failed to insert article: 개발자들이 '옛 인터넷'을 그리워하는 이유: 현대 웹 개발의 단상 \"API token is invalid.\""}
+{"timestamp":"00:06:35.631","source":"Server","level":"WARN","message":"@notionhq/client warn: \"request fail\" {}"}
+{"timestamp":"00:06:35.632","source":"Server","level":"ERROR","message":"- Failed to insert article: 주갈로 분장, 안면 인식 기술 무력화 효과 입증: 프라이버시 기술 함의 \"API token is invalid.\""}
+{"timestamp":"00:06:35.635","source":"Server","level":"WARN","message":"@notionhq/client warn: \"request fail\" {}"}
+{"timestamp":"00:06:35.635","source":"Server","level":"ERROR","message":"- Failed to insert article: React 및 Next.js 기반 동적 폼 개발: UI 중심 vs. 비즈니스 로직 엔진 통합 전략 \"API token is invalid.\""}
+{"timestamp":"00:06:35.663","source":"Server","level":"WARN","message":"@notionhq/client warn: \"request fail\" {}"}
+{"timestamp":"00:06:35.663","source":"Server","level":"ERROR","message":"- Failed to insert article: Moment.js에서 자바스크립트 Temporal API로: 최신 날짜/시간 API 마이그레이션 가이드 \"API token is invalid.\""}
+{"timestamp":"00:06:35.667","source":"Server","level":"WARN","message":"@notionhq/client warn: \"request fail\" {}"}
+{"timestamp":"00:06:35.668","source":"Server","level":"ERROR","message":"- Failed to insert article: 오픈AI, 혁신 스타트업 '아스트랄' 전격 인수: AI 생태계 확장 가속화 \"API token is invalid.\""}
+{"timestamp":"00:06:35.672","source":"Server","level":"WARN","message":"@notionhq/client warn: \"request fail\" {}"}
+{"timestamp":"00:06:35.673","source":"Server","level":"ERROR","message":"- Failed to insert article: 애니메이션/마블/DC를 통해 배우는 디지털 프로덕트 디자인: 감정 흐름 기반 사용자 경험 설계 \"API token is invalid.\""}
+{"timestamp":"00:06:35.674","source":"Server","level":"WARN","message":"@notionhq/client warn: \"request fail\" {}"}
+{"timestamp":"00:06:35.675","source":"Server","level":"ERROR","message":"- Failed to insert article: AI 기능과 AI 네이티브 제품, 비즈니스 가치와 개발 전략의 근본적 차이 \"API token is invalid.\""}
+{"timestamp":"00:06:35.677","source":"Server","level":"WARN","message":"@notionhq/client warn: \"request fail\" {}"}
+{"timestamp":"00:06:35.678","source":"Server","level":"ERROR","message":"- Failed to insert article: 현실에서 구현된 콘웨이의 게임 오브 라이프: 복잡계 시뮬레이션의 물리적 탐구 \"API token is invalid.\""}
+{"timestamp":"00:06:35.707","source":"Server","level":"WARN","message":"@notionhq/client warn: \"request fail\" {}"}
+{"timestamp":"00:06:35.708","source":"Server","level":"ERROR","message":"- Failed to insert article: `border-radius`의 한계를 넘어: CSS `corner-shape` 속성으로 UI 디자인 자유도 확장 \"API token is invalid.\""}
+{"timestamp":"00:06:36.178","source":"Server","level":"WARN","message":"@notionhq/client warn: \"request fail\" {}"}
+{"timestamp":"00:06:36.178","source":"Server","level":"ERROR","message":"- Failed to insert article: 아프로맨, 경찰 영상 활용 민사 소송 승소: 창작의 자유와 디지털 미디어 윤리 \"API token is invalid.\""}
+{"timestamp":"00:06:36.186","source":"Server","level":"WARN","message":"@notionhq/client warn: \"request fail\" {}"}
+{"timestamp":"00:06:36.186","source":"Server","level":"ERROR","message":"- Failed to insert article: 엔비디아 그린부스트: 시스템 RAM/NVMe를 활용한 GPU VRAM 투명 확장 기술 \"API token is invalid.\""}
+{"timestamp":"00:06:36.187","source":"Server","level":"LOG","message":"[Node 3] Notion Data parallel insertion completed in a blink."}
+{"timestamp":"00:06:36.630","source":"Browser","level":"INFO","message":"%cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold"}
+{"timestamp":"00:08:45.646","source":"Browser","level":"INFO","message":"%cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold"}

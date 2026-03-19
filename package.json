@@ -1,0 +1,39 @@
+{
+  "name": "nwnews",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "cron": "ts-node src/index.ts",
+    "cron:run": "ts-node src/index.ts --run-now",
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@google/genai": "^1.46.0",
+    "@types/node": "^25.5.0",
+    "@types/react": "^19.2.14",
+    "@types/react-dom": "^19.2.3",
+    "autoprefixer": "^10.4.27",
+    "dotenv": "^17.3.1",
+    "eslint": "^9.39.4",
+    "eslint-config-next": "^16.2.0",
+    "node-cron": "^4.2.1",
+    "postcss": "^8.5.8",
+    "tailwindcss": "^3.4.17",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.3"
+  },
+  "dependencies": {
+    "@notionhq/client": "^5.13.0",
+    "next": "^16.2.0",
+    "react": "^19.2.4",
+    "react-dom": "^19.2.4",
+    "rss-parser": "^3.13.0"
+  }
+}

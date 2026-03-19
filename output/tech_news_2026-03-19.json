@@ -1,0 +1,263 @@
+[
+  {
+    "original_title": "AI Is Creating a New Kind of Tech Debt — And Nobody Is Talking About It",
+    "korean_title": "AI 도입이 야기하는 새로운 '기술 부채'의 그림자: MLOps의 중요성",
+    "summary": "1. AI 모델 및 파이프라인 관리에 따른 예측 불가능한 기술 부채 유형 분석.\n2. 데이터 드리프트, 모델 버전 관리, MLOps 부재 등 AI 특유의 부채 발생.\n3. AI 시스템의 장기적 유지보수 및 확장성을 저해하는 요인 경고.",
+    "tech_keywords": [
+      "AI",
+      "기술 부채",
+      "MLOps",
+      "데이터 드리프트",
+      "모델 관리"
+    ],
+    "source_url": "https://dev.to/harsh2644/ai-is-creating-a-new-kind-of-tech-debt-and-nobody-is-talking-about-it-3pm6"
+  },
+  {
+    "original_title": "I Think a Lot of Developers Are Quietly Grieving the Old Internet",
+    "korean_title": "개발자들이 '옛 인터넷'을 그리워하는 이유: 현대 웹 개발의 단상",
+    "summary": "1. 상업화, 플랫폼 종속성 심화로 인한 과거 인터넷의 개방성 상실.\n2. 웹 개발 복잡도 증가, 과도한 프레임워크 의존성에 대한 비판적 시각.\n3. 개발 문화 및 사용자 경험 변화에 대한 회고적 고찰.",
+    "tech_keywords": [
+      "웹 생태계",
+      "플랫폼 종속성",
+      "웹 개발 복잡도",
+      "개발 문화"
+    ],
+    "source_url": "https://dev.to/the_nortern_dev/i-think-a-lot-of-developers-are-quietly-grieving-the-old-internet-3d8"
+  },
+  {
+    "original_title": "Vitest's 4.1 New \"Fast-Forward\" Mode Skips Timer Delays Instantly",
+    "korean_title": "Vitest 4.1, 'Fast-Forward' 모드 도입으로 타이머 기반 테스트 즉시 완료",
+    "summary": "1. Vitest 4.1 버전 'Fast-Forward' 모드 출시.\n2. 타이머 기반 비동기 코드 테스트 시 지연 시간 즉시 건너뛰는 기능 제공.\n3. 테스트 성능 향상, 신뢰성 증대, 개발 생산성 기여.",
+    "tech_keywords": [
+      "Vitest",
+      "단위 테스트",
+      "테스트 자동화",
+      "비동기 테스트",
+      "프론트엔드 테스트"
+    ],
+    "source_url": "https://dev.to/playfulprogramming-angular/vitests-41-new-fast-forward-mode-skips-timer-delays-instantly-4a4h"
+  },
+  {
+    "original_title": "The Mental Model I Use Before Touching Any Codebase",
+    "korean_title": "25년 베테랑 개발자의 '코드베이스 접근 전 사고 프레임워크'",
+    "summary": "1. 코드베이스 분석 전 적용할 구조화된 사고 프레임워크 제시.\n2. 아키텍처 이해, 요구사항 명확화, 잠재적 문제점 예측 중요성 강조.\n3. 주니어 개발자들의 흔한 오류 방지 및 생산성 향상 방안 제안.",
+    "tech_keywords": [
+      "코드베이스 분석",
+      "시스템 설계",
+      "아키텍처 이해",
+      "개발 생산성",
+      "소프트웨어 개발 방법론"
+    ],
+    "source_url": "https://dev.to/lessonsfromproduction/the-mental-model-i-use-before-touching-any-codebase-10bj"
+  },
+  {
+    "original_title": "I Scanned 100 AI Codebases - Here's What I Found",
+    "korean_title": "100개 AI 코드베이스 분석 결과: 보안 취약점 및 주요 인사이트",
+    "summary": "1. 100개 AI 코드베이스 대상 보안 스캐너(VibeCheck) 분석 결과 공개.\n2. AI/ML 프로젝트에서 흔히 발견되는 보안 취약점 및 패턴 식별.\n3. AI 시스템 개발 시 보안 고려사항 및 코드 품질 개선 방향 제시.",
+    "tech_keywords": [
+      "AI 코드베이스",
+      "보안 취약점",
+      "머신러닝 보안",
+      "코드 분석",
+      "VibeCheck"
+    ],
+    "source_url": "https://dev.to/itskondrat/i-scanned-100-ai-codebases-heres-what-i-found-55be"
+  },
+  {
+    "original_title": "How to Scrape YouTube Data Without the Official API (No Quota Limits)",
+    "korean_title": "유튜브 데이터 API 할당량 제한 우회: 비공식 스크래핑 전략으로 무제한 데이터 확보",
+    "summary": "1. YouTube Data API의 엄격한 할당량 제한 문제를 지적하며, 비공식 데이터 수집의 필요성을 제기합니다.\n2. 공식 API를 통하지 않고 웹 스크래핑 기법을 활용하여 대량의 유튜브 데이터를 효율적으로 확보하는 방안을 제시합니다.\n3. API 할당량 제약 없이 데이터를 수집, 분석하려는 개발자 및 연구자에게 실질적인 해결책을 제공합니다.",
+    "tech_keywords": [
+      "웹 스크래핑",
+      "YouTube Data API",
+      "할당량 제한",
+      "데이터 수집",
+      "비공식 API"
+    ],
+    "source_url": "https://dev.to/__8ef7243a4f/how-to-scrape-youtube-data-without-the-official-api-no-quota-limits-4blf"
+  },
+  {
+    "original_title": "The Difference Between AI Features and AI-Native Products",
+    "korean_title": "AI 기능과 AI 네이티브 제품, 비즈니스 가치와 개발 전략의 근본적 차이",
+    "summary": "1. 기존 제품에 AI 기능을 통합하는 방식과 AI를 핵심으로 설계된 AI 네이티브 제품 간의 차이점을 분석합니다.\n2. AI의 단순한 추가를 넘어 제품의 본질적인 가치와 사용자 경험을 재정의하는 AI 네이티브 접근법의 중요성을 강조합니다.\n3. AI 기술을 활용한 제품 전략 수립 시, 깊이 있는 AI 통합과 비즈니스 모델 간의 연계를 고려해야 함을 역설합니다.",
+    "tech_keywords": [
+      "AI 기능",
+      "AI 네이티브",
+      "제품 개발",
+      "비즈니스 모델",
+      "AI 전략"
+    ],
+    "source_url": "https://dev.to/jaideepparashar/the-difference-between-ai-features-and-ai-native-products-238n"
+  },
+  {
+    "original_title": "Onelingo MVP: Lo que aprendí cuando mi app de idiomas no salió como esperaba (Post-Mortem)",
+    "korean_title": "Duolingo 클론 앱 개발 실패기: Hugging Face Spaces 기반 Onelingo MVP 포스트모템",
+    "summary": "1. Hugging Face Spaces를 활용한 Duolingo 클론 앱(Onelingo MVP) 개발 과정에서의 솔직한 회고를 담고 있습니다.\n2. Git 인증 문제 및 예상치 못한 기술적 난관을 분석하며, 실제 프로젝트에서 겪을 수 있는 어려움을 공유합니다.\n3. MVP를 성공적인 프로덕션 레벨 제품으로 발전시키기 위한 교훈과 개선 방안을 제시하며, 개발자들에게 실용적인 인사이트를 제공합니다.",
+    "tech_keywords": [
+      "MVP",
+      "Hugging Face Spaces",
+      "Duolingo 클론",
+      "Git 인증",
+      "개발 회고",
+      "포스트모템"
+    ],
+    "source_url": "https://dev.to/derlys/onelingo-mvp-lo-que-aprendi-cuando-mi-app-de-idiomas-no-salio-como-esperaba-post-mortem-1em4"
+  },
+  {
+    "original_title": "Astral to Join OpenAI",
+    "korean_title": "속보: 코드 실행 플랫폼 Astral, OpenAI에 전격 합류 공식 발표",
+    "summary": "1. 고성능 코드 실행 플랫폼 Astral이 AI 연구 및 개발 선도 기업 OpenAI에 합류한다고 공식 발표했습니다.\n2. 이번 통합을 통해 OpenAI의 AI 모델 개발 및 배포 워크플로우가 더욱 효율화될 것으로 예상됩니다.\n3. 양사의 기술 시너지를 통해 AI 개발 생태계 전반에 걸쳐 혁신적인 변화가 기대됩니다.",
+    "tech_keywords": [
+      "Astral",
+      "OpenAI",
+      "인수합병",
+      "AI 개발",
+      "코드 실행",
+      "기술 통합"
+    ],
+    "source_url": "https://astral.sh/blog/openai"
+  },
+  {
+    "original_title": "Juggalo Makeup Blocks Facial Recognition Technology",
+    "korean_title": "주갈로 분장, 안면 인식 기술 무력화 효과 입증: 프라이버시 기술 함의",
+    "summary": "1. 특정 스타일의 주갈로(Juggalo) 분장이 안면 인식 시스템의 정확도를 현저히 저하시키는 현상이 관찰되었습니다.\n2. 이는 안면 인식 기술의 취약점과 동시에 개인 프라이버시 보호를 위한 잠재적인 '안티-안면 인식' 기술의 가능성을 시사합니다.\n3. 컴퓨터 비전 및 생체 인식 기술의 한계를 탐색하고, 프라이버시 강화를 위한 연구의 중요성을 부각합니다.",
+    "tech_keywords": [
+      "안면 인식",
+      "프라이버시",
+      "생체 인식",
+      "안티-안면 인식",
+      "컴퓨터 비전"
+    ],
+    "source_url": "https://consequence.net/2019/07/juggalo-makeup-facial-recognition/"
+  },
+  {
+    "original_title": "Afroman found not liable in defamation case brought by Ohio cops who raided home",
+    "korean_title": "래퍼 아프로맨, 자택 수색 경찰 명예훼손 소송 승소: 디지털 콘텐츠의 법적 경계선 재조명",
+    "summary": "1. 래퍼 아프로맨이 자택 수색 영상을 음악 비디오에 사용한 혐의로 제기된 경찰 명예훼손 소송에서 무죄 판결을 받았습니다.\n2. 이번 판결은 디지털 콘텐츠 내 공적 기록물 활용, 저작권, 그리고 창작의 자유 범위에 대한 중요한 논의를 촉발합니다.\n3. 개발자 커뮤니티는 미디어 플랫폼의 콘텐츠 정책, 사용자 생성 콘텐츠(UGC) 가이드라인 및 개인 프라이버시 보호 기준에 주목하고 있습니다.",
+    "tech_keywords": [
+      "디지털 저작권",
+      "콘텐츠 플랫폼",
+      "미디어 법률",
+      "UGC",
+      "프라이버시 보호"
+    ],
+    "source_url": "https://nypost.com/2026/03/18/us-news/afroman-found-not-liable-in-bizarre-ohio-defamation-case/"
+  },
+  {
+    "original_title": "Afroman Wins Civil Trial over Use of Police Raid Footage in His Music Videos",
+    "korean_title": "아프로맨, 경찰 영상 활용 민사 소송 승소: 창작의 자유와 디지털 미디어 윤리",
+    "summary": "1. 래퍼 아프로맨이 자신의 음악 비디오에 경찰의 자택 수색 영상을 사용한 것과 관련한 민사 재판에서 승리했습니다.\n2. 이번 승소는 디지털 미디어 시대에 창작자의 표현의 자유와 공적 기록물(경찰 영상)의 활용 경계를 다시금 논의하게 합니다.\n3. 개발자들은 온라인 콘텐츠 플랫폼이 직면할 수 있는 저작권 문제, 사용자 권한 및 디지털 미디어 배포 윤리에 대한 시사점을 분석합니다.",
+    "tech_keywords": [
+      "디지털 콘텐츠",
+      "저작권법",
+      "미디어 윤리",
+      "온라인 플랫폼",
+      "콘텐츠 배포"
+    ],
+    "source_url": "https://www.nytimes.com/2026/03/19/us/afroman-trial-lemon-cake-verdict.html"
+  },
+  {
+    "original_title": "OpenAI to Acquire Astral",
+    "korean_title": "오픈AI, 혁신 스타트업 '아스트랄' 전격 인수: AI 생태계 확장 가속화",
+    "summary": "1. 인공지능 분야의 선두 주자인 OpenAI가 혁신적인 기술 스타트업 Astral 인수를 공식 발표했습니다.\n2. 이번 인수는 OpenAI의 AI 연구 및 개발 역량을 대폭 강화하고, 미래 AI 제품 로드맵에 중대한 영향을 미칠 것으로 예상됩니다.\n3. Astral의 핵심 기술 스택과 인재가 OpenAI의 AI 아키텍처 및 서비스 통합에 어떤 시너지를 창출할지 업계의 관심이 집중됩니다.",
+    "tech_keywords": [
+      "OpenAI",
+      "AI 인수합병",
+      "인공지능",
+      "스타트업",
+      "기술 스택 통합"
+    ],
+    "source_url": "https://openai.com/index/openai-to-acquire-astral/"
+  },
+  {
+    "original_title": "Conway's Game of Life, in real life",
+    "korean_title": "현실에서 구현된 콘웨이의 게임 오브 라이프: 복잡계 시뮬레이션의 물리적 탐구",
+    "summary": "1. 컴퓨터 과학의 고전인 '콘웨이의 게임 오브 라이프(Conway's Game of Life)'가 실제 물리적 시스템으로 구현되었습니다.\n2. 단순한 규칙에서 시작해 복잡한 패턴을 생성하는 셀룰러 오토마타(Cellular Automata)의 실제 세계 응용 가능성을 탐구합니다.\n3. 이는 인공 생명(Artificial Life), 병렬 컴퓨팅, 분산 시스템 등 알고리즘 기반 복잡계 시뮬레이션 연구에 깊은 통찰을 제공합니다.",
+    "tech_keywords": [
+      "콘웨이의 게임 오브 라이프",
+      "셀룰러 오토마타",
+      "복잡계 시뮬레이션",
+      "인공 생명",
+      "알고리즘 구현"
+    ],
+    "source_url": "https://lcamtuf.substack.com/p/conways-game-of-life-in-real-life"
+  },
+  {
+    "original_title": "Iran war energy shock sparks global push to reduce fossil fuel dependence",
+    "korean_title": "이란발 에너지 충격: 화석 연료 의존 탈피 가속화, 친환경 기술 전환 해법은?",
+    "summary": "1. 이란 전쟁으로 인한 에너지 위기가 심화되면서 전 세계적으로 화석 연료 의존도 감축을 위한 압박이 증대되고 있습니다.\n2. 이는 지속 가능한 에너지 솔루션 개발 및 친환경 기술 투자 확대로 이어져, 에너지 전환 가속화의 중요성을 부각합니다.\n3. 스마트 그리드, 재생 에너지 시스템, 에너지 효율 최적화 기술 등 IT 기반 클린 테크 솔루션이 미래 에너지 문제 해결의 핵심 동력으로 주목받고 있습니다.",
+    "tech_keywords": [
+      "지속 가능 에너지",
+      "스마트 그리드",
+      "친환경 기술",
+      "에너지 효율 최적화",
+      "기후 기술 (Climate Tech)"
+    ],
+    "source_url": "https://www.reuters.com/business/energy/iran-war-energy-shock-sparks-global-push-reduce-fossil-fuel-dependence-2026-03-18/"
+  },
+  {
+    "original_title": "Nvidia greenboost: transparently extend GPU VRAM using system RAM/NVMe",
+    "korean_title": "엔비디아 그린부스트: 시스템 RAM/NVMe를 활용한 GPU VRAM 투명 확장 기술",
+    "summary": "1. Nvidia Greenboost는 GPU VRAM을 시스템 RAM/NVMe 스토리지로 확장하는 혁신 기술이다.\n2. GPU 메모리 제약 완화 및 대규모 AI/ML 모델 처리 성능 향상에 기여한다.\n3. 개발자 워크로드 변경 없이 VRAM을 투명하게 확장하여 시스템 리소스 활용 효율성을 극대화한다.",
+    "tech_keywords": [
+      "Nvidia Greenboost",
+      "GPU VRAM 확장",
+      "시스템 RAM",
+      "NVMe",
+      "메모리 오버플로우"
+    ],
+    "source_url": "https://gitlab.com/IsolatedOctopi/nvidia_greenboost"
+  },
+  {
+    "original_title": "Anime vs. Marvel/DC: Designing Digital Products With Emotion In Flow",
+    "korean_title": "애니메이션/마블/DC를 통해 배우는 디지털 프로덕트 디자인: 감정 흐름 기반 사용자 경험 설계",
+    "summary": "1. 디지털 제품 디자인은 픽셀, 패턴을 넘어 사용자의 감정 흐름(Emotion in Flow)과 감정 충돌(Emotion in Conflict)이 핵심이다.\n2. 애니메이션과 슈퍼히어로 영화의 스토리텔링 기법을 UI/UX 디자인에 접목하는 방안을 제시한다.\n3. 감정 변화를 반영한 디자인 패턴을 통해 사용자 참여도를 높이는 프로덕트 디자인 전략을 모색한다.",
+    "tech_keywords": [
+      "UI/UX 디자인",
+      "감정 흐름",
+      "스토리텔링",
+      "디자인 패턴",
+      "사용자 경험"
+    ],
+    "source_url": "https://smashingmagazine.com/2026/03/anime-marvel-dc-designing-digital-products-emotion-flow/"
+  },
+  {
+    "original_title": "Moving From Moment.js To The JS Temporal API",
+    "korean_title": "Moment.js에서 자바스크립트 Temporal API로: 최신 날짜/시간 API 마이그레이션 가이드",
+    "summary": "1. 자바스크립트의 날짜/시간 처리가 내장 `Date` API, `Moment.js`를 거쳐 `Temporal API`로 발전하고 있다.\n2. `Temporal API`는 기존 `Date` API의 한계와 `Moment.js` 등 라이브러리의 단점을 보완하는 표준 API다.\n3. `Moment.js` 기반 코드를 새로운 `Temporal API`로 전환하는 실용적인 마이그레이션 레시피를 제공한다.",
+    "tech_keywords": [
+      "JavaScript Temporal API",
+      "Moment.js",
+      "Date API",
+      "날짜/시간 처리",
+      "마이그레이션"
+    ],
+    "source_url": "https://smashingmagazine.com/2026/03/moving-from-moment-to-temporal-api/"
+  },
+  {
+    "original_title": "Beyond `border-radius`: What The CSS `corner-shape` Property Unlocks For Everyday UI",
+    "korean_title": "`border-radius`의 한계를 넘어: CSS `corner-shape` 속성으로 UI 디자인 자유도 확장",
+    "summary": "1. `border-radius`의 제약으로 `clip-path`, `SVG masks` 등 복잡한 워크어라운드를 사용하던 한계를 지적한다.\n2. 새로운 CSS `corner-shape` 속성은 베벨, 스쿱, 스쿼클 등 다양한 코너 모양을 손쉽게 구현할 수 있게 한다.\n3. `corner-shape`는 프론트엔드 개발자의 UI 디자인 표현력을 크게 향상시키며 독창적인 웹 UI 구현을 지원한다.",
+    "tech_keywords": [
+      "CSS corner-shape",
+      "border-radius",
+      "UI/UX 디자인",
+      "프론트엔드",
+      "웹 표준"
+    ],
+    "source_url": "https://smashingmagazine.com/2026/03/beyond-border-radius-css-corner-shape-property-ui/"
+  },
+  {
+    "original_title": "Building Dynamic Forms In React And Next.js",
+    "korean_title": "React 및 Next.js 기반 동적 폼 개발: UI 중심 vs. 비즈니스 로직 엔진 통합 전략",
+    "summary": "1. React 및 Next.js 환경에서 동적 폼(Dynamic Forms)을 구축하는 두 가지 핵심 접근 방식을 제시한다.\n2. 폼을 단순 UI 구성 요소로 유지하거나, 비즈니스 규칙 엔진과 통합하는 아키텍처를 비교 분석한다.\n3. 프로젝트 요구사항에 맞춰 UI 중심 또는 규칙 엔진 기반의 동적 폼 구현 전략을 선택하는 가이드를 제공한다.",
+    "tech_keywords": [
+      "React",
+      "Next.js",
+      "동적 폼",
+      "UI/UX 개발",
+      "비즈니스 로직 엔진"
+    ],
+    "source_url": "https://smashingmagazine.com/2026/03/building-dynamic-forms-react-next-js/"
+  }
+]
