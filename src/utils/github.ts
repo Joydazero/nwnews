@@ -9,7 +9,7 @@ const octokit = new Octokit({ auth: process.env.GITHUB_TOKEN });
 export async function pushDataToGitHub(newData: any) {
     const owner = "Joydazero"; // ❗️여기를 수정해라 (예: verys)
     const repo = "nwnews";             // ❗️레포지토리 이름
-    const path = "src/data/news.json"; // 프론트엔드가 읽어갈 데이터 파일 경로
+    const path = "data/news.json"; // 프론트엔드가 읽어갈 데이터 파일 경로
 
     console.log("🌐 [DataOps] GitHub API 통신을 시작합니다...");
 

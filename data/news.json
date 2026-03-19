@@ -1,0 +1,267 @@
+{
+  "dateStr": "2026-03-19",
+  "articles": [
+    {
+      "original_title": "AI Is Creating a New Kind of Tech Debt — And Nobody Is Talking About It",
+      "korean_title": "AI 도입으로 촉발된 새로운 기술 부채: 개발팀이 놓치고 있는 위험",
+      "summary": "1. AI/ML 시스템은 예측 불가능한 복잡성과 지속적인 모델 업데이트 요구로 인해 고유한 형태의 기술 부채를 유발한다.\n2. 데이터 파이프라인, 모델 버전 관리, 학습 데이터 드리프트 등 AI 관련 인프라 관리가 새로운 운영 오버헤드를 발생시킨다.\n3. 개발 초기에는 인지하기 어려운 이러한 AI 기술 부채는 장기적으로 시스템 유지보수 비용과 확장성에 심각한 영향을 미칠 수 있다.",
+      "tech_keywords": [
+        "AI 기술 부채",
+        "머신러닝 시스템",
+        "데이터 드리프트",
+        "MLOps",
+        "모델 버전 관리"
+      ],
+      "source_url": "https://dev.to/harsh2644/ai-is-creating-a-new-kind-of-tech-debt-and-nobody-is-talking-about-it-3pm6"
+    },
+    {
+      "original_title": "I Think a Lot of Developers Are Quietly Grieving the Old Internet",
+      "korean_title": "개발자들이 조용히 애도하는 '구 인터넷': 웹 생태계 변화에 대한 회고",
+      "summary": "1. 많은 개발자가 대규모 플랫폼 의존성, 복잡한 개발 스택, 웹 생태계의 중앙집중화 현상에 대해 회의감을 느낀다.\n2. 초기 인터넷의 개방성, 개인 프로젝트 중심의 문화, 그리고 상대적으로 단순했던 웹 개발 환경에 대한 향수가 존재한다.\n3. 현재의 웹 개발은 지나친 상업화와 프레임워크/라이브러리 과잉으로 인해 본질적인 창작의 즐거움이 저해되고 있다는 인식이 확산되고 있다.",
+      "tech_keywords": [
+        "웹 생태계",
+        "오픈 웹",
+        "프레임워크 피로도",
+        "중앙집중화",
+        "개발자 경험"
+      ],
+      "source_url": "https://dev.to/the_nortern_dev/i-think-a-lot-of-developers-are-quietly-grieving-the-old-internet-3d8"
+    },
+    {
+      "original_title": "Vitest's 4.1 New \"Fast-Forward\" Mode Skips Timer Delays Instantly",
+      "korean_title": "Vitest 4.1, \"Fast-Forward\" 모드 도입: 타이머 지연 없는 즉각적인 테스트 실행",
+      "summary": "1. Vitest 4.1 버전이 \"Fast-Forward\" 모드를 추가, 테스트 환경에서 타이머 기반 비동기 작업을 즉시 완료시킨다.\n2. 이 모드는 `setTimeout`, `setInterval` 등 JavaScript 타이머 API를 사용하는 코드의 테스트 시간을 획기적으로 단축한다.\n3. 타이머 지연으로 인한 테스트 비효율성을 해소하여 개발자는 더 빠르고 안정적인 유닛/통합 테스트를 구축할 수 있다.",
+      "tech_keywords": [
+        "Vitest",
+        "유닛 테스트",
+        "비동기 테스트",
+        "타이머 API",
+        "테스트 최적화"
+      ],
+      "source_url": "https://dev.to/playfulprogramming-angular/vitests-41-new-fast-forward-mode-skips-timer-delays-instantly-4a4h"
+    },
+    {
+      "original_title": "The Mental Model I Use Before Touching Any Codebase",
+      "korean_title": "25년 베테랑 개발자의 코드베이스 분석 전략: 첫 코딩 전 필수 멘탈 모델",
+      "summary": "1. 코드 작성 전, 시스템 아키텍처, 핵심 비즈니스 로직, 데이터 흐름 등 코드베이스의 전반적인 이해가 중요하다.\n2. 구조화된 사고 프레임워크를 통해 변경의 영향 범위와 잠재적 부작용을 사전에 식별하여 개발 비용을 절감한다.\n3. 주니어 개발자에게는 이러한 사전 분석 단계를 생략하는 것이 가장 큰 실수가 될 수 있으며, 장기적으로 기술 부채를 유발한다.",
+      "tech_keywords": [
+        "코드베이스 분석",
+        "시스템 아키텍처",
+        "비즈니스 로직",
+        "개발 워크플로우",
+        "기술 부채 예방"
+      ],
+      "source_url": "https://dev.to/lessonsfromproduction/the-mental-model-i-use-before-touching-any-codebase-10bj"
+    },
+    {
+      "original_title": "I Scanned 100 AI Codebases - Here's What I Found",
+      "korean_title": "100개 AI 코드베이스 분석 보고서: AI 프로젝트의 보안 취약점 및 개발 패턴 통찰",
+      "summary": "1. 저자는 AI 보안 스캐너 'VibeCheck'를 활용하여 100개 AI 코드베이스에서 공통적인 보안 취약점과 개발 패턴을 발견했다.\n2. AI 모델 및 데이터 파이프라인에서 흔히 발생하는 설정 오류, 민감 정보 노출, 의존성 관리 부실 등이 주요 문제점으로 지적된다.\n3. AI 프로젝트 초기 단계부터 보안 프랙티스를 통합하고, 전용 보안 도구를 활용하여 잠재적 위험을 최소화하는 방안이 강조된다.",
+      "tech_keywords": [
+        "AI 코드베이스",
+        "보안 취약점",
+        "머신러닝 보안",
+        "데이터 파이프라인",
+        "MLOps",
+        "VibeCheck"
+      ],
+      "source_url": "https://dev.to/itskondrat/i-scanned-100-ai-codebases-heres-what-i-found-55be"
+    },
+    {
+      "original_title": "The Difference Between AI Features and AI-Native Products",
+      "korean_title": "AI 기능과 AI-네이티브 제품의 핵심 차이점 분석",
+      "summary": "1. 기존 제품에 AI 기능 통합과 AI를 근간으로 설계된 제품 간의 본질적 차이점 제시.\n2. AI-네이티브 제품이 제공하는 차별화된 가치와 개발 패러다임을 강조.",
+      "tech_keywords": [
+        "AI",
+        "AI-네이티브",
+        "제품 설계",
+        "개발 패러다임",
+        "기능 통합"
+      ],
+      "source_url": "https://dev.to/jaideepparashar/the-difference-between-ai-features-and-ai-native-products-238n"
+    },
+    {
+      "original_title": "Onelingo MVP: Lo que aprendí cuando mi app de idiomas no salió como esperaba (Post-Mortem)",
+      "korean_title": "Onelingo MVP 실패 사후 분석: Duolingo 클론 개발 회고록",
+      "summary": "1. Hugging Face Spaces에서 Duolingo 클론 앱 Onelingo MVP 개발 과정 상세 회고.\n2. Git 인증 오류 등 기술적 난관과 MVP를 상업적으로 발전시키는 방안에 대한 분석.",
+      "tech_keywords": [
+        "MVP",
+        "Post-Mortem",
+        "Hugging Face Spaces",
+        "Duolingo",
+        "Git 인증"
+      ],
+      "source_url": "https://dev.to/derlys/onelingo-mvp-lo-que-aprendi-cuando-mi-app-de-idiomas-no-salio-como-esperaba-post-mortem-1em4"
+    },
+    {
+      "original_title": "How to Scrape YouTube Data Without the Official API (No Quota Limits)",
+      "korean_title": "YouTube 공식 API 없이 데이터 무제한 스크래핑 기법",
+      "summary": "1. YouTube Data API의 엄격한 할당량 제한(Quota Limits)을 우회하는 데이터 스크래핑 방법론 제시.\n2. 공식 API를 사용하지 않고도 YouTube 데이터를 효율적으로 수집하는 기술적 접근법 설명.",
+      "tech_keywords": [
+        "YouTube Data API",
+        "웹 스크래핑",
+        "할당량 제한",
+        "데이터 수집",
+        "API 우회"
+      ],
+      "source_url": "https://dev.to/__8ef7243a4f/how-to-scrape-youtube-data-without-the-official-api-no-quota-limits-4blf"
+    },
+    {
+      "original_title": "Astral to Join OpenAI",
+      "korean_title": "Astral, OpenAI 합류 공식 발표: AI 생태계 변화 예고",
+      "summary": "1. AI 기술 분야의 주요 기업인 Astral이 OpenAI에 공식적으로 합류하는 소식.\n2. 이번 합병이 AI 연구 및 개발 생태계에 미칠 잠재적 영향력 분석.",
+      "tech_keywords": [
+        "Astral",
+        "OpenAI",
+        "M&A",
+        "AI 연구",
+        "개발 생태계"
+      ],
+      "source_url": "https://astral.sh/blog/openai"
+    },
+    {
+      "original_title": "OpenBSD: PF queues break the 4 Gbps barrier",
+      "korean_title": "OpenBSD PF 큐, 4Gbps 성능 장벽 돌파: 네트워크 처리량 혁신",
+      "summary": "1. OpenBSD의 패킷 필터(PF) 큐잉 시스템이 4Gbps 처리량 장벽을 넘어선 성능 개선 달성.\n2. 네트워크 트래픽 관리 및 방화벽 성능 최적화 관련 기술적 진보 상세 분석.",
+      "tech_keywords": [
+        "OpenBSD",
+        "PF",
+        "큐잉",
+        "네트워크 성능",
+        "방화벽",
+        "Gbps"
+      ],
+      "source_url": "https://undeadly.org/cgi?action=article;sid=20260319125859"
+    },
+    {
+      "original_title": "Juggalo Makeup Blocks Facial Recognition Technology (2019)",
+      "korean_title": "주갈로 분장, AI 안면 인식 기술 무력화 사례 분석",
+      "summary": "1. 특정 분장이 AI 기반 안면 인식 시스템의 정확도를 크게 저해하는 취약점을 드러냈습니다.\n2. 이는 컴퓨터 비전 알고리즘의 잠재적 한계와 데이터셋 편향성 문제를 시사합니다.\n3. 프라이버시 보호 및 감시 회피를 위한 대안적 기술/전략 논의를 촉발합니다.",
+      "tech_keywords": [
+        "Facial Recognition",
+        "Computer Vision",
+        "AI Bias",
+        "Adversarial Attack",
+        "Privacy Enhancing Technology"
+      ],
+      "source_url": "https://consequence.net/2019/07/juggalo-makeup-facial-recognition/"
+    },
+    {
+      "original_title": "Consensus Board Game",
+      "korean_title": "분산 시스템 합의 알고리즘, 보드게임으로 학습하다",
+      "summary": "1. 복잡한 분산 시스템의 합의 알고리즘(e.g., Raft, Paxos) 원리를 게임화하여 학습 효율을 높입니다.\n2. 블록체인 및 분산 원장 기술(DLT)의 핵심 메커니즘인 합의 프로토콜 이해를 돕습니다.\n3. 시스템 디자인 및 개발 과정에서 직면하는 동시성/일관성 문제 해결에 통찰력을 제공합니다.",
+      "tech_keywords": [
+        "Consensus Algorithm",
+        "Distributed System",
+        "Blockchain",
+        "Raft",
+        "Paxos"
+      ],
+      "source_url": "https://matklad.github.io/2026/03/19/consensus-board-game.html"
+    },
+    {
+      "original_title": "Afroman found not liable in defamation case",
+      "korean_title": "IT 기술 트렌드와 무관한 법률 판례 기사",
+      "summary": "1. 본 기사는 실리콘밸리 기술 동향 및 개발 생태계와 직접적인 관련이 없는 일반 법률 소송 판결에 대한 내용을 다룹니다.\n2. 기술적 분석 또는 IT 전문 용어를 도출하기에 적합하지 않은 콘텐츠입니다.",
+      "tech_keywords": [
+        "디지털 미디어",
+        "콘텐츠 유통",
+        "온라인 플랫폼",
+        "정보 거버넌스",
+        "데이터 윤리"
+      ],
+      "source_url": "https://nypost.com/2026/03/18/us-news/afroman-found-not-liable-in-bizarre-ohio-defamation-case/"
+    },
+    {
+      "original_title": "Conway's Game of Life, in real life",
+      "korean_title": "콘웨이 생명 게임, 현실 세계에서 펼쳐지는 복잡계 시뮬레이션",
+      "summary": "1. 콘웨이 생명 게임의 셀룰러 오토마타(Cellular Automata) 개념을 실제 세계 현상에 적용, 분석합니다.\n2. 단순한 규칙으로 복잡한 패턴과 Emergent Behavior가 생성되는 과정을 탐구합니다.\n3. 인공생명, 시뮬레이션, 계산 모델링 등 이론 컴퓨터 과학의 실제적 함의를 조명합니다.",
+      "tech_keywords": [
+        "Cellular Automata",
+        "Emergent Behavior",
+        "Computational Model",
+        "Simulation",
+        "Complexity Theory"
+      ],
+      "source_url": "https://lcamtuf.substack.com/p/conways-game-of-life-in-real-life"
+    },
+    {
+      "original_title": "'Your Frustration Is the Product'",
+      "korean_title": "사용자 불만이 곧 프로덕트: 다크 패턴 비즈니스 모델 분석",
+      "summary": "1. 사용자 경험(UX)을 의도적으로 저하시켜 특정 행동을 유도하는 다크 패턴(Dark Patterns)의 문제를 지적합니다.\n2. 비즈니스 모델이 사용자 좌절을 '제품'으로 활용하는 비윤리적 서비스 디자인 관행을 비판합니다.\n3. 프로덕트 매니지먼트 및 UX 디자인의 윤리적 고려 중요성을 강조합니다.",
+      "tech_keywords": [
+        "Dark Patterns",
+        "UX Design",
+        "Product Strategy",
+        "Monetization Model",
+        "UI/UX Ethics"
+      ],
+      "source_url": "https://daringfireball.net/2026/03/your_frustration_is_the_product"
+    },
+    {
+      "original_title": "Pretraining Language Models via Neural Cellular Automata",
+      "korean_title": "신경 세포 자동자 기반 언어 모델 사전 학습 혁신",
+      "summary": "1. 신경 세포 자동자(NCA)를 활용하여 언어 모델 사전 학습 효율을 극대화한다.\n2. NCA의 분산 및 병렬 처리 특성으로 대규모 모델 학습에 새로운 접근법을 제시한다.",
+      "tech_keywords": [
+        "Neural Cellular Automata (NCA)",
+        "언어 모델",
+        "사전 학습",
+        "분산 처리",
+        "병렬 처리"
+      ],
+      "source_url": "https://hanseungwook.github.io/blog/nca-pre-pre-training/"
+    },
+    {
+      "original_title": "Anime vs. Marvel/DC: Designing Digital Products With Emotion In Flow",
+      "korean_title": "애니메이션과 슈퍼히어로 영화에서 배우는 감성적 디지털 제품 디자인",
+      "summary": "1. 애니메이션과 슈퍼히어로 콘텐츠의 감정 흐름 분석을 통해 디지털 제품 디자인에 적용한다.\n2. 사용자 경험(UX) 내 감정적 몰입과 갈등을 관리하는 실용적인 디자인 패턴을 제안한다.",
+      "tech_keywords": [
+        "UX 디자인",
+        "감성 디자인",
+        "디지털 제품",
+        "사용자 경험",
+        "디자인 패턴"
+      ],
+      "source_url": "https://smashingmagazine.com/2026/03/anime-marvel-dc-designing-digital-products-emotion-flow/"
+    },
+    {
+      "original_title": "Moving From Moment.js To The JS Temporal API",
+      "korean_title": "Moment.js를 넘어, JavaScript Temporal API로 마이그레이션 가이드",
+      "summary": "1. JavaScript의 Date API와 Moment.js의 한계를 극복하는 Temporal API의 등장을 조명한다.\n2. 기존 Moment.js 기반 코드를 Temporal API로 전환하는 실용적인 마이그레이션 전략을 제시한다.",
+      "tech_keywords": [
+        "JavaScript",
+        "Temporal API",
+        "Moment.js",
+        "Date API",
+        "마이그레이션"
+      ],
+      "source_url": "https://smashingmagazine.com/2026/03/moving-from-moment-to-temporal-api/"
+    },
+    {
+      "original_title": "Beyond `border-radius`: What The CSS `corner-shape` Property Unlocks For Everyday UI",
+      "korean_title": "`border-radius`의 한계를 넘어선 CSS `corner-shape`로 UI 혁신",
+      "summary": "1. 기존 `border-radius` 제약을 해결하기 위한 `clip-path`, SVG 마스크 등 우회 기법들을 분석한다.\n2. 새로운 CSS `corner-shape` 속성을 활용, 베벨, 스쿱, 스쿼클 등 다채로운 코너 디자인을 구현한다.",
+      "tech_keywords": [
+        "CSS",
+        "UI 디자인",
+        "border-radius",
+        "corner-shape",
+        "SVG 마스크"
+      ],
+      "source_url": "https://smashingmagazine.com/2026/03/beyond-border-radius-css-corner-shape-property-ui/"
+    },
+    {
+      "original_title": "Building Dynamic Forms In React And Next.js",
+      "korean_title": "React 및 Next.js에서 동적 폼(Form) 구축 전략",
+      "summary": "1. 동적 폼을 UI 중심 방식과 규칙 엔진 방식 두 가지 관점으로 구분하여 분석한다.\n2. React 및 Next.js 환경에서 각 접근 방식의 장단점 및 적합한 구현 전략을 제시한다.",
+      "tech_keywords": [
+        "React",
+        "Next.js",
+        "동적 폼",
+        "UI 개발",
+        "규칙 엔진"
+      ],
+      "source_url": "https://smashingmagazine.com/2026/03/building-dynamic-forms-react-next-js/"
+    }
+  ]
+}

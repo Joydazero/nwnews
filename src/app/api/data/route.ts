@@ -4,7 +4,7 @@ import path from 'path';
 
 export async function GET() {
     try {
-        const filePath = path.join(process.cwd(), 'src', 'data', 'news.json');
+        const filePath = path.join(process.cwd(), 'data', 'news.json');
         if (!fs.existsSync(filePath)) {
             return NextResponse.json({ success: true, data: { dateStr: '없음', articles: [] } });
         }

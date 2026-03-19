@@ -14,7 +14,7 @@ export async function runMainPipeline() {
         if (rawArticles.length > 0) {
             const summarizedArticles = await summarizeArticles(rawArticles);
 
-            const dataDir = path.join(process.cwd(), 'src', 'data');
+            const dataDir = path.join(process.cwd(), 'data');
             if (!fs.existsSync(dataDir)) {
                 fs.mkdirSync(dataDir, { recursive: true });
             }
