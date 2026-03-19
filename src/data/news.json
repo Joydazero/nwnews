@@ -1,4 +1,268 @@
 {
-    "dateStr": "초기 데이터",
-    "articles": []
+  "dateStr": "2026-03-19",
+  "articles": [
+    {
+      "original_title": "AI Is Creating a New Kind of Tech Debt — And Nobody Is Talking About It",
+      "korean_title": "AI 기술 부채: 개발자들이 간과하는 새로운 그림자",
+      "summary": "1. AI 시스템 도입이 예측 불가능한 형태의 기술 부채를 유발하며, 이는 기존 소프트웨어 부채와 다른 특성을 가짐.\n2. 머신러닝 모델의 복잡한 데이터 의존성, 지속적인 재학습, 그리고 모델 버전 관리가 주요 기술 부채 요인으로 작용.\n3. AI 기반 프로젝트의 장기적 유지보수 및 확장성을 위해 MLOps와 같은 새로운 부채 관리 전략 수립이 필수적임을 강조.",
+      "tech_keywords": [
+        "AI 기술 부채",
+        "머신러닝 모델",
+        "데이터 파이프라인",
+        "모델 버전 관리",
+        "MLOps"
+      ],
+      "source_url": "https://dev.to/harsh2644/ai-is-creating-a-new-kind-of-tech-debt-and-nobody-is-talking-about-it-3pm6"
+    },
+    {
+      "original_title": "I Think a Lot of Developers Are Quietly Grieving the Old Internet",
+      "korean_title": "개발자들이 그리워하는 '오픈 웹'의 시대: 올드 인터넷 향수",
+      "summary": "1. 많은 개발자들이 초기 인터넷의 개방적이고 실험적인 정신이 사라진 현 웹 생태계에 대한 상실감을 표명.\n2. 소수 거대 기업의 중앙집중화된 플랫폼 지배와 상업화가 초기 인터넷의 탈중앙화 및 커뮤니티 문화를 위협.\n3. 개발자들이 과거의 자유로운 창조와 탐험 정신을 그리워하며, 현재 웹의 방향성에 대한 비판적 인식을 공유.",
+      "tech_keywords": [
+        "웹 생태계",
+        "오픈 웹",
+        "탈중앙화",
+        "플랫폼 종속성",
+        "개발자 문화"
+      ],
+      "source_url": "https://dev.to/the_nortern_dev/i-think-a-lot-of-developers-are-quietly-grieving-the-old-internet-3d8"
+    },
+    {
+      "original_title": "Vitest's 4.1 New \"Fast-Forward\" Mode Skips Timer Delays Instantly",
+      "korean_title": "Vitest 4.1 'Fast-Forward' 모드: 비동기 타이머 테스트 속도 혁신",
+      "summary": "1. Vitest 4.1에 새롭게 추가된 'Fast-Forward' 모드가 타이머 기반 비동기 코드 테스트의 효율성을 극대화.\n2. setTimeout, setInterval 등 자바스크립트 타이머 지연을 즉시 건너뛰어 유닛 테스트 실행 시간을 획기적으로 단축.\n3. 테스트 컴포저빌리티를 개선하고, 개발자들이 비동기 로직 테스트 시 직면하는 성능 병목 현상을 해결.",
+      "tech_keywords": [
+        "Vitest",
+        "유닛 테스트",
+        "비동기 테스트",
+        "타이머 모킹",
+        "테스트 성능 최적화"
+      ],
+      "source_url": "https://dev.to/playfulprogramming-angular/vitests-41-new-fast-forward-mode-skips-timer-delays-instantly-4a4h"
+    },
+    {
+      "original_title": "The Mental Model I Use Before Touching Any Codebase",
+      "korean_title": "코드베이스 분석을 위한 멘탈 모델: 개발 생산성 향상 전략",
+      "summary": "1. 25년 이상 경력의 저자가 코드 작성 전 코드베이스를 이해하기 위한 구조화된 사고 프레임워크를 공유.\n2. 시스템 아키텍처, 데이터 흐름, 비즈니스 로직에 대한 사전 분석이 개발 오류를 최소화하고 생산성을 높이는 핵심.\n3. 특히 주니어 개발자들이 간과하기 쉬운 사전 분석의 중요성을 강조하며, 장기적으로 발생하는 비용 절감 효과를 설명.",
+      "tech_keywords": [
+        "코드베이스 분석",
+        "시스템 아키텍처",
+        "멘탈 모델",
+        "비즈니스 로직",
+        "개발 생산성"
+      ],
+      "source_url": "https://dev.to/lessonsfromproduction/the-mental-model-i-use-before-touching-any-codebase-10bj"
+    },
+    {
+      "original_title": "I Scanned 100 AI Codebases - Here's What I Found",
+      "korean_title": "100개 AI 코드베이스 스캔 결과: ML 보안 취약점 심층 분석",
+      "summary": "1. AI 코드베이스 전용 보안 스캐너 'VibeCheck'를 개발, 100개 이상의 AI 프로젝트를 분석한 결과 공유.\n2. AI/ML 시스템에서 빈번하게 발견되는 보안 취약점, 잘못된 설정, 그리고 데이터 유출 위험 패턴을 제시.\n3. 모델 무결성 저해 및 프라이버시 침해 등 AI 시스템의 고유한 잠재적 보안 위협에 대한 통찰을 제공하며 개선 방안 모색.",
+      "tech_keywords": [
+        "AI 보안",
+        "머신러닝 보안",
+        "코드베이스 스캐닝",
+        "취약점 분석",
+        "데이터 유출 방지"
+      ],
+      "source_url": "https://dev.to/itskondrat/i-scanned-100-ai-codebases-heres-what-i-found-55be"
+    },
+    {
+      "original_title": "The Difference Between AI Features and AI-Native Products",
+      "korean_title": "AI 기능 vs. AI 네이티브 제품: 진정한 AI 혁신 기준",
+      "summary": "1. 기존 제품에 AI 기능 통합과 AI를 핵심으로 설계된 AI 네이티브 제품의 차이점 분석.\n2. AI 기능은 기존 사용자 경험을 향상시키지만, AI 네이티브 제품은 AI를 통해 새로운 가치를 창출.\n3. 기업의 AI 전략 수립 시, 단순히 기능 추가를 넘어 AI 중심의 제품 개발 패러다임 전환 필요성 강조.",
+      "tech_keywords": [
+        "AI 기능",
+        "AI 네이티브",
+        "제품 개발",
+        "AI 전략",
+        "사용자 경험"
+      ],
+      "source_url": "https://dev.to/jaideepparashar/the-difference-between-ai-features-and-ai-native-products-238n"
+    },
+    {
+      "original_title": "Onelingo MVP: Lo que aprendí cuando mi app de idiomas no salió como esperaba (Post-Mortem)",
+      "korean_title": "Onelingo MVP 실패 사례 분석: Duolingo 클론 개발 회고 (Post-Mortem)",
+      "summary": "1. Duolingo 클론 앱 'Onelingo' MVP 개발 과정 중 발생한 문제점과 실패 요인 분석.\n2. Hugging Face Spaces 활용 및 Git 인증 오류 등 기술적 난관과 개발 과정에서의 교훈 공유.\n3. MVP 개발 시, 초기 단계의 전문성 확보와 잠재적 문제점 사전 식별의 중요성 강조.",
+      "tech_keywords": [
+        "MVP",
+        "Post-Mortem",
+        "Hugging Face Spaces",
+        "Git 인증",
+        "Duolingo 클론"
+      ],
+      "source_url": "https://dev.to/derlys/onelingo-mvp-lo-que-aprendi-cuando-mi-app-de-idiomas-no-salio-como-esperaba-post-mortem-1em4"
+    },
+    {
+      "original_title": "How to Scrape YouTube Data Without the Official API (No Quota Limits)",
+      "korean_title": "YouTube 데이터 스크래핑: 공식 API 제한 없이 대량 데이터 획득 전략",
+      "summary": "1. YouTube Data API의 엄격한 할당량(quota limit) 제약을 우회하여 데이터를 수집하는 방법 소개.\n2. 공식 API를 사용하지 않고도 대량의 YouTube 데이터를 효율적으로 크롤링하는 기술적 접근 방식 제시.\n3. 스크래핑 시 고려할 윤리적 문제 및 서비스 약관 준수의 중요성 언급.",
+      "tech_keywords": [
+        "YouTube Data API",
+        "데이터 스크래핑",
+        "쿼터 제한",
+        "크롤링",
+        "웹 파싱"
+      ],
+      "source_url": "https://dev.to/__8ef7243a4f/how-to-scrape-youtube-data-without-the-official-api-no-quota-limits-4blf"
+    },
+    {
+      "original_title": "Astral to Join OpenAI",
+      "korean_title": "파이썬 빌드 도구 개발사 Astral, OpenAI에 합류",
+      "summary": "1. 고성능 파이썬 도구 개발사 Astral이 OpenAI에 인수 합병 발표.\n2. Astral의 주요 프로젝트인 Ruff, Rye, uv 등 파이썬 생태계 도구의 향후 발전 방향에 대한 전망 제시.\n3. 이번 합병이 AI 및 개발 생산성 도구 분야에 미칠 영향 분석.",
+      "tech_keywords": [
+        "Astral",
+        "OpenAI",
+        "파이썬 도구",
+        "Ruff",
+        "uv",
+        "인수합병"
+      ],
+      "source_url": "https://astral.sh/blog/openai"
+    },
+    {
+      "original_title": "OpenBSD: PF queues break the 4 Gbps barrier",
+      "korean_title": "OpenBSD PF 큐잉, 4Gbps 성능 장벽 돌파: 네트워크 처리량 혁신",
+      "summary": "1. OpenBSD의 패킷 필터(PF) 큐잉 기능이 4Gbps 이상의 네트워크 처리량 달성.\n2. 네트워크 성능 최적화를 위한 PF 스케줄링 및 대역폭 관리 개선 내용 상세 설명.\n3. 고성능 네트워크 환경에서 OpenBSD 및 PF의 활용 가능성 증대 시사.",
+      "tech_keywords": [
+        "OpenBSD",
+        "PF",
+        "큐잉",
+        "네트워크 성능",
+        "Gbps",
+        "패킷 필터"
+      ],
+      "source_url": "https://undeadly.org/cgi?action=article;sid=20260319125859"
+    },
+    {
+      "original_title": "Juggalo Makeup Blocks Facial Recognition Technology (2019)",
+      "korean_title": "주갈로 메이크업, 안면 인식 기술 회피 효과 입증: AI 보안 취약점 심층 분석",
+      "summary": "1. 특정 패턴의 메이크업이 AI 기반 안면 인식 시스템을 교란, 신원 식별을 방해하는 기술적 가능성 제시.\n2. 컴퓨터 비전 모델의 취약점을 이용한 '대항 공격(Adversarial Attack)' 사례로, AI 보안 연구의 중요성 부각.\n3. 프라이버시 보호를 위한 안티-안면 인식 기술 개발 논의에 새로운 관점 제공.",
+      "tech_keywords": [
+        "안면 인식 기술",
+        "Computer Vision",
+        "Adversarial Attack",
+        "프라이버시 보호",
+        "AI 윤리"
+      ],
+      "source_url": "https://consequence.net/2019/07/juggalo-makeup-facial-recognition/"
+    },
+    {
+      "original_title": "Afroman found not liable in defamation case brought by Ohio cops who raided home",
+      "korean_title": "아프로맨, 경찰 가택 수색 영상 사용 명예훼손 소송 승소: 디지털 시대의 표현의 자유 논쟁",
+      "summary": "1. 뮤지션 아프로맨, 경찰 가택 수색 영상을 활용한 콘텐츠로 인한 명예훼손 소송에서 무죄 판결.\n2. 디지털 미디어 환경에서 공인 및 사생활 침해, 콘텐츠 윤리 간의 복합적인 법적 쟁점 부각.\n3. 온라인 플랫폼에서의 영상물 배포와 그에 따른 법적 책임 범위에 대한 시사점 제기.",
+      "tech_keywords": [
+        "디지털 콘텐츠",
+        "표현의 자유",
+        "온라인 플랫폼 법적 책임",
+        "미디어 윤리",
+        "영상 저작권"
+      ],
+      "source_url": "https://nypost.com/2026/03/18/us-news/afroman-found-not-liable-in-bizarre-ohio-defamation-case/"
+    },
+    {
+      "original_title": "Conway's Game of Life, in real life",
+      "korean_title": "콘웨이의 생명 게임, 현실 세계 구현 가능성 탐구: 알고리즘의 예측 불가능성",
+      "summary": "1. 존 콘웨이의 '생명 게임(Game of Life)' 모델이 실제 물리적 시스템 또는 생물학적 현상과 유사한 특성을 보이는 사례 분석.\n2. 셀룰러 오토마타(Cellular Automata) 이론이 복잡계 시뮬레이션 및 인공 생명 연구에 미치는 영향 재조명.\n3. 단순한 규칙으로 복잡한 패턴과 예상치 못한 '창발적(Emergent)' 행동이 발생하는 알고리즘적 원리 탐구.",
+      "tech_keywords": [
+        "Cellular Automata",
+        "생명 게임",
+        "복잡계 시뮬레이션",
+        "Emergent Behavior",
+        "알고리즘 디자인"
+      ],
+      "source_url": "https://lcamtuf.substack.com/p/conways-game-of-life-in-real-life"
+    },
+    {
+      "original_title": "Consensus Board Game",
+      "korean_title": "분산 합의 알고리즘을 보드 게임으로 학습하다: 블록체인 원리 시각화",
+      "summary": "1. 분산 시스템의 핵심 개념인 '합의(Consensus)' 메커니즘을 보드 게임 형태로 구현하여 복잡한 원리 쉽게 이해.\n2. 블록체인, 분산 데이터베이스 등에서 중요한 Paxos, Raft와 같은 합의 알고리즘의 동작 방식 시뮬레이션.\n3. 개발자 커뮤니티에서 기술 학습의 새로운 접근 방식으로 게임 기반 교육(Gamified Learning)의 효과 제시.",
+      "tech_keywords": [
+        "분산 합의 알고리즘",
+        "블록체인",
+        "분산 시스템",
+        "Paxos",
+        "Raft",
+        "Gamification"
+      ],
+      "source_url": "https://matklad.github.io/2026/03/19/consensus-board-game.html"
+    },
+    {
+      "original_title": "Afroman Wins Civil Trial over Use of Police Raid Footage in His Music Videos",
+      "korean_title": "아프로맨 승소, 경찰 수색 영상 활용한 음악 콘텐츠: 디지털 권리와 미디어의 경계",
+      "summary": "1. 아프로맨이 경찰 가택 수색 영상을 활용한 음악 비디오 관련 민사 소송에서 승소, 디지털 콘텐츠 사용 권리에 대한 중요한 판례 확립.\n2. 공개된 영상 기록물의 예술적 활용 범위와 사생활 보호, 명예훼손 간의 복잡한 법적 기술적 교차점 조명.\n3. 온라인 플랫폼과 창작자에게 디지털 미디어의 편집 및 배포에 있어 법적, 윤리적 가이드라인에 대한 시사점 제공.",
+      "tech_keywords": [
+        "디지털 권리",
+        "영상 콘텐츠 활용",
+        "사생활 보호 기술",
+        "미디어 플랫폼 윤리",
+        "저작권 관리"
+      ],
+      "source_url": "https://www.nytimes.com/2026/03/19/us/afroman-trial-lemon-cake-verdict.html"
+    },
+    {
+      "original_title": "'Your Frustration Is the Product'",
+      "korean_title": "의도된 불만: 프로덕트 디자인의 어두운 이면과 사용자 경험의 딜레마",
+      "summary": "1. 사용자의 불편함과 불만이 프로덕트의 핵심 요소 또는 의도된 결과물로 작용하는 현상을 분석.\n2. 개발자 커뮤니티에서 활발히 논의되는, 프로덕트 디자인 철학의 윤리적 딜레마를 조명.\n3. 다크 패턴(Dark Patterns) 및 사용자 경험(UX) 저하를 유발하는 비즈니스 모델에 대한 비판적 시각 제시.",
+      "tech_keywords": [
+        "프로덕트 디자인",
+        "UX/UI",
+        "다크 패턴",
+        "사용자 경험",
+        "비즈니스 모델"
+      ],
+      "source_url": "https://daringfireball.net/2026/03/your_frustration_is_the_product"
+    },
+    {
+      "original_title": "Anime vs. Marvel/DC: Designing Digital Products With Emotion In Flow",
+      "korean_title": "몰입형 경험 설계: 애니메이션에서 발견하는 감성적 프로덕트 디자인 패턴",
+      "summary": "1. 픽셀과 패턴을 넘어 스토리텔링 기법과 감정 흐름을 디지털 프로덕트 디자인에 접목하는 방법론 제시.\n2. 애니메이션 및 슈퍼히어로 영화의 서사 구조 분석을 통해 사용자 감정 이입 및 몰입형 경험 설계 전략 도출.\n3. Emotion in Flow, Emotion in Conflict 개념을 활용한 실용적인 프로덕트 디자인 패턴 제안.",
+      "tech_keywords": [
+        "UX 디자인",
+        "스토리텔링",
+        "감성 디자인",
+        "사용자 경험",
+        "디자인 패턴"
+      ],
+      "source_url": "https://smashingmagazine.com/2026/03/anime-marvel-dc-designing-digital-products-emotion-flow/"
+    },
+    {
+      "original_title": "Moving From Moment.js To The JS Temporal API",
+      "korean_title": "JavaScript 시간 관리 혁신: Moment.js에서 Temporal API로의 전환 가이드",
+      "summary": "1. JavaScript의 내장 `Date` API 및 Moment.js의 한계를 극복하는 새로운 표준 Temporal API 소개.\n2. Temporal API가 기존 시간 처리 라이브러리의 문제점을 해결하고 제공하는 개선된 기능 분석.\n3. Moment.js 기반 코드의 Temporal API로의 실용적인 마이그레이션 전략 및 코드 레시피 제공.",
+      "tech_keywords": [
+        "JavaScript",
+        "Temporal API",
+        "Moment.js",
+        "Date API",
+        "시간 처리"
+      ],
+      "source_url": "https://smashingmagazine.com/2026/03/moving-from-moment-to-temporal-api/"
+    },
+    {
+      "original_title": "Beyond `border-radius`: What The CSS `corner-shape` Property Unlocks For Everyday UI",
+      "korean_title": "라운드 코너의 한계를 넘어: `corner-shape`로 진화하는 CSS UI 디자인",
+      "summary": "1. `border-radius`의 제약을 극복하고 다양한 코너 형태를 구현하기 위한 CSS `corner-shape` 속성 도입.\n2. `clip-path`, SVG 마스크 등 기존의 복잡한 UI 구현 방식 대신 `corner-shape`의 간결하고 강력한 기능 소개.\n3. 베벨(beveled), 스쿱(scooped), 스쿼클(squircle) 등 독특한 UI 요소 구현을 통한 디자인 유연성 및 개발 생산성 향상.",
+      "tech_keywords": [
+        "CSS",
+        "corner-shape",
+        "border-radius",
+        "UI 디자인",
+        "clip-path"
+      ],
+      "source_url": "https://smashingmagazine.com/2026/03/beyond-border-radius-css-corner-shape-property-ui/"
+    },
+    {
+      "original_title": "Building Dynamic Forms In React And Next.js",
+      "korean_title": "복잡한 폼, 이제는 쉽게: React 및 Next.js 동적 폼 설계 가이드",
+      "summary": "1. React 및 Next.js 환경에서 동적 폼(Dynamic Forms)을 효과적으로 구축하는 방법론 탐색.\n2. 단순 UI 역할의 폼과 비즈니스 로직을 포함하는 룰 엔진(Rule Engine) 폼의 차이점 및 선택 기준 제시.\n3. 폼 설계 시 확장성, 재사용성, 유지보수성을 고려한 아키텍처 및 구현 전략 제안.",
+      "tech_keywords": [
+        "React",
+        "Next.js",
+        "동적 폼",
+        "룰 엔진",
+        "프론트엔드 아키텍처"
+      ],
+      "source_url": "https://smashingmagazine.com/2026/03/building-dynamic-forms-react-next-js/"
+    }
+  ]
 }
