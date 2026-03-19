@@ -42,7 +42,7 @@ export async function summarizeArticles(articles: any[]) {
         chunks.push(articles.slice(i, i + chunkSize));
     }
 
-    const aiPromises = chunks.map(async (chunk, index) => {
+    const aiPromises = chunks.map(async (chunk: any[], index: number) => {
         try {
             console.log(`- Generating chunk ${index + 1}...`);
             const response = await ai.models.generateContent({

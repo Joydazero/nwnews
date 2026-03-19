@@ -32,7 +32,7 @@ export async function fetchTechArticles() {
             const hnIds = await hnIdsRes.json();
             const top8Ids = hnIds.slice(0, 8);
 
-            const itemPromises = top8Ids.map(async id => {
+            const itemPromises = top8Ids.map(async (id: number) => {
                 const itemRes = await fetch(`https://hacker-news.firebaseio.com/v0/item/${id}.json`);
                 const item = await itemRes.json();
                 return {
@@ -58,7 +58,7 @@ export async function fetchTechArticles() {
         const feed = await parser.parseURL('https://www.smashingmagazine.com/feed/');
         if (feed.items && feed.items.length > 0) {
             const topFeeds = feed.items.slice(0, 4);
-            topFeeds.forEach(latestFeed => {
+            topFeeds.forEach((latestFeed: any) => {
                 allArticles.push({
                     source: 'Smashing Magazine',
                     title: latestFeed.title,

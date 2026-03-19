@@ -1,0 +1,10 @@
+{
+  "/_global-error/page": "app/_global-error/page.js",
+  "/_not-found/page": "app/_not-found/page.js",
+  "/api/data/route": "app/api/data/route.js",
+  "/api/files/route": "app/api/files/route.js",
+  "/api/generate/route": "app/api/generate/route.js",
+  "/api/notion-gc/route": "app/api/notion-gc/route.js",
+  "/manage/page": "app/manage/page.js",
+  "/page": "app/page.js"
+}

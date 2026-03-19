@@ -18,7 +18,7 @@ export async function createNotionTechNews(articles: any[]) {
 
     // [원인 해결] 기존 for문 내 await 동기 통신으로 인한 네트워크 병목 발생 (20개 기준 10초 이상 지연)
     // [개선 반영] Promise.all을 활용해 다중 비동기 병렬 요청 처리로 노션 적재 시간을 1초 단위로 대폭 단축 
-    const insertPromises = articles.map(article => {
+    const insertPromises = articles.map((article: any) => {
         return notion.pages.create({
             parent: { database_id: databaseId },
             properties: {
