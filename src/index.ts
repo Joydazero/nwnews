@@ -3,6 +3,7 @@ import { fetchTechArticles } from './fetchArticles';
 import { summarizeArticles } from './summarizeArticles';
 import { createNotionTechNews } from './createNotionTechNews';
 import { cleanup_old_notion_pages } from './cleanupNotion';
+import { pushDataToGitHub } from './utils/github';
 import * as fs from 'fs';
 import * as path from 'path';
 
@@ -13,19 +14,26 @@ export async function runMainPipeline() {
         if (rawArticles.length > 0) {
             const summarizedArticles = await summarizeArticles(rawArticles);
 
-            const outputDir = path.join(process.cwd(), 'output');
-            if (!fs.existsSync(outputDir)) {
-                fs.mkdirSync(outputDir);
+            const dataDir = path.join(process.cwd(), 'src', 'data');
+            if (!fs.existsSync(dataDir)) {
+                fs.mkdirSync(dataDir, { recursive: true });
             }
 
-            const fileName = `tech_news_${new Date().toISOString().split('T')[0]}.json`;
-            const filePath = path.join(outputDir, fileName);
+            const filePath = path.join(dataDir, 'news.json');
+            const fileData = {
+                dateStr: new Date().toISOString().split('T')[0],
+                articles: summarizedArticles
+            };
 
-            fs.writeFileSync(filePath, JSON.stringify(summarizedArticles, null, 2), 'utf8');
+            fs.writeFileSync(filePath, JSON.stringify(fileData, null, 2), 'utf8');
             console.log(`[Success] Pipeline file completed. Output saved to ${filePath}`);
 
             // Node 3: Notion API Insert
             await createNotionTechNews(summarizedArticles);
+
+            // Node 4: GitHub DataPush (Vercel Auto-deploy Trigger)
+            console.log("번역 완료, GitHub 저장소에 데이터를 주입합니다.");
+            await pushDataToGitHub(fileData);
 
             return summarizedArticles;
         } else {
