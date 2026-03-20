@@ -5,6 +5,7 @@
   "/api/files/route": "/api/files",
   "/api/generate/route": "/api/generate",
   "/api/notion-gc/route": "/api/notion-gc",
+  "/global/page": "/global",
   "/manage/page": "/manage",
   "/page": "/"
 }

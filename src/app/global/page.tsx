@@ -45,6 +45,19 @@ export default function GlobalNewsPage() {
         }
     };
 
+    const downloadJson = () => {
+        if (!data) return;
+        const blob = new Blob([JSON.stringify(data, null, 2)], { type: 'application/json' });
+        const url = URL.createObjectURL(blob);
+        const a = document.createElement('a');
+        a.href = url;
+        a.download = `${activeTab}_news_${data.dateStr}.json`;
+        document.body.appendChild(a);
+        a.click();
+        document.body.removeChild(a);
+        URL.revokeObjectURL(url);
+    };
+
     return (
         <main className="max-w-4xl mx-auto py-16 px-6 sm:px-8">
             <header className="text-center mb-12 animate-fade-in">
@@ -75,6 +88,21 @@ export default function GlobalNewsPage() {
                         >
                             {activeTab.toUpperCase()} 최신 소식 자동 수집 ✨
                         </button>
+
+                        <button
+                            onClick={downloadJson}
+                            disabled={!data}
+                            className="px-8 py-3.5 text-[1.05rem] font-bold text-text-main bg-card-bg border border-card-border rounded-xl transition-all hover:bg-white/10 hover:border-text-muted flex items-center justify-center outline-none disabled:opacity-50 disabled:cursor-not-allowed"
+                        >
+                            📥 JSON 다운로드
+                        </button>
+
+                        <Link
+                            href="/manage"
+                            className="px-8 py-3.5 text-[1.05rem] font-bold text-text-main bg-card-bg border border-card-border rounded-xl transition-all hover:bg-white/10 hover:border-text-muted flex items-center justify-center outline-none"
+                        >
+                            ⚙️ 관리 콘솔
+                        </Link>
                     </div>
                 )}
 

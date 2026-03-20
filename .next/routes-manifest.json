@@ -66,6 +66,12 @@
       "namedRegex": "^/api/notion\\-gc(?:/)?$"
     },
     {
+      "page": "/global",
+      "regex": "^/global(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/global(?:/)?$"
+    },
+    {
       "page": "/manage",
       "regex": "^/manage(?:/)?$",
       "routeKeys": {},
