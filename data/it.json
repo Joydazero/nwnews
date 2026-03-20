@@ -1,5 +1,392 @@
 {
   "category": "it",
   "dateStr": "2026-03-20",
-  "articles": []
+  "articles": [
+    {
+      "category": "it",
+      "is_ai": false,
+      "original_title": "Congrats to the Winners of Our First DEV Weekend Challenge!",
+      "korean_title": "제1회 DEV 주말 챌린지 결과 발표: 커뮤니티 기반 기술 혁신의 성과",
+      "summary": "1. 개발자 커뮤니티 DEV에서 주최한 첫 번째 주말 챌린지가 종료되었으며, 특정 프롬프트에 대응하여 기술적 창의성을 발휘한 최종 우승자들이 선정됨.\n2. 이번 챌린지는 짧은 시간 내에 완성도 높은 프로토타입을 구축하는 개발자들의 문제 해결 능력과 오픈소스 생태계의 협업 가치를 조명함.",
+      "tech_keywords": [
+        "Community",
+        "Coding Challenge",
+        "Open Source",
+        "Software Development"
+      ],
+      "source": "DEV Community",
+      "source_url": "https://dev.to/devteam/congrats-to-the-winners-of-our-first-dev-weekend-challenge-1gml"
+    },
+    {
+      "category": "it",
+      "is_ai": true,
+      "original_title": "Your Agent Is Making Decisions Nobody Authorized",
+      "korean_title": "자율형 AI 에이전트의 역설: 승인되지 않은 의사결정과 거버넌스 붕괴 위험",
+      "summary": "1. 퀀트 펀드의 독립적인 5개 전략이 개별 리스크 한도를 준수했음에도 불구하고, 자율형 에이전트 간의 상호작용으로 인해 예상치 못한 승인되지 않은 결정이 내려진 사례를 분석함.\n2. AI 에이전트의 자율성이 높아질수록 기존의 정적 리스크 관리 프레임워크는 한계에 부딪히며, 실시간 감시 및 런타임 가드레일(Runtime Guardrails) 구축이 필수적임을 강조함.",
+      "tech_keywords": [
+        "AI Agent",
+        "Risk Management",
+        "Governance",
+        "Autonomous Systems"
+      ],
+      "source": "DEV Community",
+      "source_url": "https://dev.to/dannwaneri/your-agent-is-making-decisions-nobody-authorized-2bc7"
+    },
+    {
+      "category": "it",
+      "is_ai": false,
+      "original_title": "I Think a Lot of Developers Are Quietly Grieving the Old Internet",
+      "korean_title": "현대 개발자들이 느끼는 '개방형 웹'에 대한 상실감과 생태계 변화에 대한 고찰",
+      "summary": "1. 플랫폼 중심의 폐쇄적 생태계와 알고리즘 기반 콘텐츠 소비가 가속화됨에 따라, 과거 실험적이고 개방적이었던 웹(Old Internet)의 가치를 그리워하는 개발자들의 심리적 현상을 진단함.\n2. 기술적 진보가 생산성을 높였으나, 개인의 기술적 탐구와 커뮤니티 중심의 순수한 개발 문화가 파편화되는 과정에서 발생하는 '정서적 단절' 문제를 제기함.",
+      "tech_keywords": [
+        "Web Evolution",
+        "Developer Experience",
+        "Internet History",
+        "Open Web"
+      ],
+      "source": "DEV Community",
+      "source_url": "https://dev.to/the_nortern_dev/i-think-a-lot-of-developers-are-quietly-grieving-the-old-internet-3d8"
+    },
+    {
+      "category": "it",
+      "is_ai": false,
+      "original_title": "I Tried Vite+ and Replaced My Entire Frontend Toolchain",
+      "korean_title": "Vite+ 도입을 통한 프론트엔드 툴체인 단일화: 복잡성 제거와 빌드 성능 극대화",
+      "summary": "1. 번들러, 컴파일러, 린터 등 파편화된 프론트엔드 도구들을 Vite+ 기반의 통합 툴체인으로 교체하여 개발 환경의 복잡성을 획기적으로 개선한 사례를 공유함.\n2. 설정 오버헤드를 줄이고 빌드 속도를 최적화함으로써 유지보수성을 높이는 모던 프론트엔드 아키텍처의 새로운 표준을 제시함.",
+      "tech_keywords": [
+        "Vite",
+        "Frontend Toolchain",
+        "Build Optimization",
+        "Developer Productivity"
+      ],
+      "source": "DEV Community",
+      "source_url": "https://dev.to/erikch/i-tried-vite-and-replaced-my-entire-frontend-toolchain-4cgb"
+    },
+    {
+      "category": "it",
+      "is_ai": false,
+      "original_title": "Vitest's 4.1 New \"Fast-Forward\" Mode Skips Timer Delays Instantly",
+      "korean_title": "Vitest 4.1 업데이트: 타이머 지연을 즉각 생략하는 'Fast-Forward' 모드 분석",
+      "summary": "1. Vitest 4.1 버전에 새롭게 도입된 'Fast-Forward' 모드는 `setTimeout`과 같은 타이머가 포함된 비동기 로직 테스트 시 실제 대기 시간 없이 즉각적인 실행을 가능하게 함.\n2. 테스트의 구성 가능성(Composability)을 강화하고 전체 CI/CD 파이프라인의 테스트 스위트 실행 시간을 단축시키는 기술적 메커니즘을 설명함.",
+      "tech_keywords": [
+        "Vitest",
+        "Unit Testing",
+        "Async JavaScript",
+        "Fast-Forward Mode"
+      ],
+      "source": "DEV Community",
+      "source_url": "https://dev.to/playfulprogramming-angular/vitests-41-new-fast-forward-mode-skips-timer-delays-instantly-4a4h"
+    },
+    {
+      "category": "it",
+      "is_ai": false,
+      "original_title": "How to Add Link Previews to Your React App (With Code Examples)",
+      "korean_title": "React 애플리케이션 내 Open Graph 메타데이터 기반 Rich Link Preview 구현 가이드",
+      "summary": "1. Open Graph 및 Twitter Cards 프로토콜을 파싱하여 외부 URL의 제목, 설명, 이미지를 동적으로 렌더링하는 React 컴포넌트 설계 및 구현 방법 제시.\n2. 클라이언트 사이드에서의 CORS 이슈 해결을 위한 프록시 서버 활용 전략과 데이터 페칭 최적화를 통한 사용자 경험(UX) 향상 방안 상술.",
+      "tech_keywords": [
+        "React",
+        "Open Graph",
+        "Metadata",
+        "CORS",
+        "Frontend"
+      ],
+      "source": "dev.to",
+      "source_url": "https://dev.to/eatyou_eatyou_d79d27e5622/how-to-add-link-previews-to-your-react-app-with-code-examples-4l6d"
+    },
+    {
+      "category": "it",
+      "is_ai": true,
+      "original_title": "1m Tokens (& WebSocket)",
+      "korean_title": "100만 토큰 처리 최적화: WebSocket 기반의 고성능 ML 스레딩 엔진 아키텍처",
+      "summary": "1. 100만 단위의 대규모 토큰 시퀀스를 효율적으로 처리하기 위해 머신러닝(ML) 최적화 기법이 적용된 커스텀 스레딩 엔진의 설계 구조와 병목 지점 해결 사례 공유.\n2. 실시간 데이터 스트리밍을 위한 WebSocket 통신 프로토콜 최적화 및 백엔드 시스템의 동시성 제어를 통한 저지연(Low-latency) 처리 메커니즘 분석.",
+      "tech_keywords": [
+        "Machine Learning",
+        "WebSocket",
+        "Threading Engine",
+        "Performance Optimization",
+        "LLM"
+      ],
+      "source": "dev.to",
+      "source_url": "https://dev.to/tavari/1m-tokens-websocket-1f0c"
+    },
+    {
+      "category": "it",
+      "is_ai": false,
+      "original_title": "Stop Fighting with PDF Libraries: Generate Dynamic PDFs Using HTML & JSON",
+      "korean_title": "레거시 PDF 라이브러리 탈피: HTML5와 JSON 기반의 동적 PDF 생성 워크플로우",
+      "summary": "1. 복잡한 전용 라이브러리 대신 표준 웹 기술인 HTML/CSS 템플릿과 JSON 데이터를 바인딩하여 문서를 동적으로 생성하는 현대적인 PDF 렌더링 프로세스 제안.\n2. 서버 사이드 렌더링(SSR) 환경에서의 레이아웃 정확도 유지 및 비즈니스 로직에 따른 문서 자동화 파이프라인 구축 방법 설명.",
+      "tech_keywords": [
+        "PDF Generation",
+        "HTML/CSS",
+        "JSON Data Binding",
+        "SSR",
+        "Automation"
+      ],
+      "source": "dev.to",
+      "source_url": "https://dev.to/maccilyas/stop-fighting-with-pdf-libraries-generate-dynamic-pdfs-using-html-json-jk1"
+    },
+    {
+      "category": "it",
+      "is_ai": false,
+      "original_title": "I built a native GUI for direct server-to-server transfers (FTP/SFTP) because rclone CLI wasn't visual enough for me.",
+      "korean_title": "CLI의 한계를 넘는 서버 간 데이터 전송: rclone 기반 Native GUI 도구 개발 및 최적화",
+      "summary": "1. 대규모 미디어 마이그레이션 효율성을 높이기 위해 rclone CLI 기능을 시각화한 Native GUI 래퍼(Wrapper) 개발기 및 사용자 인터페이스 설계 전략.\n2. FTP/SFTP 프로토콜을 통한 다이렉트 서버 간 전송(Server-to-Server) 성능 극대화 및 실시간 전송 상태 모니터링 대시보드 구현 기술 공유.",
+      "tech_keywords": [
+        "rclone",
+        "GUI",
+        "FTP/SFTP",
+        "Data Migration",
+        "DevTools"
+      ],
+      "source": "dev.to",
+      "source_url": "https://dev.to/andrii_bondar_fc866063a87/i-built-a-native-gui-for-direct-server-to-server-transfers-ftpsftp-because-rclone-cli-wasnt-dd0"
+    },
+    {
+      "category": "it",
+      "is_ai": false,
+      "original_title": "Vite vs Webpack: Build Tool Comparison for Modern Web Development (2026)",
+      "korean_title": "2026년 프론트엔드 빌드 툴 벤치마크: Vite와 Webpack의 생산성 및 번들 최적화 비교",
+      "summary": "1. Native ESM 기반 No-bundle 방식의 Vite와 광범위한 플러그인 생태계를 보유한 Webpack의 HMR(Hot Module Replacement) 속도 및 빌드 타임 비교 분석.\n2. 프로덕션 환경에서의 트리 쉐이킹(Tree Shaking), 코드 스플리팅 효율성 및 프로젝트 규모에 따른 최적의 빌드 아키텍처 선정 가이드라인 제시.",
+      "tech_keywords": [
+        "Vite",
+        "Webpack",
+        "Build Tools",
+        "HMR",
+        "Bundle Optimization"
+      ],
+      "source": "dev.to",
+      "source_url": "https://dev.to/_d7eb1c1703182e3ce1782/vite-vs-webpack-build-tool-comparison-for-modern-web-development-2026-3793"
+    },
+    {
+      "category": "it",
+      "is_ai": false,
+      "original_title": "PostgreSQL Performance Tuning Checklist: 2026 Complete Guide",
+      "korean_title": "PostgreSQL 성능 튜닝 가이드 2026: 인덱싱부터 커넥션 풀링까지 초정밀 최적화 전략",
+      "summary": "1. 인덱스 최적화, 쿼리 실행 계획(Execution Plan) 분석, Vacuum 및 메모리 설정을 통해 데이터베이스 처리 성능을 극대화하는 실무 체크리스트를 제공합니다.\n2. 커넥션 풀링(Connection Pooling) 도입 및 모니터링 전략을 통해 고부하 환경에서도 안정적인 엔터프라이즈급 DB 가용성을 확보하는 방안을 제시합니다.",
+      "tech_keywords": [
+        "PostgreSQL",
+        "Database Tuning",
+        "Query Optimization",
+        "Connection Pooling"
+      ],
+      "source": "dev.to",
+      "source_url": "https://dev.to/_d7eb1c1703182e3ce1782/postgresql-performance-tuning-checklist-2026-complete-guide-65a"
+    },
+    {
+      "category": "it",
+      "is_ai": false,
+      "original_title": "Privacy Friendly Analytics Setup",
+      "korean_title": "프라이버시 중심의 웹 분석 환경 구축: Google Analytics 대안과 데이터 주권 확보 전략",
+      "summary": "1. 수십 개의 데이터 포인트를 수집하는 기존 분석 도구의 대안으로, 사용자 프라이버시를 존중하면서도 핵심 비즈니스 지표를 정확히 측정하는 방법론을 다룹니다.\n2. 셀프 호스팅(Self-hosting) 기반의 분석 스택 구성을 통해 외부 플랫폼 의존도를 낮추고 데이터 주권(Data Sovereignty)을 강화하는 아키텍처를 소개합니다.",
+      "tech_keywords": [
+        "Web Analytics",
+        "Privacy",
+        "Data Sovereignty",
+        "Self-hosting"
+      ],
+      "source": "dev.to",
+      "source_url": "https://dev.to/selfhostingsh/privacy-friendly-analytics-setup-2m7h"
+    },
+    {
+      "category": "it",
+      "is_ai": false,
+      "original_title": "How to Build a CLI Tool with Rust: Step-by-Step Tutorial",
+      "korean_title": "Rust 기반 고성능 CLI 도구 개발 가이드: Clap을 활용한 인자 파싱 및 견고한 에러 핸들링",
+      "summary": "1. Rust의 강력한 타입 시스템과 'clap' 크레이트를 활용하여 전문가급 커맨드라인 인터페이스(CLI) 도구를 설계하고 구현하는 엔드투엔드 프로세스를 설명합니다.\n2. 파일 I/O 처리, 컬러 출력 레이아웃, 그리고 배포를 위한 테스트 전략 등 실무에서 즉시 활용 가능한 Rust 개발 패턴을 공유합니다.",
+      "tech_keywords": [
+        "Rust",
+        "CLI",
+        "clap",
+        "Error Handling"
+      ],
+      "source": "dev.to",
+      "source_url": "https://dev.to/_d7eb1c1703182e3ce1782/how-to-build-a-cli-tool-with-rust-step-by-step-tutorial-1jek"
+    },
+    {
+      "category": "it",
+      "is_ai": false,
+      "original_title": "Best CI/CD Pipeline for Small Teams: A Practical 2026 Guide",
+      "korean_title": "2026 소규모 팀을 위한 최적의 CI/CD 파이프라인: GitHub Actions와 GitLab CI 비교 분석",
+      "summary": "1. 소규모 개발 조직에 최적화된 워크플로우 자동화를 위해 GitHub Actions, GitLab CI, CircleCI 등 주요 도구의 비용 대비 효율성과 설정 복잡도를 심층 비교합니다.\n2. 운영 오버헤드를 최소화하면서 빌드, 테스트, 배포 파이프라인을 구축할 수 있는 실무적인 구성 예시와 관리 전략을 제안합니다.",
+      "tech_keywords": [
+        "CI/CD",
+        "GitHub Actions",
+        "DevOps",
+        "Workflow Automation"
+      ],
+      "source": "dev.to",
+      "source_url": "https://dev.to/_d7eb1c1703182e3ce1782/best-cicd-pipeline-for-small-teams-a-practical-2026-guide-2ad0"
+    },
+    {
+      "category": "it",
+      "is_ai": true,
+      "original_title": "The Developers Who Thrive in AI Won’t Be the Best Coders",
+      "korean_title": "AI 시대 생존 전략: '코딩 구현력'보다 중요한 시스템 아키텍처와 문제 정의 역량",
+      "summary": "1. AI 기반 코드 생성 도구의 대중화로 인해 소프트웨어 엔지니어의 핵심 가치가 단순 구현 능력에서 복잡한 시스템 설계 및 비즈니스 문제 해결 능력으로 이동하고 있음을 분석합니다.\n2. 기술적 패러다임 변화 속에서 AI를 생산성 도구로 완벽히 제어하며 도메인 지식을 결합하는 'AI-Native' 엔지니어로의 전환 필요성을 강조합니다.",
+      "tech_keywords": [
+        "AI",
+        "Software Engineering",
+        "LLM",
+        "Developer Productivity"
+      ],
+      "source": "dev.to",
+      "source_url": "https://dev.to/jaideepparashar/the-developers-who-thrive-in-ai-wont-be-the-best-coders-505e"
+    },
+    {
+      "category": "it",
+      "is_ai": true,
+      "original_title": "ArXiv Declares Independence from Cornell",
+      "korean_title": "arXiv, 코넬 대학교로부터 독립 선언: 학술 오픈 액세스 생태계의 거버넌스 대전환",
+      "summary": "1. 글로벌 최대의 과학 기술 프리프린트 서버인 arXiv가 코넬 대학교 산하 기관에서 벗어나 독립적인 비영리 법인 체제로 전환하며 학술 공유 인프라의 현대화를 추진함.\n2. 급증하는 AI 및 물리학 논문 트래픽을 수용하기 위한 클라우드 기반 인프라 확장과 독자적인 재정 및 의사결정 구조를 확보하여 학계의 오픈 사이언스 요구에 대응할 계획.",
+      "tech_keywords": [
+        "Open Access",
+        "Preprint",
+        "Scientific Infrastructure",
+        "Governance"
+      ],
+      "source": "Science",
+      "source_url": "https://www.science.org/content/article/arxiv-pioneering-preprint-server-declares-independence-cornell"
+    },
+    {
+      "category": "it",
+      "is_ai": true,
+      "original_title": "Push events into a running session with channels",
+      "korean_title": "Claude Channels 도입: LLM 세션 내 실시간 이벤트 푸시 및 스테이트풀 워크플로우 최적화",
+      "summary": "1. Anthropic이 Claude API에 '채널(Channels)' 인터페이스를 도입하여, 실행 중인 LLM 세션에 비동기적으로 이벤트를 푸시하고 실시간 데이터 흐름을 제어할 수 있는 기능을 공개함.\n2. 이를 통해 개발자는 복잡한 AI 에이전트 워크플로우에서 컨텍스트를 유지하며 즉각적인 인터랙션을 구현할 수 있으며, 특히 실시간 스트리밍 및 상태 관리(State Management) 성능을 대폭 향상시킴.",
+      "tech_keywords": [
+        "Claude",
+        "LLM API",
+        "Event-driven Architecture",
+        "Stateful Session"
+      ],
+      "source": "Claude Docs",
+      "source_url": "https://code.claude.com/docs/en/channels"
+    },
+    {
+      "category": "it",
+      "is_ai": false,
+      "original_title": "Google details new 24-hour process to sideload unverified Android apps",
+      "korean_title": "구글 안드로이드, 사이드로딩 보안 강화: 미검증 APK 설치 시 '24시간 대기' 강제",
+      "summary": "1. 구글이 안드로이드 생태계의 보안 강화를 위해 출처가 불분명한 앱의 사이드로딩(Sideloading) 과정에 24시간의 보안 검토 유예 기간을 도입하는 새로운 프로세스를 발표함.\n2. 소셜 엔지니어링을 통한 악성 코드 확산을 방지하기 위한 조치로, 플레이 프로텍트(Play Protect)의 엔드포인트 보안 검증을 강화하여 악성 앱 설치의 진입 장벽을 높이는 것이 핵심.",
+      "tech_keywords": [
+        "Android",
+        "Sideloading",
+        "APK Security",
+        "Play Protect",
+        "Cybersecurity"
+      ],
+      "source": "Ars Technica",
+      "source_url": "https://arstechnica.com/gadgets/2026/03/google-details-new-24-hour-process-to-sideload-unverified-android-apps/"
+    },
+    {
+      "category": "it",
+      "is_ai": false,
+      "original_title": "Full Disclosure: A Third (and Fourth) Azure Sign-In Log Bypass Found",
+      "korean_title": "Azure IAM 보안 위기: 로그인 로그 우회 취약점 추가 발견 및 인프라 보안 허점 노출",
+      "summary": "1. 마이크로소프트 Azure 환경에서 공격자가 탐지 시스템을 회피하며 로그인 로그 기록을 우회할 수 있는 세 번째와 네 번째 제로데이 취약점이 상세히 공개됨.\n2. 해당 취약점은 클라우드 IAM(Identity and Access Management) 아키텍처의 로깅 무결성을 훼손할 수 있어, 기업용 클라우드 환경의 감사 로그(Audit Log) 신뢰성에 심각한 위협을 가함.",
+      "tech_keywords": [
+        "Azure",
+        "IAM",
+        "Cloud Security",
+        "Log Bypass",
+        "Vulnerability"
+      ],
+      "source": "TrustedSec",
+      "source_url": "https://trustedsec.com/blog/full-disclosure-a-third-and-fourth-azure-sign-in-log-bypass-found"
+    },
+    {
+      "category": "it",
+      "is_ai": false,
+      "original_title": "Drugwars for the TI-82/83/83 Calculators (2011)",
+      "korean_title": "레트로 하드웨어의 재조명: TI-83 계산기용 'Drugwars' 소스코드와 임베디드 최적화",
+      "summary": "1. 2011년에 작성된 TI-83 그래핑 계산기용 클래식 게임 'Drugwars'의 소스코드가 재조명되며, 하드웨어 성능이 극도로 제한된 환경에서의 효율적 로직 설계 기법이 공유됨.\n2. TI-Basic 언어를 활용한 데이터 처리 및 메모리 관리 방식을 통해 레트로 컴퓨팅 아키텍처에 대한 기술적 통찰과 임베디드 프로그래밍의 정수를 보여줌.",
+      "tech_keywords": [
+        "Retro Computing",
+        "TI-Basic",
+        "Embedded Systems",
+        "Z80",
+        "Legacy Code"
+      ],
+      "source": "GitHub Gist",
+      "source_url": "https://gist.github.com/mattmanning/1002653/b7a1e88479a10eaae3bd5298b8b2c86e16fb4404"
+    },
+    {
+      "category": "it",
+      "is_ai": false,
+      "original_title": "How the Turner twins are mythbusting modern technical apparel",
+      "korean_title": "현대 테크니컬 어패럴의 성능 검증: 터너 형제의 실험적 소재 공학 분석",
+      "summary": "1. 고기능성 아웃도어 의류(Technical Apparel)의 마케팅적 주장을 검증하기 위해 실제 극한 환경에서 소재의 내구성 및 투습 성능을 기술적으로 테스트.\n2. 의복 공학적 관점에서 신소재가 제공하는 기능적 지표와 실제 퍼포먼스 사이의 격차를 분석하고, 실질적인 데이터 기반의 장비 평가 방법론 제시.",
+      "tech_keywords": [
+        "Technical Apparel",
+        "Material Science",
+        "Performance Testing",
+        "Durability"
+      ],
+      "source": "Carryology",
+      "source_url": "https://www.carryology.com/insights/how-the-turner-twins-are-mythbusting-modern-gear/"
+    },
+    {
+      "category": "it",
+      "is_ai": false,
+      "original_title": "Return of the Obra Dinn: spherical mapped dithering for a 1bpp first-person game",
+      "korean_title": "1bpp 렌더링의 혁신: 'Return of the Obra Dinn'의 구형 매핑 디더링 알고리즘",
+      "summary": "1. 1-bit per pixel(1bpp) 환경에서 3D 그래픽을 구현하기 위해 구형 매핑(Spherical Mapping) 기반의 디더링(Dithering) 기법을 도입하여 시각적 일관성 확보.\n2. 카메라 이동 시 발생하는 픽셀 노이즈를 제어하고, 저사양 렌더링 파이프라인에서 복잡한 명암 표현을 구현하기 위한 그래픽 프로그래밍 최적화 사례.",
+      "tech_keywords": [
+        "Graphics Programming",
+        "Dithering",
+        "1bpp",
+        "Rendering Pipeline",
+        "Spherical Mapping"
+      ],
+      "source": "TIGSource",
+      "source_url": "https://forums.tigsource.com/index.php?topic=40832.msg1363742#msg1363742"
+    },
+    {
+      "category": "it",
+      "is_ai": false,
+      "original_title": "Cockpit is a web-based graphical interface for servers",
+      "korean_title": "Cockpit: 리눅스 서버 관리를 위한 고성능 웹 기반 대화형 GUI 프레임워크",
+      "summary": "1. 복잡한 CLI 기반 리눅스 시스템 관리를 브라우저 환경에서 제어할 수 있도록 지원하는 오픈소스 서버 관리 인터페이스.\n2. 시스템 API와 직접 통신하여 미들웨어 없이 실시간 모니터링, 스토리지 구성, 컨테이너(Podman) 및 가상 머신 관리 기능을 통합 제공하는 DevOps 도구.",
+      "tech_keywords": [
+        "Linux",
+        "SysAdmin",
+        "Web GUI",
+        "DevOps",
+        "Container Management"
+      ],
+      "source": "GitHub",
+      "source_url": "https://github.com/cockpit-project/cockpit"
+    },
+    {
+      "category": "it",
+      "is_ai": true,
+      "original_title": "Show HN: Three new Kitten TTS models – smallest less than 25MB",
+      "korean_title": "Kitten TTS: 25MB 미만의 초경량 온디바이스 텍스트 음성 합성 모델 공개",
+      "summary": "1. 엣지 컴퓨팅(Edge Computing) 환경에 최적화된 25MB 미만의 초경량 Kitten TTS 모델 3종을 통해 저지연(Low Latency) 음성 합성 구현.\n2. 모델 파라미터 경량화와 연산 효율 극대화를 통해 낮은 하드웨어 자원에서도 고품질 추론 성능을 유지하는 ML 모델 아키텍처 제시.",
+      "tech_keywords": [
+        "TTS",
+        "Model Compression",
+        "Edge AI",
+        "Deep Learning",
+        "Inference Optimization"
+      ],
+      "source": "GitHub",
+      "source_url": "https://github.com/KittenML/KittenTTS"
+    },
+    {
+      "category": "it",
+      "is_ai": false,
+      "original_title": "4Chan mocks £520k fine for UK online safety breaches",
+      "korean_title": "영국 규제 당국의 4Chan 벌금 부과와 플랫폼 거버넌스 준수 논란",
+      "summary": "1. 영국 규제 기관 Ofcom이 온라인 안전법 위반을 근거로 4Chan에 부과한 52만 파운드의 벌금과 이에 따른 법적 대응 및 플랫폼의 반응 분석.\n2. 콘텐츠 모더레이션(Content Moderation) 알고리즘의 부재와 글로벌 안전 규제 준수 간의 갈등이 테크 생태계의 정책 관리에 미치는 영향 분석.",
+      "tech_keywords": [
+        "Content Moderation",
+        "Compliance",
+        "Online Safety Act",
+        "Platform Governance"
+      ],
+      "source": "BBC News",
+      "source_url": "https://www.bbc.com/news/articles/c624330lg1ko"
+    }
+  ]
 }
