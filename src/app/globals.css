@@ -3,7 +3,6 @@
 @tailwind utilities;
 
 @layer base {
-
   :root,
   [data-theme="dark"] {
     --bg-main: #0f172a;
@@ -31,6 +30,8 @@
   body {
     scrollbar-gutter: stable;
     overflow-x: hidden;
+    font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    letter-spacing: -0.015em;
   }
 
   body {
@@ -45,6 +46,17 @@
   .animate-fade-in {
     animation: fadeIn 0.6s ease-out forwards;
   }
+
+  .shimmer {
+    background: linear-gradient(
+      90deg,
+      rgba(255, 255, 255, 0) 0%,
+      rgba(255, 255, 255, 0.05) 50%,
+      rgba(255, 255, 255, 0) 100%
+    );
+    background-size: 200% 100%;
+    animation: shimmer 1.5s infinite linear;
+  }
 }
 
 @keyframes fadeIn {
@@ -56,5 +68,14 @@
   to {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: -200% 0;
   }
 }

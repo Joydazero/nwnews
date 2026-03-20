@@ -1,3 +1,5 @@
+'use client';
+
 import React, { useState } from 'react';
 
 export interface Article {
@@ -5,7 +7,8 @@ export interface Article {
     korean_title: string;
     summary: string;
     source_url: string;
-    tech_keywords?: string[]; // AI가 정확하게 추출해준 핵심 기술 키워드
+    tech_keywords?: string[];
+    is_ai?: boolean; // AI 관련 뉴스 하이라이트용 플래그
 }
 
 export default function ArticleCard({ article, index }: { article: Article; index: number }) {
@@ -26,16 +29,31 @@ export default function ArticleCard({ article, index }: { article: Article; inde
     };
 
     return (
-        <article className="bg-card-bg border border-card-border rounded-2xl p-8 backdrop-blur-md shadow-[0_4px_30px_rgba(0,0,0,0.1)] transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl relative overflow-hidden group mb-8 animate-fade-in flex flex-col justify-between">
+        <article className={`bg-card-bg border rounded-2xl p-8 backdrop-blur-md shadow-[0_4px_30px_rgba(0,0,0,0.1)] transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl relative overflow-hidden group mb-8 animate-fade-in flex flex-col justify-between ${
+            article.is_ai 
+            ? 'border-accent/40 bg-accent/5 ring-1 ring-accent/20' 
+            : 'border-card-border'
+        }`}>
             <div>
-                <div className="absolute top-0 left-0 w-1.5 h-full bg-accent shadow-[0_0_10px_var(--accent-glow)] scale-y-0 origin-top transition-transform duration-300 group-hover:scale-y-100" />
+                {/* Horizontal Top Bar */}
+                <div className={`absolute top-0 left-0 w-full h-1 bg-accent shadow-[0_0_10px_var(--accent-glow)] scale-x-0 origin-left transition-transform duration-500 group-hover:scale-x-100 ${
+                    article.is_ai ? 'scale-x-100 opacity-70' : ''
+                }`} />
 
                 <div className="flex justify-between items-start mb-2">
-                    <h2 className="text-2xl font-semibold leading-snug pr-8">
-                        <a href={article.source_url} target="_blank" rel="noopener noreferrer" className="text-text-main hover:text-accent transition-colors">
-                            {article.korean_title}
-                        </a>
-                    </h2>
+                    <div className="flex flex-col gap-2 pr-8">
+                        {article.is_ai && (
+                            <span className="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-accent text-[10px] font-bold text-white uppercase tracking-wider w-fit animate-pulse">
+                                <span className="w-1.5 h-1.5 bg-white rounded-full" />
+                                AI Focus
+                            </span>
+                        )}
+                        <h2 className={`text-2xl font-semibold leading-snug ${article.is_ai ? 'text-accent' : ''}`}>
+                            <a href={article.source_url} target="_blank" rel="noopener noreferrer" className="text-text-main hover:text-accent transition-colors">
+                                {article.korean_title}
+                            </a>
+                        </h2>
+                    </div>
                     <button
                         onClick={handleCopyMarkdown}
                         className={`shrink-0 p-2 rounded-lg border transition-all duration-300 ${copied
@@ -55,7 +73,7 @@ export default function ArticleCard({ article, index }: { article: Article; inde
                 </div>
 
                 <div className="text-sm text-text-muted mb-6 flex items-center gap-2">
-                    <span>🇺🇸
+                    <span>🌍
                         <a href={article.source_url} target="_blank" rel="noopener noreferrer" className="text-text-muted underline ml-1.5 hover:text-accent transition-colors">
                             {article.original_title}
                         </a>
@@ -78,7 +96,11 @@ export default function ArticleCard({ article, index }: { article: Article; inde
                         {article.tech_keywords.map((k, i) => (
                             <span
                                 key={i}
-                                className="px-4 py-1.5 rounded-full bg-white/5 text-text-main text-[0.85rem] font-bold shadow-sm border border-card-border transition-all duration-300 hover:bg-accent hover:text-white hover:border-accent hover:-translate-y-0.5 hover:shadow-[0_5px_15px_var(--accent-glow)] cursor-default tracking-wide"
+                                className={`px-4 py-1.5 rounded-full text-[0.85rem] font-bold shadow-sm border transition-all duration-300 hover:-translate-y-0.5 cursor-default tracking-wide ${
+                                    article.is_ai && (k.toLowerCase().includes('ai') || k.toLowerCase().includes('gpt'))
+                                    ? 'bg-accent text-white border-accent shadow-[0_5px_15px_var(--accent-glow)]'
+                                    : 'bg-white/5 text-text-main border-card-border hover:bg-accent hover:text-white hover:border-accent'
+                                }`}
                             >
                                 #{k}
                             </span>
