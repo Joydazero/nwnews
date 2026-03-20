@@ -4,43 +4,75 @@
   "articles": [
     {
       "category": "jp",
-      "original_title": "トランプ米大統領、ホルムズ航行で日本に貢献要請 高市首相、早期沈静化訴え―対米投資合意・日米首脳会談 - 時事ドットコム",
-      "korean_title": "트럼프, 일본에 호르무즈 해협 기여 요청... 다카이치 총리 조기 진정 촉구",
-      "summary": "1. 트럼프 미국 대통령이 호르무즈 해협의 안전한 항행을 위해 일본의 기여를 요청했습니다.\n2. 다카이치 총리는 상황의 조기 진정을 촉구하며, 미일 정상회담에서 대미 투자 합의를 이끌어냈습니다.\n3. 회담에서는 양국 간 경제 협력과 지역 안보 문제에 대한 논의가 이루어졌습니다.",
-      "source": "Jiji.com",
-      "source_url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTFBYd3pZVXlKbTFVVFR6Y2EzazJYM3poNnEwWGxNY1ZTS1REdll3VUJqa291TG5ncERQOHp1NGZ3UjVNUWVTV2x5LTJuM19XLUEzMk02bVQyUnh5RE5aQTNza2NzVQ?oc=5"
+      "is_ai": false,
+      "original_title": "高市首相、トランプ氏は「最強のバディと確信」 夕食会で - 毎日新聞",
+      "korean_title": "다카이치 총리, 트럼프와 만찬서 \"최강의 파트너\" 확신... 호르무즈 공헌 요청받아",
+      "summary": "1. 다카이치 사나에 일본 총리가 트럼프 미 대통령과의 만찬에서 두 사람의 관계를 '최강의 버디(파트너)'라고 부르며 굳건한 신뢰를 표명함.\n2. 트럼프 대통령은 호르무즈 해협의 항행 안전을 위해 일본이 기여해달라고 요청했으며, 다카이치 총리는 이란을 비난하면서도 일본 법령 범위 내에서 대응하겠다고 설명함.\n3. 일본 정부 내에서는 이번 회담이 성공적이었다는 안도감이 확산하고 있으나, 향후 미측이 요구할 구체적인 안보 숙제에 대한 부담도 커지는 형국임.",
+      "source": "매일신문(每日新聞) 외",
+      "source_url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBqMVJlczk2Y0VoU0pKWjNnTkNKSU5lX1p2MDdEQUhtMFFGektBVWlCVHV3VHhjMlcwd3BHRmg2aTJyYVlFdW05UGU5T2hUYmJVOUhoZjdJSWRsdGFVaUZHX0RoZk9UX0xi?oc=5"
     },
     {
       "category": "jp",
-      "original_title": "新名神高速のトンネルで多重事故、5人が死亡 三重・亀山市 [三重県] - 朝日新聞",
-      "korean_title": "신메이신 고속도로 터널 다중 추돌사고... 5명 사망",
-      "summary": "1. 미에현 가메야마시 신메이신 고속도로 터널에서 차량 4대가 관련된 다중 추돌사고가 발생했습니다.\n2. 이 사고로 5명이 숨지고 다수의 부상자가 발생했으며, 경찰은 대형 화물차 운전자를 현행범으로 체포했습니다.\n3. 사고 발생 구간은 일시적으로 통행이 제한되었으며, 경찰은 정확한 사고 원인을 조사 중입니다.",
-      "source": "Asahi Shimbun",
-      "source_url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9kX3Vlc01DYW9vbkhKaVlNckxPdmNFVUhVT0tnWUVMUVlXd1YwZExtekxuNlBxbnpzaFM2SmI2MnFwQTRLUDVCTk8yMWtUbG0wN1BtNFBIWldtZ2gyRW9FX3Fab1ZqZzA?oc=5"
+      "is_ai": false,
+      "original_title": "【速報・動画あり】ヘリ基地反対協の関係先に家宅捜索 辺野古船転覆で海保 業務上過失致死傷容疑 - 琉球新報デジタル",
+      "korean_title": "오키나와 헤노코 선박 전복 사고... 해상보안청, 시민단체 업무상 과실치사상 혐의 강제수사",
+      "summary": "1. 일본 해상보안청이 지난 오키나와현 헤노코 앞바다에서 발생한 시민단체 선박 전복 사고(2명 사망)와 관련해 해당 단체의 사무실 등을 압수수색함.\n2. 사고 선박을 운항했던 미군 기지 건설 반대 단체는 안전 관리 미흡에 대한 비판을 받고 있으며, 해상보안청은 업무상 과실치사상 혐의를 적용해 수사 중임.\n3. 사고 당시 선원들의 태도와 단체의 해명 과정에 대한 논란이 이어지는 가운데, 당국은 선박 운항 데이터와 내부 자료를 토대로 정확한 사고 원인을 규명할 방침임.",
+      "source": "류큐신보(琉球新報) 외",
+      "source_url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9UaVBoMV9RV0Nhdnk4SkxibHpDZ28wY1kwUWlNY0tFRWtJX0xQeDJEMjhDTXFtWG56bTJTcFg5SkxjR25vU2d5R2lVOU1BZ2YxbXh6WVFHR3V4eFA0YmY2SA?oc=5"
     },
     {
       "category": "jp",
-      "original_title": "辺野古転覆 海保が2隻運航の抗議団体を家宅捜索、業務上過失致死傷容疑など - 産経ニュース",
-      "korean_title": "헤노코 시위선 전복 사고... 해상보안청, 시위 단체 압수수색",
-      "summary": "1. 오키나와 헤노코 기지 건설 반대 시위 중 시위선 전복 사고와 관련하여, 해상보안청이 시위 단체를 압수수색했습니다.\n2. 해상보안청은 해당 단체가 운항하던 2척의 선박과 관련해 업무상 과실치사상 등의 혐의를 적용했습니다.\n3. 이번 압수수색은 시위 단체의 활동에 대한 당국의 강경 대응을 보여주며, 향후 관련 수사가 확대될 것으로 예상됩니다.",
-      "source": "Sankei Shimbun",
-      "source_url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE9GWW8wN0RBY2dDMWYyWWR5alNoN3B2cmNvNXUzeDBEQ1RRUXllV0UtbVQyQ1kzUHNIV0FCMWN1SFJDUUdxd3Q0X1Y2VXJZX2FBTFN3Wks0OGd3SlB5ajBZZzhhRXJYeFlmc05LVEVDWkhLM2RLdmc?oc=5"
+      "is_ai": false,
+      "original_title": "原油先物下落、ホルムズ海峡巡る日欧声明や米の供給拡大示唆で - Reuters",
+      "korean_title": "일·유럽, 호르무즈 해협 안전 확보 공동성명 발표... 국제 유가 하락세",
+      "summary": "1. 일본과 유럽 주요국이 호르무즈 해협에서의 항행 안전 확보와 에너지 시장 안정을 위한 공동성명을 발표하고 이란의 공격 행위를 강력히 규탄함.\n2. 미 정부의 원유 공급 확대 시사와 일·유럽의 공동 대응 움직임이 맞물리면서 국제 원유 선물 가격이 하락세를 나타냄.\n3. 트럼프 대통령은 유럽에 대해 방위비 분담 등 불만을 표출하는 한편, 일본에는 호르무즈 해협 안보 공헌을 직접 요구하며 압박 수위를 높임.",
+      "source": "로이터(Reuters) 외",
+      "source_url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQZ19MdjJkTl83cXlrbl9SdFZ4MldiRkNHRVdUS2hjRHZhWldJQk1iV2lWMGE3LW91Z0dyM1I5bTczSjhZVElUUFJhRXMyOFlPQ0xzWGxjLW40eWxYZWxWM3VnYmZuakVUWUl4STBwajVxYXNhTll5NE5YaDhGQm5JQjFoZGNiQnds?oc=5"
     },
     {
       "category": "jp",
-      "original_title": "対イラン戦争は「計り知れない天恵」、長引かせ被害拡大するべき イスラエル安全保障内閣メンバー（ＡＦＰ＝時事） - Yahoo!ニュース",
-      "korean_title": "이스라엘 안보 내각, 대이란 전쟁은 '헤아릴 수 없는 천혜'... 피해 확산 주장",
-      "summary": "1. 이스라엘 안보 내각의 한 멤버가 이란과의 전쟁을 \"헤아릴 수 없는 천혜\"라고 표현하며, 전쟁을 장기화하고 피해를 확대해야 한다고 주장했습니다.\n2. 이 발언은 가자 지구 및 중동 지역의 긴장이 고조되는 가운데, 이스라엘 강경파의 대이란 강경 노선을 시사합니다.\n3. 이스라엘 총리는 이란이 우라늄 농축 및 미사일 제조 능력이 없다는 주장에 대해 \"파괴적인 타격\"을 언급하며 긴장을 증폭시켰습니다.",
-      "source": "AFP=Jiji",
-      "source_url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9GUkpZLVBrWDdjNlpyNE80NzRGMUM1Z2M2ZWJVczlCU21rLUprd0EtS3dlRXA0dVlVUGRXSTNWNXk2bXBjaUwzQkpIa184eDF0LTdvX2h3XzJPWVRGTkM5YndXUXpGa1FJRDdfUGpRcXRORThOR09RQVIwdk10ZkU?oc=5"
+      "is_ai": false,
+      "original_title": "「台湾海峡の現状変更」に反対、日米首脳会談の文書発表 迎撃ミサイル生産4倍に拡大 - 産経ニュース",
+      "korean_title": "미일 정상, \"대만해협 현상변경 반대\" 명시... 요격 미사일 생산 4배 확대 합의",
+      "summary": "1. 미일 정상이 회담 후 공동 문서를 통해 대만해협의 평화와 안정이 필수적임을 강조하며 중국을 겨냥한 일방적인 현상변경 시도에 반대한다는 입장을 밝힘.\n2. 양국은 안보 협력 강화의 구체적 조치로 일본 내 요격 미사일 생산 능력을 현재의 4배 수준으로 대폭 확충하기로 전격 합의함.\n3. 트럼프 대통령은 일본이 안보 책임을 다하려 한다고 긍정 평가했으며, 일본 정부는 이번 회담을 통해 동맹의 결속력을 재확인하는 성과를 거뒀다고 자평함.",
+      "source": "산케이뉴스(産経ニュース) 외",
+      "source_url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1lTjVIRXpka0ZIYzUwbXNCZWJub1dTVHJVRU1ORG9mZlBoRE52RDI1Tl96bGJWTlpvdWZvelQxek9jaUVuWXhwMWU2ZHRhV0VqS3dUTjFIdTVuMDNJdWxoM0otTmJZcTlZc3N4S25IeGl2WnNNdFE?oc=5"
     },
     {
       "category": "jp",
-      "original_title": "トランプ氏「日本はNATOとは違う」 欧州への不満鮮明 - 毎日新聞",
-      "korean_title": "트럼프 \"일본은 NATO와 다르다\"... 유럽에 대한 불만 표출",
-      "summary": "1. 트럼프 전 미국 대통령이 일본은 NATO(북대서양조약기구)와 다르다고 발언하며 유럽 동맹국들에 대한 불만을 명확히 드러냈습니다.\n2. 트럼프는 유럽 국가들이 방위비 분담에 충분히 기여하지 않는다고 비판해 왔으며, 이번 발언은 동맹국들의 역할에 대한 그의 시각을 다시 한번 보여줍니다.\n3. 이와 동시에 트럼프는 고위급 회담에서 다카이치 총리에게 호르무즈 해협의 항행 안전에 대한 일본의 기여를 요청한 것으로 알려졌습니다.",
-      "source": "Mainichi Shimbun",
-      "source_url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5aem9xajdDXzluMUtNVUVNNVpCRk5OUG5lOVZ6TGZxb3FTMFRlVUFZNFhjYUowOHNJMmd4c0lacVNBbG82aVNsZzJGdFJLRTlGSFNSTVJsMGV2SGEwN1pERWQ0LXFWejdB?oc=5"
+      "is_ai": false,
+      "original_title": "愛知の新東名トンネル内で１２台絡む事故、４人軽傷…下り線で一時通行止め - 読売新聞オンライン",
+      "korean_title": "신메이신 고속도로서 연쇄 추돌 사고로 5명 사망... 화물차 운전자 체포",
+      "summary": "1. 미에현 가메야마시 신메이신 고속도로에서 대형 트럭이 정체 중이던 차량들을 들이받는 다중 추돌 사고가 발생해 5명이 사망함.\n2. 사고 여파로 차량 화재가 발생하고 인근 도로 통행이 장시간 차단됐으며, 경찰은 가해 화물차 운전자를 현장에서 체포해 정확한 경위를 조사 중임.\n3. 공사로 인한 정체 구간에서 사고가 발생한 만큼, 안전거리 미확보 및 전방 주시 태만 등 운전자의 과실 가능성에 무게가 실리고 있음.",
+      "source": "요미우리신문(読売新聞) 외",
+      "source_url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE53akQxU2lPWHA2U1NvUEVUbnBOQ294bUp0YXJ3WW8yamV3UXRVR0dtVjhwcHlzYmVzOUJhMXlJRDNyNEx2YzVfQVJIUzgxeERHcEowelFpSTBCWjR2N0xwTzEtQ01Udw?oc=5"
+    },
+    {
+      "category": "jp",
+      "is_ai": false,
+      "original_title": "イランのガス田攻撃「今後控える」 ネタニヤフ氏、自身の死亡説否定 - 朝日新聞",
+      "korean_title": "네타냐후 총리 “이란 가스전 추가 공격 자제” 발표… 본인 사망설은 일축",
+      "summary": "1. 베냐민 네타냐후 이스라엘 총리가 이란 가스전 공격을 이스라엘의 단독 소행으로 인정하면서도, 당분간 추가 공격은 자제하겠다고 밝힘.\n2. 이번 공격으로 카타르의 LNG 수출 17%가 중단되었으며, 시설 복구에 최대 5년이 소요될 것으로 보여 아시아와 유럽의 에너지 공급망에 비상이 걸림.\n3. 네타냐후 총리는 최근 온라인상에서 확산한 자신의 사망설을 공식 부인하며, 이란과의 전쟁이 이스라엘에 '천혜의 기회'가 될 수 있다는 내부 강경론 속에 행보를 지속함.",
+      "source": "朝日新聞 (아사히신문) 등",
+      "source_url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5zTW00UlpTVWFuMWhET0FWSkRSMXUtQjJuOWdjMWpNX1VfU0ljaTlwZTJYS2lJcEN1WXFqcnlJM21Nd1g3QkQ2Ni1DSWcxbWs4TlFTYW91UUFxZ0FCbzRndDhIVEFDUFk?oc=5"
+    },
+    {
+      "category": "jp",
+      "is_ai": false,
+      "original_title": "広く晴れるが関東は所々で雨　東北と北海道は次第に雨や雪　今日3月20日の天気予報 - tenki.jp",
+      "korean_title": "[3월 20일 일본 날씨] 전국 맑지만 관동 곳곳에 비… 벚꽃 개화 속 꽃가루 주의",
+      "summary": "1. 3월 20일 일본 전국이 대체로 맑은 날씨를 보이겠으나, 관동 지방은 흐리고 곳에 따라 비가 내리며 낮에도 쌀쌀한 기온이 이어질 전망임.\n2. 따뜻한 기온의 영향으로 벚꽃 개화가 빨라지고 있으나, 편백나무(히노키) 꽃가루가 기승을 부리고 있어 알레르기 환자들의 주의가 필요함.\n3. 21일 오전까지 홋카이도에는 눈보라가 예보되었으며, 오는 28일경에는 일본 전역에 대규모 비 소식이 있어 연휴 이후 날씨 변화가 클 것으로 보임.",
+      "source": "tenki.jp 등",
+      "source_url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9BX0EyXzBPQnBvd1gtU2kxcy1sd0VySTQwTWZvem5IZUtrc2paMVdjNjNva1hieUZiOWFSWG81cmpxZGItWmlGb01Hd2l3RTlmeF93U3oxbXB0N3ZBSTRNY1JnelRWYVVWdGfSAW9BVV95cUxNZGUzS2d2ajFPdG96UFlHaHJpcmplQVlmNFJ0YU9zeXNWVXdPanVwU3lIN2xBY3VQdTVHbnhyX1UzN09qUjgtVmV5Tm1MMXp6WG9FZzZKWnhhYVJLMnBTekRJMWRpV2hPVE94d3E3WFE?oc=5"
+    },
+    {
+      "category": "jp",
+      "is_ai": false,
+      "original_title": "共産山添氏「イラン攻撃やめろ」国会デモ 社民幹事長、辺野古事故「埋め立てるのが悪い」 - 産経ニュース",
+      "korean_title": "日 국회 앞 1만 명 규모 '이란 공격 반대' 시위… 한국식 '펜라이트' 집회 눈길",
+      "summary": "1. 일본 국회의사당 주변에서 시민 약 1만 1천 명이 모여 이란 공격 중단과 평화 유지를 촉구하는 대규모 항의 집회를 개최함.\n2. 일본 공산당과 사회민주당 등 야당 정치인들이 참여해 정부의 외교 정책을 비판했으며, 오키나와 헤노코 기지 매립 현장의 사고를 언급하며 정부 책임론을 제기함.\n3. 특히 이번 시위에서는 한국의 시민 데모에서 유래한 '펜라이트'를 활용한 집회 방식이 도입되어 일본 내 새로운 시위 문화로 주목받음.",
+      "source": "産経ニュース (산케이뉴스) 등",
+      "source_url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE5kUEp2TDlSRXJxSGlBb1RyVkZDOGRndXl4LV9MUWtMVHlSZFkxMGNTZEJJMEppd3pBRDRUSmZQWFAzQXJTak91ZTdoUkxtb0pPXzRaVkpmM1JRdVBIQkVldUdHY1JaMjFXbi1XUHJZMk13dW41WXc?oc=5"
     }
   ]
 }
