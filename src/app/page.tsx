@@ -26,7 +26,7 @@ export default function HomePage() {
     const handleGenerate = async () => {
         setLoading(true);
         try {
-            const response = await fetch('/api/generate', { 
+            const response = await fetch('/api/generate', {
                 method: 'POST',
                 body: JSON.stringify({ category: 'it' }),
                 headers: { 'Content-Type': 'application/json' }
@@ -48,18 +48,19 @@ export default function HomePage() {
         <main className="max-w-4xl mx-auto py-16 px-6 sm:px-8">
             <header className="text-center mb-12 animate-fade-in">
                 <h1 className="text-[3rem] font-extrabold bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent mb-1">
-                    NW News Dispatch
+                    NWNEWS
                 </h1>
-                
+
                 {/* More Information Section */}
                 <div className="flex flex-col items-center gap-2 mb-8">
                     <div className="flex justify-center gap-3 text-sm text-text-muted mb-1 opacity-80">
                         <span>more information</span>
                         <Link href="/global" className="hover:scale-125 transition-transform">🇺🇸</Link>
                         <Link href="/global" className="hover:scale-125 transition-transform">🇯🇵</Link>
+                        <Link href="/global" className="hover:scale-125 transition-transform">🇩🇪</Link>
                     </div>
-                    <Link 
-                        href="/global" 
+                    <Link
+                        href="/global"
                         className="text-xs text-accent hover:underline opacity-80"
                     >
                         세계 뉴스 보러가기 &rarr;

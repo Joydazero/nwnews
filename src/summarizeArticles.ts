@@ -5,7 +5,7 @@ dotenv.config();
 const ai = new GoogleGenAI({ apiKey: process.env.GEMINI_API_KEY || '' });
 
 // 프롬프트 템플릿 팩토리
-const getPrompt = (category: 'it' | 'us' | 'jp', chunkArticles: any[]) => {
+const getPrompt = (category: 'it' | 'us' | 'jp' | 'de', chunkArticles: any[]) => {
     const articlesJson = JSON.stringify(chunkArticles.map(a => ({ title: a.title, description: a.description, url: a.url })), null, 2);
 
     if (category === 'us') {
@@ -70,6 +70,37 @@ ${articlesJson}
 `;
     }
 
+    if (category === 'de') {
+        return `
+**[Role]**
+너는 독일 및 유럽 연합(EU)의 정치, 경제, 기술 트렌드를 한국 독자들에게 가장 빠르고 정확하게 전달하는 수석 글로벌 에디터야.
+
+**[Task]**
+독일어 기사 JSON 데이터를 분석하고, 한국인들이 유럽 특유의 뉘앙스를 정확히 이해할 수 있도록 자연스러운 한국어로 번역 및 요약해.
+
+**[Constraints]**
+1. 독일어 특유의 길고 복잡한 만연체 문장을 짧고 명료한 한국어 능동태로 끊어서 교정해.
+2. 각 기사당 3줄 이하의 핵심 요약(Bullet points)을 반드시 작성해.
+3. EU 관련 법안이나 독일 고유명사는 한국 독자가 직관적으로 이해할 수 있는 단어로 의역(Transcreation)해.
+4. 인사말, 부연 설명, 마크다운 기호(json)를 절대 포함하지 마. 오직 순수한 JSON 객체 텍스트만 출력해.
+
+**[Output Format]**
+[
+  {
+    "category": "de",
+    "original_title": "원본 독일어 제목",
+    "korean_title": "직관적이고 매력적인 한국어 제목",
+    "summary": "1. 요약 첫 번째\\n2. 요약 두 번째\\n3. 요약 세 번째",
+    "source": "언론사 이름 (예: WELT)",
+    "source_url": "원본 링크"
+  }
+]
+
+JSON 데이터:
+${articlesJson}
+`;
+    }
+
     // Default: IT
     return `
 너는 실리콘밸리의 최신 기술 트렌드를 한국어로 번역/요약하는 수석 테크 에디터야.
@@ -101,7 +132,7 @@ ${articlesJson}
 `;
 };
 
-export async function summarizeArticles(articles: any[], category: 'it' | 'us' | 'jp' = 'it') {
+export async function summarizeArticles(articles: any[], category: 'it' | 'us' | 'jp' | 'de' = 'it') {
     console.log(`[Node 2] Summarizing ${category.toUpperCase()} articles using Google Gemini API...`);
 
     const chunkSize = 5;

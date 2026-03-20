@@ -1,5 +1,5 @@
 import * as cron from 'node-cron';
-import { fetchTechArticles, fetchUSNews, fetchJPNews } from './fetchArticles';
+import { fetchTechArticles, fetchUSNews, fetchJPNews, fetchDENews } from './fetchArticles';
 import { summarizeArticles } from './summarizeArticles';
 import { createNotionTechNews } from './createNotionTechNews';
 import { cleanup_old_notion_pages } from './cleanupNotion';
@@ -10,7 +10,7 @@ import * as path from 'path';
 /**
  * 🚀 공통 카테고리 파이프라인 엔진
  */
-export async function runCategoryPipeline(category: 'it' | 'us' | 'jp') {
+export async function runCategoryPipeline(category: 'it' | 'us' | 'jp' | 'de') {
     const categoryUpper = category.toUpperCase();
     console.log(`\n[${new Date().toISOString()}] Executing ${categoryUpper} Pipeline...`);
     
@@ -19,6 +19,7 @@ export async function runCategoryPipeline(category: 'it' | 'us' | 'jp') {
         if (category === 'it') rawArticles = await fetchTechArticles();
         else if (category === 'us') rawArticles = await fetchUSNews();
         else if (category === 'jp') rawArticles = await fetchJPNews();
+        else if (category === 'de') rawArticles = await fetchDENews();
 
         if (rawArticles.length > 0) {
             console.log(`[Node 1-${category.toUpperCase()}] Fetched ${rawArticles.length} raw articles.`);
@@ -105,6 +106,8 @@ if (require.main === module) {
         runCategoryPipeline('us').then(() => process.exit(0)).catch(() => process.exit(1));
     } else if (process.argv.includes('--run-jp')) {
         runCategoryPipeline('jp').then(() => process.exit(0)).catch(() => process.exit(1));
+    } else if (process.argv.includes('--run-de')) {
+        runCategoryPipeline('de').then(() => process.exit(0)).catch(() => process.exit(1));
     } else if (process.argv.includes('--run-now')) {
         // 하위 호환성 (IT 기본 실행)
         runCategoryPipeline('it').then(() => process.exit(0)).catch(() => process.exit(1));

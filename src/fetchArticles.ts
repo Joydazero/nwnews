@@ -77,18 +77,18 @@ export async function fetchTechArticles() {
 }
 
 /**
- * 🇺🇸 미국 뉴스 수집 (Fox News / Google News US)
+ * 🇺🇸 미국 뉴스 수집 (Fox News / AP News)
  */
 export async function fetchUSNews() {
     const allArticles: any[] = [];
-    console.log('[Node 1-US] 🌐 미국 주요 매체(Fox News, Google News US)에서 기사를 가져옵니다...');
+    console.log('[Node 1-US] 🌐 미국 주요 매체(Fox News, AP News)에서 기사를 가져옵니다...');
 
-    // 1. Fox News (Latest) 5개
+    // 1. Fox News (Latest) 3개
     try {
         const parser = new Parser();
         const feed = await parser.parseURL('http://feeds.foxnews.com/foxnews/latest');
         if (feed.items && feed.items.length > 0) {
-            const topFeeds = feed.items.slice(0, 5);
+            const topFeeds = feed.items.slice(0, 3);
             topFeeds.forEach((item: any) => {
                 allArticles.push({
                     source: 'Fox News',
@@ -97,30 +97,30 @@ export async function fetchUSNews() {
                     url: item.link
                 });
             });
-            console.log('✅ Fox News 에서 5개 뉴스 수집 완료');
+            console.log('✅ Fox News 에서 3개 뉴스 수집 완료');
         }
     } catch (error) {
         console.error('❌ Fox News 수집 실패:', error);
     }
 
-    // 2. Google News US (Politics/Main) 5개 추가 보완
+    // 2. AP News (via Yahoo RSS) 3개 추가
     try {
         const parser = new Parser();
-        const feed = await parser.parseURL('https://news.google.com/rss?hl=en-US&gl=US&ceid=US:en');
+        const feed = await parser.parseURL('https://news.yahoo.com/rss/ap');
         if (feed.items && feed.items.length > 0) {
-            const topFeeds = feed.items.slice(0, 5);
+            const topFeeds = feed.items.slice(0, 3);
             topFeeds.forEach((item: any) => {
                 allArticles.push({
-                    source: 'Google News (US)',
+                    source: 'AP News',
                     title: item.title,
                     description: item.contentSnippet || item.content || '본문 내용 생략',
                     url: item.link
                 });
             });
-            console.log('✅ Google News US 에서 5개 뉴스 수집 완료');
+            console.log('✅ AP News 에서 3개 뉴스 수집 완료');
         }
     } catch (error) {
-        console.error('❌ Google News US 수집 실패:', error);
+        console.error('❌ AP News 수집 실패:', error);
     }
 
     return allArticles;
@@ -171,6 +171,35 @@ export async function fetchJPNews() {
         }
     } catch (error) {
         console.error('❌ Google News JP 수집 실패:', error);
+    }
+
+    return allArticles;
+}
+
+/**
+ * 🇩🇪 독일 뉴스 수집 (WELT)
+ */
+export async function fetchDENews() {
+    const allArticles: any[] = [];
+    console.log('[Node 1-DE] 🌐 독일 주요 매체(WELT)에서 기사를 가져옵니다...');
+
+    try {
+        const parser = new Parser();
+        const feed = await parser.parseURL('https://www.welt.de/feeds/topnews.rss');
+        if (feed.items && feed.items.length > 0) {
+            const topFeeds = feed.items.slice(0, 5);
+            topFeeds.forEach((item: any) => {
+                allArticles.push({
+                    source: 'WELT',
+                    title: item.title,
+                    description: item.contentSnippet || item.content || '본문 내용 생략',
+                    url: item.link
+                });
+            });
+            console.log('✅ WELT 에서 5개 뉴스 수집 완료');
+        }
+    } catch (error) {
+        console.error('❌ WELT 수집 실패:', error);
     }
 
     return allArticles;

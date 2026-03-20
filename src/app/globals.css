@@ -27,10 +27,17 @@
     --accent-glow: rgba(59, 130, 246, 0.4);
   }
 
+  html,
+  body {
+    scrollbar-gutter: stable;
+    overflow-x: hidden;
+  }
+
   body {
     background: var(--bg-gradient);
     background-attachment: fixed;
     color: var(--text-main);
+    transition: background 0.3s ease, color 0.3s ease;
   }
 }
 
