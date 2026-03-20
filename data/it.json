@@ -1,0 +1,305 @@
+{
+  "category": "it",
+  "dateStr": "2026-03-20",
+  "articles": [
+    {
+      "category": "it",
+      "original_title": "Congrats to the Winners of Our First DEV Weekend Challenge!",
+      "korean_title": "DEV 위크엔드 챌린지 첫 우승팀 발표!",
+      "summary": "1. DEV 커뮤니티의 첫 번째 위크엔드 챌린지 우승자가 공식 발표되었다.\n2. 이번 챌린지는 특정 기술 스택을 활용한 개발 프로젝트를 겨루는 방식으로 진행되었다.\n3. 개발 커뮤니티 내 협력 및 기술 공유를 장려하는 소중한 장을 마련했다.",
+      "tech_keywords": [
+        "개발 챌린지",
+        "개발 커뮤니티",
+        "오픈 소스 프로젝트",
+        "기술 공유"
+      ],
+      "source": "DEV Community",
+      "source_url": "https://dev.to/devteam/congrats-to-the-winners-of-our-first-dev-weekend-challenge-1gml"
+    },
+    {
+      "category": "it",
+      "original_title": "Your Agent Is Making Decisions Nobody Authorized",
+      "korean_title": "승인 범위를 벗어난 의사결정을 내리는 AI 에이전트의 위험성",
+      "summary": "1. 양적 펀드에서 독립적으로 운영되는 AI 에이전트들이 개별 리스크 한도는 준수했지만, 전체 시스템 관점에서 통제 불능 의사결정을 초래할 수 있다.\n2. AI 에이전트의 자율성과 의사결정 프로세스에 대한 감독 부재가 심각한 잠재적 리스크로 부상하고 있다.\n3. AI 시스템의 블랙박스 문제를 해결하고, 의사결정 투명성 및 거버넌스 프레임워크 구축이 시급하다.",
+      "tech_keywords": [
+        "AI 에이전트",
+        "자율 의사결정 시스템",
+        "알고리즘 트레이딩",
+        "AI 리스크 관리",
+        "거버넌스"
+      ],
+      "source": "DEV Community",
+      "source_url": "https://dev.to/dannwaneri/your-agent-is-making-decisions-nobody-authorized-2bc7"
+    },
+    {
+      "category": "it",
+      "original_title": "I Think a Lot of Developers Are Quietly Grieving the Old Internet",
+      "korean_title": "'옛 인터넷' 시대의 종말, 개발자들이 느끼는 상실감",
+      "summary": "1. 많은 개발자가 과거의 개방적이고 자유로웠던 인터넷 환경에 대한 '상실감'을 조용히 느끼고 있다는 분석이다.\n2. 웹의 상업화, 중앙 집중화, 플랫폼 종속성 심화가 초기 인터넷 정신과 충돌하며 개발 생태계에 변화를 가져왔다.\n3. '옛 인터넷'이 지녔던 탈중앙화, 개방형 표준, 커뮤니티 중심의 가치들을 재조명한다.",
+      "tech_keywords": [
+        "탈중앙화 웹",
+        "오픈 웹",
+        "웹 표준",
+        "인터넷 거버넌스",
+        "개발 문화"
+      ],
+      "source": "DEV Community",
+      "source_url": "https://dev.to/the_nortern_dev/i-think-a-lot-of-developers-are-quietly-grieving-the-old-internet-3d8"
+    },
+    {
+      "category": "it",
+      "original_title": "I Tried Vite+ and Replaced My Entire Frontend Toolchain",
+      "korean_title": "Vite+ 도입으로 프론트엔드 툴체인 전면 교체 성공 사례",
+      "summary": "1. 필자는 Vite+를 도입하여 기존의 복잡하고 비효율적인 프론트엔드 빌드 툴체인을 완전히 대체했다.\n2. Vite+의 혁신적인 HMR(Hot Module Replacement), 빠른 번들링, 강력한 개발 서버 성능으로 개발 생산성이 크게 향상되었다.\n3. 프로젝트 개발 환경 최적화 및 복잡한 구성 감소에 기여한 Vite+의 실질적인 적용 경험과 이점을 공유한다.",
+      "tech_keywords": [
+        "Vite+",
+        "프론트엔드 툴체인",
+        "번들러",
+        "개발 서버",
+        "HMR"
+      ],
+      "source": "DEV Community",
+      "source_url": "https://dev.to/erikch/i-tried-vite-and-replaced-my-entire-frontend-toolchain-4cgb"
+    },
+    {
+      "category": "it",
+      "original_title": "Vitest's 4.1 New \"Fast-Forward\" Mode Skips Timer Delays Instantly",
+      "korean_title": "Vitest 4.1 'Fast-Forward' 모드, 타이머 지연 테스트 혁신",
+      "summary": "1. Vitest 4.1에 새로 추가된 'Fast-Forward' 모드는 타이머 관련 비동기 테스트의 실행 효율성을 극대화한다.\n2. `setTimeout`이나 `setInterval`과 같은 타이머 지연을 즉시 건너뛰어 테스트 시간을 획기적으로 단축한다.\n3. 테스트 합성성(composability)을 유지하며 비동기 로직 검증의 속도와 신뢰성을 동시에 향상시키는 핵심 개선 사항이다.",
+      "tech_keywords": [
+        "Vitest",
+        "유닛 테스트",
+        "비동기 테스트",
+        "테스트 러너",
+        "타이머 모킹"
+      ],
+      "source": "DEV Community",
+      "source_url": "https://dev.to/playfulprogramming-angular/vitests-41-new-fast-forward-mode-skips-timer-delays-instantly-4a4h"
+    },
+    {
+      "category": "it",
+      "original_title": "1m Tokens (& WebSocket)",
+      "korean_title": "100만 토큰 처리 쓰레딩 엔진과 WebSocket: ML 기반 최적화 전략",
+      "summary": "1. 대규모 토큰 처리를 위한 고성능 쓰레딩 엔진 개발.\n2. 머신러닝(ML) 기반 최적화 기법을 적용하여 엔진 성능 극대화.\n3. WebSocket을 활용한 실시간 통신 및 데이터 스트리밍 지원.",
+      "tech_keywords": [
+        "쓰레딩 엔진",
+        "최적화",
+        "ML",
+        "WebSocket",
+        "대규모 토큰 처리"
+      ],
+      "source": "dev.to",
+      "source_url": "https://dev.to/tavari/1m-tokens-websocket-1f0c"
+    },
+    {
+      "category": "it",
+      "original_title": "Stop Fighting with PDF Libraries: Generate Dynamic PDFs Using HTML & JSON",
+      "korean_title": "PDF 라이브러리와의 씨름은 이제 그만: HTML & JSON으로 동적 PDF 생성하기",
+      "summary": "1. 기존 PDF 라이브러리 활용의 어려움 해소 방안 제시.\n2. HTML 마크업과 JSON 데이터를 활용한 동적 PDF 생성 방식 제안.\n3. 웹 애플리케이션 내 PDF 생성 프로세스 간소화.",
+      "tech_keywords": [
+        "PDF 생성",
+        "HTML",
+        "JSON",
+        "동적 문서",
+        "웹 애플리케이션"
+      ],
+      "source": "dev.to",
+      "source_url": "https://dev.to/maccilyas/stop-fighting-with-pdf-libraries-generate-dynamic-pdfs-using-html-json-jk1"
+    },
+    {
+      "category": "it",
+      "original_title": "I built a native GUI for direct server-to-server transfers (FTP/SFTP) because rclone CLI wasn't visual enough for me.",
+      "korean_title": "rclone CLI의 한계를 넘어선: FTP/SFTP 서버 간 전송을 위한 네이티브 GUI 개발기",
+      "summary": "1. rclone CLI의 시각적 한계를 극복하기 위한 네이티브 GUI 개발.\n2. FTP/SFTP 프로토콜을 활용한 서버 간 직접 파일 전송 기능 구현.\n3. 대용량 미디어 파일 이동 및 사이트 마이그레이션 작업 효율성 증대.",
+      "tech_keywords": [
+        "네이티브 GUI",
+        "FTP",
+        "SFTP",
+        "서버 간 전송",
+        "rclone CLI"
+      ],
+      "source": "dev.to",
+      "source_url": "https://dev.to/andrii_bondar_fc866063a87/i-built-a-native-gui-for-direct-server-to-server-transfers-ftpsftp-because-rclone-cli-wasnt-dd0"
+    },
+    {
+      "category": "it",
+      "original_title": "Push events into a running session with channels",
+      "korean_title": "채널(Channels)을 활용한 실시간 세션 이벤트 푸시 구현 전략",
+      "summary": "1. 실시간 세션에 이벤트를 효율적으로 전달하는 채널 메커니즘 소개.\n2. 실행 중인 세션에 비동기적으로 이벤트를 푸시하는 방법론 제시.\n3. 웹 애플리케이션의 실시간 상호작용 및 알림 기능 구현에 활용.",
+      "tech_keywords": [
+        "채널(Channels)",
+        "이벤트 푸시",
+        "실시간 통신",
+        "세션 관리",
+        "비동기 프로그래밍"
+      ],
+      "source": "code.claude.com",
+      "source_url": "https://code.claude.com/docs/en/channels"
+    },
+    {
+      "category": "it",
+      "original_title": "Astral to Join OpenAI",
+      "korean_title": "파이썬 도구 개발사 Astral, OpenAI에 합류: AI 생태계에 미칠 영향",
+      "summary": "1. 파이썬 생태계 핵심 도구 개발사 Astral의 OpenAI 합류 소식.\n2. `Ruff` 등 Astral의 기술 스택이 OpenAI 프로젝트에 기여할 가능성 분석.\n3. AI 및 개발자 도구 분야의 전략적 통합과 향후 파급 효과 조명.",
+      "tech_keywords": [
+        "Astral",
+        "OpenAI",
+        "Python",
+        "Ruff",
+        "AI 생태계"
+      ],
+      "source": "astral.sh",
+      "source_url": "https://astral.sh/blog/openai"
+    },
+    {
+      "category": "Retro Computing",
+      "original_title": "Drugwars for the TI-82/83/83 Calculators",
+      "korean_title": "TI-82/83 계산기용 'Drugwars' 게임: 레거시 시스템 개발 문화 재조명",
+      "summary": "1. 1980년대 TI-82/83 계산기용 게임 'Drugwars' 코드가 Gist를 통해 해커뉴스에서 화제.\n2. 클래식 컴퓨팅 플랫폼에 대한 개발자 커뮤니티의 지속적인 관심 부각.\n3. 제한된 하드웨어 환경에서의 개발 패러다임과 레거시 코드 아카이빙의 가치 공유.",
+      "tech_keywords": [
+        "레거시 시스템",
+        "TI 계산기 프로그래밍",
+        "복고 컴퓨팅",
+        "개발자 문화",
+        "Gist"
+      ],
+      "source": "Hacker News Gist",
+      "source_url": "https://gist.github.com/mattmanning/1002653/b7a1e88479a10eaae3bd5298b8b2c86e16fb4404"
+    },
+    {
+      "category": "Mobile Security",
+      "original_title": "Google details new 24-hour process to sideload unverified Android apps",
+      "korean_title": "구글, 미검증 안드로이드 앱 사이드로드에 24시간 승인 프로세스 도입",
+      "summary": "1. 구글이 미검증 안드로이드 앱 사이드로드 시 새로운 24시간 승인 절차를 발표.\n2. 안드로이드 플랫폼 보안 강화 및 악성 앱 설치 방지를 위한 정책 변화.\n3. 사용자 편의성과 보안 리스크 관리 간의 균형점 모색 및 생태계 보호 강화.",
+      "tech_keywords": [
+        "Android 보안",
+        "사이드로드",
+        "앱 유통 정책",
+        "Google Play Protect",
+        "모바일 OS"
+      ],
+      "source": "Ars Technica",
+      "source_url": "https://arstechnica.com/gadgets/2026/03/google-details-new-24-hour-process-to-sideload-unverified-android-apps/"
+    },
+    {
+      "category": "Cloud Security",
+      "original_title": "Full Disclosure: A Third (and Fourth) Azure Sign-In Log Bypass Found",
+      "korean_title": "마이크로소프트 Azure 로그인 로그 우회 취약점 추가 발견 (3차, 4차)",
+      "summary": "1. Microsoft Azure에서 로그인 로그를 우회하는 신규 취약점 두 가지(3차, 4차)가 추가로 공개됨.\n2. 클라우드 환경의 보안 로깅 메커니즘 무력화 가능성이 제기되어 심각한 위협으로 분류.\n3. 클라우드 보안 감사 및 모니터링 시스템의 견고성 재평가 및 개선 필요성 강조.",
+      "tech_keywords": [
+        "Azure 보안",
+        "클라우드 취약점",
+        "로그인 우회",
+        "IDP 보안",
+        "Microsoft Cloud"
+      ],
+      "source": "TrustedSec Blog",
+      "source_url": "https://trustedsec.com/blog/full-disclosure-a-third-and-fourth-azure-sign-in-log-bypass-found"
+    },
+    {
+      "category": "System Administration",
+      "original_title": "Cockpit is a web-based graphical interface for servers",
+      "korean_title": "Cockpit: 리눅스 서버 관리를 위한 웹 기반 그래픽 인터페이스",
+      "summary": "1. Cockpit은 리눅스 서버 관리를 웹 브라우저를 통해 직관적으로 수행하는 GUI 도구.\n2. 서버 모니터링, 스토리지, 네트워크, 컨테이너 관리 등 다양한 기능 통합 제공.\n3. DevOps 및 시스템 관리 효율성을 높이는 오픈소스 프로젝트로 주목.",
+      "tech_keywords": [
+        "리눅스 서버 관리",
+        "Web UI",
+        "DevOps 도구",
+        "컨테이너 관리",
+        "시스템 모니터링"
+      ],
+      "source": "GitHub / Cockpit Project",
+      "source_url": "https://github.com/cockpit-project/cockpit"
+    },
+    {
+      "category": "Product Engineering",
+      "original_title": "How the Turner twins are mythbusting modern technical apparel",
+      "korean_title": "터너 형제, 최신 기술 의류의 통념을 깨다: 소재 혁신과 기능성 재정의",
+      "summary": "1. 터너 형제가 첨단 기술 의류 분야에서 기존 통념을 파괴하며 혁신을 주도.\n2. 소재 공학 및 제품 디자인 관점에서 기능성 의류의 새로운 표준 제시.\n3. 성능 중심의 의류 개발 접근 방식과 사용자 경험 개선에 초점.",
+      "tech_keywords": [
+        "소재 공학",
+        "제품 디자인",
+        "기능성 의류",
+        "혁신 기술",
+        "R&D"
+      ],
+      "source": "Carryology",
+      "source_url": "https://www.carryology.com/insights/how-the-turner-twins-are-mythbusting-modern-gear/"
+    },
+    {
+      "category": "it",
+      "original_title": "Return of the Obra Dinn: spherical mapped dithering for a 1bpp first-person game",
+      "korean_title": "Return of the Obra Dinn: 1비트 게임을 위한 스페리컬 맵드 디더링 기술 심층 분석",
+      "summary": "1. 해커뉴스 최상단 핫토픽으로 부상한 1bpp(1-bit per pixel) 그래픽 렌더링 기술.\n2. 'Return of the Obra Dinn' 게임에 적용된 스페리컬 맵드 디더링(spherical mapped dithering) 기법 분석.\n3. 제한된 비트 심도 환경에서 깊이감과 공간감을 표현하는 혁신적인 비주얼 구현 전략.",
+      "tech_keywords": [
+        "1bpp 그래픽",
+        "디더링",
+        "렌더링",
+        "픽셀 아트",
+        "게임 개발"
+      ],
+      "source": "TIGSource 포럼",
+      "source_url": "https://forums.tigsource.com/index.php?topic=40832.msg1363742#msg1363742"
+    },
+    {
+      "category": "it",
+      "original_title": "Modal vs. Separate Page: UX Decision Tree",
+      "korean_title": "모달(Modal) vs. 개별 페이지: UX 의사결정 트리 완벽 가이드",
+      "summary": "1. 모달 컴포넌트와 개별 페이지 사용 간의 UX(사용자 경험) 설계 기준 제시.\n2. 모달 사용 지양 시점 및 사용자 흐름 방해 최소화 전략 분석.\n3. 인터럽션 수준과 내비게이션 경로에 따른 적절한 UI(사용자 인터페이스) 패턴 선택.",
+      "tech_keywords": [
+        "UX/UI 디자인",
+        "모달 컴포넌트",
+        "내비게이션",
+        "인터페이스 패턴",
+        "사용자 흐름"
+      ],
+      "source": "Smashing Magazine",
+      "source_url": "https://smashingmagazine.com/2026/03/modal-separate-page-ux-decision-tree/"
+    },
+    {
+      "category": "it",
+      "original_title": "Anime vs. Marvel/DC: Designing Digital Products With Emotion In Flow",
+      "korean_title": "애니메이션/슈퍼히어로 영화를 통해 배우는 감정 기반 디지털 프로덕트 디자인 전략",
+      "summary": "1. 디지털 프로덕트 디자인에서 픽셀 및 패턴뿐 아니라 감정 흐름의 중요성 강조.\n2. 애니메이션 및 슈퍼히어로 영화의 감정 전환 기법을 프로덕트 디자인에 적용.\n3. 'Emotion in Flow', 'Emotion in Conflict' 개념을 활용한 사용자 경험 설계 통찰.",
+      "tech_keywords": [
+        "프로덕트 디자인",
+        "UX 설계",
+        "감성 디자인",
+        "사용자 경험",
+        "스토리텔링"
+      ],
+      "source": "Smashing Magazine",
+      "source_url": "https://smashingmagazine.com/2026/03/anime-marvel-dc-designing-digital-products-emotion-flow/"
+    },
+    {
+      "category": "it",
+      "original_title": "Moving From Moment.js To The JS Temporal API",
+      "korean_title": "Moment.js에서 자바스크립트 Temporal API로 전환: 실용적 마이그레이션 가이드",
+      "summary": "1. 자바스크립트의 시간 처리 방식 진화: `Date` API, Moment.js를 넘어 Temporal API 등장.\n2. Temporal API는 기존 `Date` API의 한계와 Moment.js의 단점 보완.\n3. Moment.js 기반 코드의 Temporal API로의 효율적인 마이그레이션 전략 및 코드 예시.",
+      "tech_keywords": [
+        "JavaScript",
+        "Temporal API",
+        "Moment.js",
+        "Date API",
+        "마이그레이션"
+      ],
+      "source": "Smashing Magazine",
+      "source_url": "https://smashingmagazine.com/2026/03/moving-from-moment-to-temporal-api/"
+    },
+    {
+      "category": "it",
+      "original_title": "Beyond `border-radius`: What The CSS `corner-shape` Property Unlocks For Everyday UI",
+      "korean_title": "`border-radius`를 넘어선 CSS `corner-shape` 속성: 혁신적인 UI 디자인 가능성",
+      "summary": "1. 기존 `border-radius`의 한계를 극복하기 위한 `clip-path`, SVG 마스크 등 우회 기법.\n2. 새로운 CSS `corner-shape` 속성 도입으로 다양한 코너 스타일 구현.\n3. 베벨(beveled), 스쿠프(scooped), 스쿼클(squircle) 등 비표준 코너 형태의 UI 디자인 확장.",
+      "tech_keywords": [
+        "CSS",
+        "border-radius",
+        "corner-shape",
+        "UI 디자인",
+        "웹 프론트엔드"
+      ],
+      "source": "Smashing Magazine",
+      "source_url": "https://smashingmagazine.com/2026/03/beyond-border-radius-css-corner-shape-property-ui/"
+    }
+  ]
+}
