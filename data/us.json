@@ -1,5 +1,46 @@
 {
   "category": "us",
   "dateStr": "2026-03-20",
-  "articles": []
+  "articles": [
+    {
+      "category": "us",
+      "original_title": "Missing University of Alabama student Jimmy Gracey found dead in Barcelona",
+      "korean_title": "앨라배마대 실종 학생 바르셀로나에서 시신으로 발견돼 충격",
+      "summary": "1. 앨라배마대학교 학생 지미 그레이시(20)가 스페인 바르셀로나에서 실종된 지 며칠 만에 숨진 채 발견되었습니다.\n2. 그의 시신은 바르셀로나의 포트 올림픽(Port Olimpic)에서 수습되었으며, 가족이 이를 확인했습니다.\n3. 미국 대학생의 해외 실종 사망 사건은 유학생들의 안전 문제에 대한 경각심을 불러일으키고 있습니다.",
+      "source": "Fox News",
+      "source_url": "https://www.foxnews.com/us/missing-university-alabama-student-jimmy-gracey-found-dead-barcelona"
+    },
+    {
+      "category": "world",
+      "original_title": "Ukraine peace talks on ‘situational pause’ as Middle East conflict intensifies: Kremlin",
+      "korean_title": "크렘린궁, 중동 분쟁 격화로 우크라이나 평화협상 '일시 중단' 발표",
+      "summary": "1. 크렘린궁은 중동 분쟁이 격화되면서 우크라이나 평화 협상이 '상황적 일시 중단' 상태에 있다고 밝혔습니다.\n2. 젤렌스키 우크라이나 대통령은 이르면 주말에 협상을 재개할 수 있다는 의사를 표명했습니다.\n3. 중동 정세가 국제 외교 의제에 미치는 영향이 커지면서 우크라이나 사태 해결이 더욱 복잡해지는 양상입니다.",
+      "source": "Fox News",
+      "source_url": "https://www.foxnews.com/world/ukraine-peace-talks-situational-pause-middle-east-conflict-intensifies:kremlin"
+    },
+    {
+      "category": "us",
+      "original_title": "Indiana University philanthropy group allegedly led fundraising training with Hamas-linked 'sham charity'",
+      "korean_title": "인디애나대 자선단체, 하마스 연계 의혹 '가짜 자선단체'와 모금 훈련 주도 논란",
+      "summary": "1. 인디애나대학교 무슬림 자선 이니셔티브가 하마스 자금 지원 혐의로 제재를 받는 하야트 욜루(Hayat Yolu)와 협력하여 모금 훈련을 진행했다는 의혹이 제기되었습니다.\n2. 미 재무부가 제재한 단체와 대학 단체의 연루 의혹으로 미국 내에서 큰 논란이 되고 있습니다.\n3. 학술 기관의 자선 활동 투명성 및 테러 단체 연루 가능성에 대한 철저한 조사가 요구되고 있습니다.",
+      "source": "Fox News",
+      "source_url": "https://www.foxnews.com/us/indiana-university-philanthropy-group-allegedly-led-fundraising-training-hamas-linked-sham-charity"
+    },
+    {
+      "category": "us",
+      "original_title": "DHS touts 10 straight months of zero illegal aliens released at border as crossings plunge",
+      "korean_title": "미 국토안보부, 10개월 연속 국경 불법 체류자 석방 '0건' 기록…불법 월경 급감",
+      "summary": "1. 미 국토안보부(DHS)는 국경 순찰대가 10개월 연속 불법 입국자(불법 체류자)를 국경에서 석방한 사례가 없다고 밝혔습니다.\n2. 이는 '선(先) 집행' 정책과 역사적으로 낮은 불법 국경 통과 건수 덕분이라고 설명했습니다.\n3. 강력한 국경 통제 정책이 불법 이민 감소에 직접적인 영향을 미치고 있음을 강조하며, 향후 이민 정책 논의에 중요한 근거가 될 전망입니다.",
+      "source": "Fox News",
+      "source_url": "https://www.foxnews.com/us/dhs-touts-10-straight-months-zero-illegal-aliens-released-border-crossings-plunge"
+    },
+    {
+      "category": "us",
+      "original_title": "UC Berkeley to pay $1M, overhaul policies after antisemitism lawsuit settlement",
+      "korean_title": "UC 버클리, 반유대주의 소송 합의로 100만 달러 배상 및 정책 전면 개편",
+      "summary": "1. UC 버클리 대학교가 유대인에 대한 괴롭힘을 주장하는 소송에 합의하며 100만 달러(약 13억 원)를 배상하게 되었습니다.\n2. 대학은 합의에 따라 새로운 반유대주의 정책을 도입하고 기존 정책을 대폭 개편할 예정입니다.\n3. 이번 합의는 미국 대학 캠퍼스 내 증가하는 반유대주의 문제와 표현의 자유, 소수자 보호 간의 균형에 대한 논의를 촉발할 것으로 보입니다.",
+      "source": "Fox News",
+      "source_url": "https://www.foxnews.com/media/uc-berkeley-pay-1m-overhaul-policies-after-antisemitism-lawsuit-settlement"
+    }
+  ]
 }
