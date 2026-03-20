@@ -1,54 +1,5 @@
 {
   "category": "us",
   "dateStr": "2026-03-20",
-  "articles": [
-    {
-      "category": "us",
-      "original_title": "Feds charge 3 in $2.5b scheme to smuggle us AI tech to China using dummy servers",
-      "korean_title": "미국 AI 기술, 중국으로 25억 달러 불법 유출…3명 기소",
-      "summary": "1. 미국 연방 당국이 25억 달러(약 3조 4천억 원) 규모의 인공지능(AI) 기술 불법 대중 수출 계획에 연루된 3명을 기소했습니다.\n2. 피고인들은 가짜 서류와 유령 회사를 이용해 미국 AI 기술을 중국으로 빼돌리려 한 혐의를 받고 있습니다.\n3. 이들은 서버 제조업체 슈퍼마이크로(Supermicro)와 연관된 인물들로 알려졌습니다.",
-      "source": "Fox News",
-      "source_url": "https://www.foxnews.com/us/feds-charge-3-2-5b-scheme-smuggle-us-ai-tech-china-using-dummy-servers"
-    },
-    {
-      "category": "us",
-      "original_title": "Missing University of Alabama student Jimmy Gracey found dead in Barcelona",
-      "korean_title": "스페인 바르셀로나에서 실종된 앨라배마대 학생, 결국 숨진 채 발견",
-      "summary": "1. 스페인 바르셀로나에서 실종되었던 앨라배마 대학교 학생 지미 그레이시(20세)가 숨진 채 발견되었습니다.\n2. 그의 시신은 수색 끝에 바르셀로나 올림픽 항구에서 인양되었으며, 가족이 사망 사실을 확인했습니다.\n3. 자세한 사망 원인 등은 아직 밝혀지지 않았습니다.",
-      "source": "Fox News",
-      "source_url": "https://www.foxnews.com/us/missing-university-alabama-student-jimmy-gracey-found-dead-barcelona"
-    },
-    {
-      "category": "world",
-      "original_title": "Ukraine peace talks on ‘situational pause’ as Middle East conflict intensifies: Kremlin",
-      "korean_title": "러시아, 우크라이나 평화협상 '일시 중단' 선언...중동 사태 격화 영향",
-      "summary": "1. 러시아 크렘린궁은 중동 분쟁 격화로 인해 우크라이나 평화 회담이 '일시적 중단' 상태에 있다고 밝혔습니다.\n2. 이는 젤렌스키 대통령이 빠르면 토요일에 우크라이나 대표단이 협상을 재개할 수 있다고 언급한 직후 나온 발표입니다.\n3. 복잡해진 국제 정세가 우크라이나 사태 해결 노력에 영향을 미치고 있습니다.",
-      "source": "Fox News",
-      "source_url": "https://www.foxnews.com/world/ukraine-peace-talks-situational-pause-middle-east-conflict-intensifies-kremlin"
-    },
-    {
-      "category": "world",
-      "original_title": "China makes energy security 'reunification' offer to Taiwan amid Middle East war",
-      "korean_title": "중국, 중동 분쟁 속 대만에 '에너지 안보 통일' 제안…숨겨진 의도는?",
-      "summary": "1. 중국이 중동 분쟁이 격화되는 가운데 대만에 '에너지 안보 통일'을 제안했습니다.\n2. 이는 대만과의 관계 개선을 명분으로 삼아 궁극적으로는 통일을 목표로 하는 중국의 전략적 움직임으로 풀이됩니다.\n3. 제안의 구체적인 내용과 대만의 반응은 아직 공개되지 않았습니다.",
-      "source": "Yahoo News",
-      "source_url": "https://www.yahoo.com/news/articles/china-makes-energy-security-reunification-072555778.html"
-    },
-    {
-      "category": "us",
-      "original_title": "Boys accused in gang rape of 12-year-old girl ask judge to let them out of jail",
-      "korean_title": "12세 소녀 집단 성폭행 혐의 소년들, 법원에 '석방' 요청 논란",
-      "summary": "1. 12세 소녀를 집단 성폭행한 혐의로 기소된 소년들이 법원에 구금 해제를 요청해 논란이 일고 있습니다.\n2. 피고 측은 심리 전 석방을 통해 방어권 보장을 주장하고 있는 것으로 보입니다.\n3. 이번 요청이 피해자 가족과 사회 전반에 어떤 영향을 미칠지 관심이 집중됩니다.",
-      "source": "Yahoo News",
-      "source_url": "https://www.yahoo.com/news/articles/boys-accused-gang-rape-12-181129755.html"
-    },
-    {
-      "category": "us",
-      "original_title": "Nancy Guthrie Abduction Motive Identified as Possible ‘Revenge’ After Reports Savannah Is ‘Questioning’ How Much Her ‘Spotlight’ Put Her ‘Family’s Safety’ at Risk",
-      "korean_title": "낸시 거스리 납치 사건, '복수' 가능성 대두… 사바나, '명성'이 가족 안전 위협했나 고뇌",
-      "summary": "1. 낸시 거스리 씨가 납치되는 충격적인 사건이 발생했습니다.\n2. 수사 당국은 이번 납치의 동기가 '복수'일 가능성에 무게를 싣고 조사를 진행 중입니다.\n3. 한편, 유명인 '사바나'는 자신의 대중적 '주목'이 가족의 안전을 위험에 빠뜨린 것은 아닌지 깊이 고심하고 있습니다.",
-      "source": "Yahoo News",
-      "source_url": "https://www.yahoo.com/news/articles/nancy-guthrie-abduction-motive-identified-215018006.html"
-    }
-  ]
+  "articles": []
 }
