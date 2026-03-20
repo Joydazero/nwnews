@@ -4,42 +4,92 @@
   "articles": [
     {
       "category": "de",
-      "original_title": "„Erpressung“ und „Verrat“ – Frustrierte EU bricht mit Viktor Orbán",
-      "korean_title": "EU, 헝가리 오르반 총리 '협박, 배신' 맹비난하며 결별 선언",
-      "summary": "1. 심야 EU 정상회의에서 헝가리 총리가 약속을 어기자 EU 회원국들의 불만이 폭발했습니다.\n2. EU는 오르반 총리가 평소에도 반항적이었지만, 약속은 지킨다는 기존의 신뢰가 깨졌다고 분석했습니다.\n3. 이번 사태로 브뤼셀에서 합의된 EU 결정의 실효성에 대한 근본적인 의문이 제기되고 있습니다.",
+      "is_ai": false,
+      "original_title": "Die Linke ist gerade dabei, zu einer Sekte zu verkommen",
+      "korean_title": "독일 좌파당의 몰락... 정치 정당에서 '폐쇄적 종교 집단'으로 전락 위기",
+      "summary": "1. 아마데우-안토니오 재단 설립자는 기고문을 통해 독일 좌파당(Die Linke)이 합리적인 정당 기능을 상실하고 폐쇄적인 종파주의로 흐르고 있다고 비판했다.\n2. 당 내 핵심 인사인 그레고어 기지에 대한 인종차별 의혹은 반제국주의, 정체성 정치, 반유대주의가 결합한 당의 이데올로기적 고립을 단적으로 보여준다.\n3. 필자는 좌파당이 외부 세계와 소통하기보다 자신들만의 이념적 요새를 구축하는 데 매몰되어 정당으로서의 생명력을 잃어가고 있다고 경고했다.",
       "source": "WELT",
-      "source_url": "https://www.welt.de/wirtschaft/article69bc90708f5761671715913a/blockade-von-ukraine-hilfe-erpressung-und-verrat-frustrierte-eu-bricht-mit-viktor-orban.html"
+      "source_url": "https://www.welt.de/debatte/plus69babf9e3f652f409296180e/antisemitismus-die-linke-ist-gerade-dabei-zu-einer-sekte-zu-verkommen.html"
     },
     {
       "category": "de",
-      "original_title": "Jetzt fordert der UN-Generalsekretär Trump auf, den Krieg zu beenden",
-      "korean_title": "UN 사무총장, 이란 사태 확전 경고하며 트럼프에 '전쟁 중단' 촉구",
-      "summary": "1. 안토니우 구테흐스 UN 사무총장이 이란 분쟁에서의 잠재적 전쟁 범죄에 대해 경고했습니다.\n2. 그는 에너지 기반 시설 공격과 민간인 사망자 증가는 국제법 위반 가능성이 있다고 지적했습니다.\n3. 구테흐스 총장은 트럼프 미국 대통령에게 전투 종식을 위한 노력을 기울일 것을 강력히 요청했습니다.",
+      "is_ai": false,
+      "original_title": "Die alternde Gesellschaft ist das Beste, was uns passieren kann",
+      "korean_title": "고령화 사회는 축복인가... '쇠퇴' 프레임 깨는 인구 구조의 재해석",
+      "summary": "1. 고령화를 국가적 쇠퇴로, 젊음을 무조건적인 도약으로 연결 짓는 기존의 인구통계학적 담론에 정면으로 이의를 제기하는 분석이 나왔다.\n2. 실제 데이터는 고령화가 반드시 경제적 몰락을 의미하지 않으며, 오히려 사회적 안정과 성숙한 발전을 이끄는 토대가 될 수 있음을 시사한다.\n3. 인구 구조 변화를 공포로 받아들이기보다, 변화된 현실에 최적화된 새로운 사회 모델을 설계하는 기회로 삼아야 한다고 강조했다.",
       "source": "WELT",
-      "source_url": "https://www.welt.de/politik/ausland/article69bc8f4dea8bf301e4ae18cd/exklusiv-jetzt-fordert-der-un-generalsekretaer-trump-auf-den-krieg-zu-beenden.html"
+      "source_url": "https://www.welt.de/debatte/plus6997f977f9269d94305a54c8/demografischer-wandel-die-alternde-gesellschaft-ist-das-beste-was-uns-passieren-kann.html"
     },
     {
       "category": "de",
+      "is_ai": false,
+      "original_title": "Spione in weißen Kitteln – die neue Bedrohung aus China",
+      "korean_title": "독일 연구소 노리는 '가운 입은 스파이'... 중국의 전방위 기술 첩보전",
+      "summary": "1. 중국이 독일의 첨단 과학 기술을 탈취하기 위해 대학 및 연구소 내 과학자들을 포섭하고 비밀리에 데이터를 유출하는 등 첩보 활동을 강화하고 있다.\n2. 독일 보안 당국은 최근 의심스러운 데이터 흐름과 비밀 거래 정황이 급증하고 있음을 확인하고, 중국의 '과학 간첩' 활동에 대해 경계령을 내렸다.\n3. 독일 연구계 내 중국의 영향력 확대가 국가 안보와 미래 경제 경쟁력을 심각하게 위협하는 수준에 도달했다는 진단이다.",
+      "source": "WELT",
+      "source_url": "https://www.welt.de/wissenschaft/plus69bbbf96d3cf984a3adb72bb/militaer-und-geheimdienst-chinas-spione-in-weissen-kitteln-die-neue-bedrohung-in-deutschen-laboren.html"
+    },
+    {
+      "category": "de",
+      "is_ai": false,
+      "original_title": "F-35-Tarnkappenjet der USA muss notlanden – Explosionen und Brände in den Golfstaaten",
+      "korean_title": "이란의 걸프국 공습에 미군 F-35 비상착륙... 중동 전면전 위기 고조",
+      "summary": "1. 이란이 걸프 지역 국가들을 대상으로 대규모 공격을 단행한 가운데, 미군의 F-35 스텔스 전투기가 이란 측 발사체에 맞아 비상 착륙하는 사건이 발생했다.\n2. 현재 걸프 국가 전역에서 폭발과 화재가 보고되고 있으며, 이란의 공세가 강화됨에 따라 중동의 군사적 긴장감이 최고조에 달했다.\n3. 미국 매체들은 실시간 속보를 통해 이번 사태를 보도 중이며, 서방 국가들과 이란 간의 직접적인 무력 충돌 가능성이 우려되는 상황이다.",
+      "source": "WELT",
+      "source_url": "https://www.welt.de/politik/ausland/article69bce233ea8bf301e4ae1a85/krieg-in-nahost-f-35-tarnkappenjet-der-usa-muss-notlanden-explosionen-und-braende-in-den-golfstaaten-liveticker.html"
+    },
+    {
+      "category": "de",
+      "is_ai": false,
+      "original_title": "Das einst brisanteste Archiv Deutschlands ist jetzt online verfügbar – in den USA",
+      "korean_title": "나치당원 1,600만 명 명부 전격 공개... 독일 아닌 미국서 온라인 서비스",
+      "summary": "1. 독일 현대사의 가장 민감한 기록인 과거 나치당(NSDAP) 당원 가입 명부가 미국 국립문서고에 의해 온라인에 전면 공개되었다.\n2. 해당 자료는 약 1,600만 명의 개인 정보를 포함하고 있으며, 독일 연방 아카이브는 법적 제약으로 인해 지금까지 일반 공개를 하지 못했던 문건이다.\n3. 미국의 이번 디지털 아카이브 공개를 통해 전 세계 연구자들은 독일의 과거 청산과 역사적 진실 규명에 필요한 핵심 자료에 자유롭게 접근할 수 있게 되었다.",
+      "source": "WELT",
+      "source_url": "https://www.welt.de/geschichte/article69bbb2eed225a75f4a23472d/nsdap-mitglieder-das-einst-brisanteste-archiv-deutschlands-ist-jetzt-online-verfuegbar-in-den-usa.html"
+    },
+    {
+      "category": "de",
+      "is_ai": false,
+      "original_title": "Empörung in Brüssel – Merz wirft Orbán „Akt grober Illoyalität“ vor",
+      "korean_title": "브뤼셀의 분노: 프리드리히 메르츠, 오르반 총리에 '중대한 배신' 맹비난",
+      "summary": "1. 우크라이나 지원책을 둘러싼 EU 이사회 내 갈등이 격화하는 가운데, 헝가리의 거부권 행사에 대한 비판이 쏟아지고 있습니다.\n2. 독일 차기 총리 유력 후보인 프리드리히 메르츠는 수십억 유로 규모의 차관 지원을 가로막은 빅토르 오르반 총리를 향해 '중대한 불충 행위'라고 직격탄을 날렸습니다.\n3. 헝가리의 반복적인 봉쇄 조치가 EU의 대외 정책 실효성과 내부 결속력을 심각하게 훼손하고 있다는 우려가 커지고 있습니다.",
+      "source": "Die Welt",
+      "source_url": "https://www.welt.de/politik/ausland/article69bc00a392f222671ccb3b3e/empoerung-in-bruessel-merz-wirft-orban-akt-grober-illoyalitaet-vor.html"
+    },
+    {
+      "category": "de",
+      "is_ai": false,
+      "original_title": "„Fast alle im Raum gingen Orbán hart an“ – EU bricht mit Ungarn",
+      "korean_title": "\"모두가 오르반을 몰아세웠다\"… 신뢰 무너진 EU와 헝가리의 결별",
+      "summary": "1. 심야 EU 정상회의에서 대다수 회원국 정상이 헝가리 오르반 총리를 이례적으로 강하게 압박하며 사실상 '결별' 수준의 갈등을 노출했습니다.\n2. 반대 의견을 내더라도 결국 합의를 지켰던 오르반의 과거 행보와 달리, 최근의 약속 파기는 EU 정상들 사이에서 '신뢰의 종말'로 받아들여지고 있습니다.\n3. 이번 사태로 인해 브뤼셀에서 내려지는 주요 결정들이 실제 현장에서 동력을 얻을 수 있을지에 대한 근본적인 의구심이 확산 중입니다.",
+      "source": "Die Welt",
+      "source_url": "https://www.welt.de/wirtschaft/plus69bc90708f5761671715913a/eu-bricht-with-ungarn-fast-alle-im-raum-gingen-orban-hart-an.html"
+    },
+    {
+      "category": "de",
+      "is_ai": false,
+      "original_title": "Jetzt fordert der UN-Generalsekretär Trump auf, den Iran-Krieg zu beenden",
+      "korean_title": "UN 사무총장, 트럼프에 '이란 전쟁 종식' 촉구… 잠재적 전쟁 범죄 경고",
+      "summary": "1. 안토니우 구테흐스 UN 사무총장이 이란 갈등과 관련해 트럼프에게 전쟁을 끝내기 위한 적극적인 개입을 요청했습니다.\n2. 구테흐스 총장은 에너지 기반 시설에 대한 공격과 민간인 희생자 급증이 국제법 위반이자 전쟁 범죄로 간주될 수 있다고 강력히 경고했습니다.\n3. 중동의 긴장 고조가 인류 전체의 위기로 번지기 전에 미국이 중재자로서의 역할을 수행해야 한다는 입장을 분명히 했습니다.",
+      "source": "Die Welt",
+      "source_url": "https://www.welt.de/politik/ausland/article69bc8f4dea8bf301e4ae18cd/antonio-guterres-jetzt-fordert-der-un-generalsekretaer-trump-auf-den-iran-krieg-zu-beenden.html"
+    },
+    {
+      "category": "de",
+      "is_ai": false,
       "original_title": "„Nicht zulassen, dass sich 2015 wiederholt“ – EU bereitet sich auf mögliche Migrationskrise vor",
-      "korean_title": "EU, '2015년 난민 사태 반복 불가' 선언하며 이란발 이주 위기 대비",
-      "summary": "1. EU 회원국들은 이란 전쟁으로 인한 잠재적 이주(난민) 위기에 대비하고자 합니다.\n2. 우르줄라 폰데어라이엔 EU 집행위원장은 '2015년과 같은 상황이 다시는 반복되어서는 안 된다'고 강조했습니다.\n3. 프레데릭센 덴마크 총리와 멜로니 이탈리아 총리는 비상시를 대비한 '긴급 제동 조치' 도입을 요구했습니다.",
-      "source": "WELT",
+      "korean_title": "\"2015년 대혼란 재현은 없다\"… EU, 이란발 난민 위기 선제 대응",
+      "summary": "1. EU 회원국들이 이란 전쟁의 여파로 발생할 수 있는 대규모 난민 유입 가능성에 대비해 비상 계획 수립에 나섰습니다.\n2. 우르줄라 폰데어라이엔 집행위원장은 과거 2015년의 난민 사태와 같은 통제 불능 상황을 절대 되풀이하지 않겠다고 강조했습니다.\n3. 덴마크와 이탈리아 등 주요국 정상들은 국경 폐쇄 등 비상 상황 시 즉각 발동 가능한 '비상 제동(Notbremse)' 장치 도입을 강력히 요구하고 있습니다.",
+      "source": "Die Welt",
       "source_url": "https://www.welt.de/politik/ausland/article69bcaf22ea8bf301e4ae1913/lage-im-nahen-osten-nicht-zulassen-dass-sich-2015-wiederholt-eu-bereitet-sich-auf-moegliche-migrationskrise-vor.html"
     },
     {
       "category": "de",
-      "original_title": "Ort in Arizona erreicht über 40 °C – neuer US-Hitzerekord für den März",
-      "korean_title": "美 애리조나주 3월 기온 43.3°C 기록, 역대 최고치 경신",
-      "summary": "1. 목요일 애리조나주에서 43.3°C를 기록하며 미국 3월 역대 최고 기온을 경신했습니다.\n2. 피닉스, 샌디에이고, 라스베이거스 등 여러 도시에 이례적인 폭염이 강타했습니다.\n3. 이는 통상 5월에 나타나던 40°C 이상의 고온 현상이 훨씬 일찍 시작된 것입니다.",
-      "source": "WELT",
-      "source_url": "https://www.welt.de/vermischtes/article69bcad768f57616717159179/martinez-lake-ort-in-arizona-erreicht-ueber-40-c-neuer-us-hitzerekord-fuer-den-maerz.html"
-    },
-    {
-      "category": "de",
+      "is_ai": false,
       "original_title": "„Gewaltige Generation stabiler Energiequelle“ – USA und Japan investieren in Atomreaktoren",
-      "korean_title": "美-日, '안정적 에너지원 확보' 위해 730억 달러 규모 원전·천연가스 투자 합의",
-      "summary": "1. 미국과 일본은 워싱턴에서 대규모 에너지 프로젝트 협약을 체결했습니다.\n2. 양국은 소형 모듈 원자로(SMR)에 400억 달러, 천연가스 발전소에 330억 달러를 투자합니다.\n3. 이는 안정적인 전력 공급, 가격 하락, 그리고 기술 리더십 확보를 목표로 합니다.",
-      "source": "WELT",
+      "korean_title": "미-일 에너지 동맹 강화: 소형 원자로 등 차세대 에너지에 730억 달러 투입",
+      "summary": "1. 미국과 일본이 워싱턴에서 만나 소형 모듈형 원자로(SMR) 개발에 400억 달러, 천연가스 발전소 건설에 330억 달러를 투자하기로 합의했습니다.\n2. 양국은 이번 대규모 투자를 통해 전력 공급의 안정을 꾀하고 에너지 가격을 낮춰 산업 경쟁력을 높인다는 전략입니다.\n3. 이번 협력은 단순한 에너지 공급을 넘어 차세대 에너지 기술 시장에서의 글로벌 주도권을 확보하기 위한 포석으로 풀이됩니다.",
+      "source": "Die Welt",
       "source_url": "https://www.welt.de/politik/ausland/article69bca1378f5761671715914f/40-milliarden-dollar-projekt-gewaltige-generation-stabiler-energiequelle-usa-und-japan-investieren-in-atomreaktoren.html"
     }
   ]
