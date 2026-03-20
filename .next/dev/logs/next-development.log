@@ -1,53 +1,57 @@
-{"timestamp":"00:00:05.143","source":"Server","level":"LOG","message":""}
-{"timestamp":"00:00:09.062","source":"Browser","level":"INFO","message":"%cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold"}
-{"timestamp":"00:00:11.398","source":"Server","level":"LOG","message":"[dotenv@17.3.1] injecting env (0) from .env -- tip: 🛡️ auth for agents: https://vestauth.com"}
-{"timestamp":"00:00:11.411","source":"Server","level":"LOG","message":"[dotenv@17.3.1] injecting env (0) from .env -- tip: 🛠️  run anywhere with `dotenvx run -- yourcommand`"}
-{"timestamp":"00:00:11.415","source":"Server","level":"LOG","message":"[dotenv@17.3.1] injecting env (0) from .env -- tip: 🤖 agentic secret storage: https://dotenvx.com/as2"}
-{"timestamp":"00:00:11.640","source":"Server","level":"LOG","message":"[API] Manual trigger for it pipeline..."}
-{"timestamp":"00:00:11.643","source":"Server","level":"LOG","message":"\n[2026-03-20T08:31:49.655Z] Executing IT Pipeline (Volume Boost Mode)..."}
-{"timestamp":"00:00:11.644","source":"Server","level":"LOG","message":"[Node 1] 🌐 다중 매체(Dev.to, HackerNews, RSS)에서 기사를 확장 수집합니다 (목표: 25+)..."}
-{"timestamp":"00:00:12.209","source":"Server","level":"LOG","message":"✅ Dev.to 에서 15개 뉴스 수집 완료"}
-{"timestamp":"00:00:13.170","source":"Server","level":"LOG","message":"✅ Hacker News 에서 상위 15개 토픽 수집 완료"}
-{"timestamp":"00:00:13.722","source":"Server","level":"LOG","message":"✅ Smashing Magazine RSS 에서 10개 뉴스 수집 완료"}
-{"timestamp":"00:00:13.723","source":"Server","level":"LOG","message":"[Node 1] ✨ 총 40개의 통합 글로벌 기사 큐레이팅 성공!"}
-{"timestamp":"00:00:13.724","source":"Server","level":"LOG","message":"[Node 2] Summarizing IT articles (High Accuracy Volume Boost)..."}
-{"timestamp":"00:00:13.725","source":"Server","level":"LOG","message":"  - Processing it chunk 1/8 (Attempt 1)..."}
-{"timestamp":"00:00:14.218","source":"Server","level":"ERROR","message":"❌ it Chunk 1 attempt 1 failed: \"{\\\"error\\\":{\\\"code\\\":404,\\\"message\\\":\\\"This model models/gemini-2.0-flash-lite is no longer available to new users. Please update your code to use a newer model for the latest features and improvements.\\\",\\\"status\\\":\\\"NOT_FOUND\\\"}}\""}
-{"timestamp":"00:00:17.231","source":"Server","level":"LOG","message":"  - Processing it chunk 1/8 (Attempt 2)..."}
-{"timestamp":"00:00:17.533","source":"Server","level":"ERROR","message":"❌ it Chunk 1 attempt 2 failed: \"{\\\"error\\\":{\\\"code\\\":404,\\\"message\\\":\\\"This model models/gemini-2.0-flash-lite is no longer available to new users. Please update your code to use a newer model for the latest features and improvements.\\\",\\\"status\\\":\\\"NOT_FOUND\\\"}}\""}
-{"timestamp":"00:00:23.537","source":"Server","level":"LOG","message":"  - Processing it chunk 1/8 (Attempt 3)..."}
-{"timestamp":"00:00:23.874","source":"Server","level":"ERROR","message":"❌ it Chunk 1 attempt 3 failed: \"{\\\"error\\\":{\\\"code\\\":404,\\\"message\\\":\\\"This model models/gemini-2.0-flash-lite is no longer available to new users. Please update your code to use a newer model for the latest features and improvements.\\\",\\\"status\\\":\\\"NOT_FOUND\\\"}}\""}
-{"timestamp":"00:00:24.886","source":"Server","level":"LOG","message":"  - Processing it chunk 2/8 (Attempt 1)..."}
-{"timestamp":"00:00:25.143","source":"Server","level":"ERROR","message":"❌ it Chunk 2 attempt 1 failed: \"{\\\"error\\\":{\\\"code\\\":404,\\\"message\\\":\\\"This model models/gemini-2.0-flash-lite is no longer available to new users. Please update your code to use a newer model for the latest features and improvements.\\\",\\\"status\\\":\\\"NOT_FOUND\\\"}}\""}
-{"timestamp":"00:00:28.154","source":"Server","level":"LOG","message":"  - Processing it chunk 2/8 (Attempt 2)..."}
-{"timestamp":"00:00:28.381","source":"Server","level":"ERROR","message":"❌ it Chunk 2 attempt 2 failed: \"{\\\"error\\\":{\\\"code\\\":404,\\\"message\\\":\\\"This model models/gemini-2.0-flash-lite is no longer available to new users. Please update your code to use a newer model for the latest features and improvements.\\\",\\\"status\\\":\\\"NOT_FOUND\\\"}}\""}
-{"timestamp":"00:00:34.392","source":"Server","level":"LOG","message":"  - Processing it chunk 2/8 (Attempt 3)..."}
-{"timestamp":"00:00:34.757","source":"Server","level":"ERROR","message":"❌ it Chunk 2 attempt 3 failed: \"{\\\"error\\\":{\\\"code\\\":404,\\\"message\\\":\\\"This model models/gemini-2.0-flash-lite is no longer available to new users. Please update your code to use a newer model for the latest features and improvements.\\\",\\\"status\\\":\\\"NOT_FOUND\\\"}}\""}
-{"timestamp":"00:00:35.760","source":"Server","level":"LOG","message":"  - Processing it chunk 3/8 (Attempt 1)..."}
-{"timestamp":"00:00:36.030","source":"Server","level":"ERROR","message":"❌ it Chunk 3 attempt 1 failed: \"{\\\"error\\\":{\\\"code\\\":404,\\\"message\\\":\\\"This model models/gemini-2.0-flash-lite is no longer available to new users. Please update your code to use a newer model for the latest features and improvements.\\\",\\\"status\\\":\\\"NOT_FOUND\\\"}}\""}
-{"timestamp":"00:00:39.036","source":"Server","level":"LOG","message":"  - Processing it chunk 3/8 (Attempt 2)..."}
-{"timestamp":"00:00:39.278","source":"Server","level":"ERROR","message":"❌ it Chunk 3 attempt 2 failed: \"{\\\"error\\\":{\\\"code\\\":404,\\\"message\\\":\\\"This model models/gemini-2.0-flash-lite is no longer available to new users. Please update your code to use a newer model for the latest features and improvements.\\\",\\\"status\\\":\\\"NOT_FOUND\\\"}}\""}
-{"timestamp":"00:00:45.291","source":"Server","level":"LOG","message":"  - Processing it chunk 3/8 (Attempt 3)..."}
-{"timestamp":"00:00:45.706","source":"Server","level":"ERROR","message":"❌ it Chunk 3 attempt 3 failed: \"{\\\"error\\\":{\\\"code\\\":404,\\\"message\\\":\\\"This model models/gemini-2.0-flash-lite is no longer available to new users. Please update your code to use a newer model for the latest features and improvements.\\\",\\\"status\\\":\\\"NOT_FOUND\\\"}}\""}
-{"timestamp":"00:00:46.721","source":"Server","level":"LOG","message":"  - Processing it chunk 4/8 (Attempt 1)..."}
-{"timestamp":"00:00:46.964","source":"Server","level":"ERROR","message":"❌ it Chunk 4 attempt 1 failed: \"{\\\"error\\\":{\\\"code\\\":404,\\\"message\\\":\\\"This model models/gemini-2.0-flash-lite is no longer available to new users. Please update your code to use a newer model for the latest features and improvements.\\\",\\\"status\\\":\\\"NOT_FOUND\\\"}}\""}
-{"timestamp":"00:00:49.970","source":"Server","level":"LOG","message":"  - Processing it chunk 4/8 (Attempt 2)..."}
-{"timestamp":"00:00:50.177","source":"Server","level":"ERROR","message":"❌ it Chunk 4 attempt 2 failed: \"{\\\"error\\\":{\\\"code\\\":404,\\\"message\\\":\\\"This model models/gemini-2.0-flash-lite is no longer available to new users. Please update your code to use a newer model for the latest features and improvements.\\\",\\\"status\\\":\\\"NOT_FOUND\\\"}}\""}
-{"timestamp":"00:00:56.190","source":"Server","level":"LOG","message":"  - Processing it chunk 4/8 (Attempt 3)..."}
-{"timestamp":"00:00:56.516","source":"Server","level":"ERROR","message":"❌ it Chunk 4 attempt 3 failed: \"{\\\"error\\\":{\\\"code\\\":404,\\\"message\\\":\\\"This model models/gemini-2.0-flash-lite is no longer available to new users. Please update your code to use a newer model for the latest features and improvements.\\\",\\\"status\\\":\\\"NOT_FOUND\\\"}}\""}
-{"timestamp":"00:00:57.529","source":"Server","level":"LOG","message":"  - Processing it chunk 5/8 (Attempt 1)..."}
-{"timestamp":"00:00:57.786","source":"Server","level":"ERROR","message":"❌ it Chunk 5 attempt 1 failed: \"{\\\"error\\\":{\\\"code\\\":404,\\\"message\\\":\\\"This model models/gemini-2.0-flash-lite is no longer available to new users. Please update your code to use a newer model for the latest features and improvements.\\\",\\\"status\\\":\\\"NOT_FOUND\\\"}}\""}
-{"timestamp":"00:01:00.789","source":"Server","level":"LOG","message":"  - Processing it chunk 5/8 (Attempt 2)..."}
-{"timestamp":"00:01:01.090","source":"Server","level":"ERROR","message":"❌ it Chunk 5 attempt 2 failed: \"{\\\"error\\\":{\\\"code\\\":404,\\\"message\\\":\\\"This model models/gemini-2.0-flash-lite is no longer available to new users. Please update your code to use a newer model for the latest features and improvements.\\\",\\\"status\\\":\\\"NOT_FOUND\\\"}}\""}
-{"timestamp":"00:01:07.093","source":"Server","level":"LOG","message":"  - Processing it chunk 5/8 (Attempt 3)..."}
-{"timestamp":"00:01:07.529","source":"Server","level":"ERROR","message":"❌ it Chunk 5 attempt 3 failed: \"{\\\"error\\\":{\\\"code\\\":404,\\\"message\\\":\\\"This model models/gemini-2.0-flash-lite is no longer available to new users. Please update your code to use a newer model for the latest features and improvements.\\\",\\\"status\\\":\\\"NOT_FOUND\\\"}}\""}
-{"timestamp":"00:01:08.541","source":"Server","level":"LOG","message":"  - Processing it chunk 6/8 (Attempt 1)..."}
-{"timestamp":"00:01:08.796","source":"Server","level":"ERROR","message":"❌ it Chunk 6 attempt 1 failed: \"{\\\"error\\\":{\\\"code\\\":404,\\\"message\\\":\\\"This model models/gemini-2.0-flash-lite is no longer available to new users. Please update your code to use a newer model for the latest features and improvements.\\\",\\\"status\\\":\\\"NOT_FOUND\\\"}}\""}
-{"timestamp":"00:01:11.797","source":"Server","level":"LOG","message":"  - Processing it chunk 6/8 (Attempt 2)..."}
-{"timestamp":"00:01:12.023","source":"Server","level":"ERROR","message":"❌ it Chunk 6 attempt 2 failed: \"{\\\"error\\\":{\\\"code\\\":404,\\\"message\\\":\\\"This model models/gemini-2.0-flash-lite is no longer available to new users. Please update your code to use a newer model for the latest features and improvements.\\\",\\\"status\\\":\\\"NOT_FOUND\\\"}}\""}
-{"timestamp":"00:01:18.032","source":"Server","level":"LOG","message":"  - Processing it chunk 6/8 (Attempt 3)..."}
-{"timestamp":"00:01:18.447","source":"Server","level":"ERROR","message":"❌ it Chunk 6 attempt 3 failed: \"{\\\"error\\\":{\\\"code\\\":404,\\\"message\\\":\\\"This model models/gemini-2.0-flash-lite is no longer available to new users. Please update your code to use a newer model for the latest features and improvements.\\\",\\\"status\\\":\\\"NOT_FOUND\\\"}}\""}
-{"timestamp":"00:01:19.458","source":"Server","level":"LOG","message":"  - Processing it chunk 7/8 (Attempt 1)..."}
-{"timestamp":"00:01:19.715","source":"Server","level":"ERROR","message":"❌ it Chunk 7 attempt 1 failed: \"{\\\"error\\\":{\\\"code\\\":404,\\\"message\\\":\\\"This model models/gemini-2.0-flash-lite is no longer available to new users. Please update your code to use a newer model for the latest features and improvements.\\\",\\\"status\\\":\\\"NOT_FOUND\\\"}}\""}
-{"timestamp":"00:01:22.720","source":"Server","level":"LOG","message":"  - Processing it chunk 7/8 (Attempt 2)..."}
-{"timestamp":"00:01:23.038","source":"Server","level":"ERROR","message":"❌ it Chunk 7 attempt 2 failed: \"{\\\"error\\\":{\\\"code\\\":404,\\\"message\\\":\\\"This model models/gemini-2.0-flash-lite is no longer available to new users. Please update your code to use a newer model for the latest features and improvements.\\\",\\\"status\\\":\\\"NOT_FOUND\\\"}}\""}
+{"timestamp":"00:00:04.018","source":"Server","level":"LOG","message":""}
+{"timestamp":"00:00:07.610","source":"Browser","level":"INFO","message":"%cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold"}
+{"timestamp":"00:00:57.474","source":"Server","level":"LOG","message":"[dotenv@17.3.1] injecting env (0) from .env -- tip: ⚡️ secrets for agents: https://dotenvx.com/as2"}
+{"timestamp":"00:00:57.481","source":"Server","level":"LOG","message":"[dotenv@17.3.1] injecting env (0) from .env -- tip: 🛡️ auth for agents: https://vestauth.com"}
+{"timestamp":"00:00:57.485","source":"Server","level":"LOG","message":"[dotenv@17.3.1] injecting env (0) from .env -- tip: ⚙️  load multiple .env files with { path: ['.env.local', '.env'] }"}
+{"timestamp":"00:00:57.605","source":"Server","level":"LOG","message":"[API] Manual trigger for it pipeline..."}
+{"timestamp":"00:00:57.607","source":"Server","level":"LOG","message":"\n[2026-03-20T09:03:39.239Z] Executing IT Pipeline (Volume Boost Mode)..."}
+{"timestamp":"00:00:57.608","source":"Server","level":"LOG","message":"[Node 1] 🌐 다중 매체(Dev.to, HackerNews, RSS)에서 기사를 확장 수집합니다 (목표: 25+)..."}
+{"timestamp":"00:00:58.286","source":"Server","level":"LOG","message":"✅ Dev.to 에서 15개 뉴스 수집 완료"}
+{"timestamp":"00:00:59.109","source":"Server","level":"LOG","message":"✅ Hacker News 에서 상위 15개 토픽 수집 완료"}
+{"timestamp":"00:00:59.498","source":"Server","level":"LOG","message":"✅ Smashing Magazine RSS 에서 10개 뉴스 수집 완료"}
+{"timestamp":"00:00:59.499","source":"Server","level":"LOG","message":"[Node 1] ✨ 총 40개의 통합 글로벌 기사 큐레이팅 성공!"}
+{"timestamp":"00:00:59.500","source":"Server","level":"LOG","message":"\n[Hybrid] ⚡ IT 하이브리드 가공 시작..."}
+{"timestamp":"00:00:59.502","source":"Server","level":"LOG","message":"  🔍 Scoping: https://dev.to/devteam/congrats-to-the-winners-of-our-first-dev-weekend-challenge-1gml"}
+{"timestamp":"00:01:02.976","source":"Server","level":"LOG","message":"  🔍 Scoping: https://dev.to/erikch/i-tried-vite-and-replaced-my-entire-frontend-toolchain-4cgb"}
+{"timestamp":"00:01:05.202","source":"Server","level":"LOG","message":"  🔍 Scoping: https://dev.to/dannwaneri/your-agent-is-making-decisions-nobody-authorized-2bc7"}
+{"timestamp":"00:01:09.100","source":"Server","level":"LOG","message":"  🔍 Scoping: https://dev.to/playfulprogramming-angular/vitests-41-new-fast-forward-mode-skips-timer-delays-instantly-4a4h"}
+{"timestamp":"00:01:10.717","source":"Server","level":"LOG","message":"  🔍 Scoping: https://dev.to/eatyou_eatyou_d79d27e5622/how-to-add-link-previews-to-your-react-app-with-code-examples-4l6d"}
+{"timestamp":"00:01:12.975","source":"Server","level":"LOG","message":"  🔍 Scoping: https://dev.to/tavari/1m-tokens-websocket-1f0c"}
+{"timestamp":"00:01:15.789","source":"Server","level":"LOG","message":"  🔍 Scoping: https://dev.to/harsh2644/ai-is-creating-a-new-kind-of-tech-debt-and-nobody-is-talking-about-it-3pm6"}
+{"timestamp":"00:01:18.201","source":"Server","level":"LOG","message":"  🔍 Scoping: https://dev.to/andrii_bondar_fc866063a87/i-built-a-native-gui-for-direct-server-to-server-transfers-ftpsftp-because-rclone-cli-wasnt-dd0"}
+{"timestamp":"00:01:20.390","source":"Server","level":"LOG","message":"  🔍 Scoping: https://dev.to/brianmtreese/angulars-new-debounced-signal-explained-2gg6"}
+{"timestamp":"00:01:22.846","source":"Server","level":"LOG","message":"  🔍 Scoping: https://dev.to/camb/amazon-lost-63-million-orders-because-nobody-reviewed-the-code-heres-what-governance-actually-64h"}
+{"timestamp":"00:01:25.253","source":"Server","level":"LOG","message":"[Hybrid] 🤖 Gemini가 10개 기사를 세련되게 다듬는 중..."}
+{"timestamp":"00:01:35.113","source":"Server","level":"LOG","message":"[Hybrid] ✅ IT 완료 — 총 10개 정밀 가공 성공"}
+{"timestamp":"00:01:35.124","source":"Server","level":"LOG","message":"[Success] IT file completed with 10 articles."}
+{"timestamp":"00:01:35.127","source":"Server","level":"LOG","message":"[Node 3] Inserting 10 articles into Notion DB (Paralleled Execution)..."}
+{"timestamp":"00:01:42.580","source":"Server","level":"WARN","message":"@notionhq/client warn: \"request fail\" {}"}
+{"timestamp":"00:01:42.581","source":"Server","level":"ERROR","message":"- Failed to insert article: Vite+로 프런트엔드 툴체인 전체를 교체한 경험 \"API token is invalid.\""}
+{"timestamp":"00:01:42.582","source":"Server","level":"WARN","message":"@notionhq/client warn: \"request fail\" {}"}
+{"timestamp":"00:01:42.583","source":"Server","level":"ERROR","message":"- Failed to insert article: AI 에이전트, 승인되지 않은 결정 내려 \"API token is invalid.\""}
+{"timestamp":"00:01:42.591","source":"Server","level":"WARN","message":"@notionhq/client warn: \"request fail\" {}"}
+{"timestamp":"00:01:42.592","source":"Server","level":"ERROR","message":"- Failed to insert article: 첫 DEV 주말 챌린지 우승자 발표! \"API token is invalid.\""}
+{"timestamp":"00:01:42.601","source":"Server","level":"WARN","message":"@notionhq/client warn: \"request fail\" {}"}
+{"timestamp":"00:01:42.602","source":"Server","level":"ERROR","message":"- Failed to insert article: rclone CLI의 한계, 서버 간 직접 전송 위한 GUI 구축 \"API token is invalid.\""}
+{"timestamp":"00:01:42.607","source":"Server","level":"WARN","message":"@notionhq/client warn: \"request fail\" {}"}
+{"timestamp":"00:01:42.608","source":"Server","level":"ERROR","message":"- Failed to insert article: AI가 새 유형의 기술 부채를 만들지만 아무도 주목하지 않는다 \"API token is invalid.\""}
+{"timestamp":"00:01:42.614","source":"Server","level":"WARN","message":"@notionhq/client warn: \"request fail\" {}"}
+{"timestamp":"00:01:42.614","source":"Server","level":"ERROR","message":"- Failed to insert article: 100만 토큰 처리 및 WebSocket 제어 스레딩 엔진 개발 \"API token is invalid.\""}
+{"timestamp":"00:01:42.623","source":"Server","level":"WARN","message":"@notionhq/client warn: \"request fail\" {}"}
+{"timestamp":"00:01:42.624","source":"Server","level":"ERROR","message":"- Failed to insert article: Angular의 새로운 debounced() 신호 기능 설명 \"API token is invalid.\""}
+{"timestamp":"00:01:42.633","source":"Server","level":"WARN","message":"@notionhq/client warn: \"request fail\" {}"}
+{"timestamp":"00:01:42.634","source":"Server","level":"ERROR","message":"- Failed to insert article: 코드 검토 누락으로 630만 건의 주문 손실: Amazon의 거버넌스 문제 \"API token is invalid.\""}
+{"timestamp":"00:01:42.708","source":"Server","level":"WARN","message":"@notionhq/client warn: \"request fail\" {}"}
+{"timestamp":"00:01:42.709","source":"Server","level":"ERROR","message":"- Failed to insert article: React 앱에 링크 미리보기 추가하는 방법 (코드 예제 포함) \"API token is invalid.\""}
+{"timestamp":"00:01:42.712","source":"Server","level":"WARN","message":"@notionhq/client warn: \"request fail\" {}"}
+{"timestamp":"00:01:42.712","source":"Server","level":"ERROR","message":"- Failed to insert article: Vitest 4.1, 타이머 지연 즉시 건너뛰는 '빨리 감기' 모드 출시 \"API token is invalid.\""}
+{"timestamp":"00:01:42.713","source":"Server","level":"LOG","message":"[Node 3] Notion Data parallel insertion completed in a blink."}
+{"timestamp":"00:01:42.714","source":"Server","level":"LOG","message":"🌐 [DataOps] GitHub API 통신을 시작합니다..."}
+{"timestamp":"00:01:43.646","source":"Server","level":"LOG","message":"🚀 [DataOps] GitHub에 성공적으로 커밋 완료! Vercel이 곧 리빌드를 시작합니다."}
+{"timestamp":"00:01:45.753","source":"Browser","level":"INFO","message":"%cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold"}
+{"timestamp":"00:05:40.250","source":"Server","level":"LOG","message":"✓ Compiled in 357ms"}
+{"timestamp":"00:05:41.805","source":"Browser","level":"ERROR","message":"./src/components/ArticleCard.tsx:61:26\nUnexpected token. Did you mean `{'}'}` or `&rbrace;`?\n  59 |                                 <path strokeLinecap=\"round\" stroke...\n  60 |                             </svg>\n> 61 |                         )}\n     |                          ^\n  62 |                     </button>\n  63 |                 </div>\n  64 |\n\nParsing ecmascript source code failed\n\nImport traces:\n  Client Component Browser:\n    ./src/components/ArticleCard.tsx [Client Component Browser]\n    ./src/app/page.tsx [Client Component Browser]\n    ./src/app/page.tsx [Server Component]\n\n  Client Component SSR:\n    ./src/components/ArticleCard.tsx [Client Component SSR]\n    ./src/app/page.tsx [Client Component SSR]\n    ./src/app/page.tsx [Server Component]"}
+{"timestamp":"00:05:54.476","source":"Server","level":"LOG","message":"✓ Compiled in 1487ms"}
+{"timestamp":"00:06:06.399","source":"Server","level":"LOG","message":"✓ Compiled in 227ms"}
+{"timestamp":"00:06:22.219","source":"Server","level":"LOG","message":"✓ Compiled in 160ms"}
+{"timestamp":"00:12:47.802","source":"Server","level":"LOG","message":"✓ Compiled in 1919ms"}

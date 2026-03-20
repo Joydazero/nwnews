@@ -1,182 +1,114 @@
 'use client';
+
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
-import ThemeToggle from '../../components/ThemeToggle';
+import ProgressBar from '../../components/ProgressBar';
 
 export default function ManagePage() {
-    const [isAuthenticated, setIsAuthenticated] = useState(false);
-    const [userId, setUserId] = useState('');
-    const [password, setPassword] = useState('');
-    const [errorMsg, setErrorMsg] = useState('');
-
-    const [files, setFiles] = useState<string[]>([]);
-    const [loading, setLoading] = useState(true);
+    const [loading, setLoading] = useState(false);
+    const [lastUpdate, setLastUpdate] = useState<string | null>(null);
 
     useEffect(() => {
-        if (isAuthenticated) {
-            fetchFiles();
-        }
-    }, [isAuthenticated]);
+        const stored = localStorage.getItem('nwnews_last_update');
+        setLastUpdate(stored);
+    }, []);
 
-    const handleLogin = (e: React.FormEvent) => {
-        e.preventDefault();
-        if (userId === 'admin' && password === 'Parktest1234') {
-            setIsAuthenticated(true);
-            setErrorMsg('');
-        } else {
-            setErrorMsg('아이디 또는 비밀번호가 올바르지 않습니다.');
-        }
-    };
-
-    const fetchFiles = async () => {
+    const handleUpdate = async (category: string) => {
+        if (loading) return;
         setLoading(true);
-        const res = await fetch('/api/files');
-        const data = await res.json();
-        if (data.success) setFiles(data.files);
-        setLoading(false);
-    };
-
-    const handleDownload = async (filename: string) => {
         try {
-            const res = await fetch(`/api/files?filename=${filename}`);
-            const data = await res.json();
-            if (data.success && data.content) {
-                const blob = new Blob([JSON.stringify(data.content, null, 2)], { type: 'application/json' });
-                const url = URL.createObjectURL(blob);
-                const a = document.createElement('a');
-                a.href = url;
-                a.download = filename;
-                document.body.appendChild(a);
-                a.click();
-                document.body.removeChild(a);
-                URL.revokeObjectURL(url);
+            const response = await fetch('/api/generate', {
+                method: 'POST',
+                body: JSON.stringify({ category }),
+                headers: { 'Content-Type': 'application/json' }
+            });
+            const result = await response.json();
+            if (result.success) {
+                const today = new Date().toISOString().split('T')[0];
+                localStorage.setItem('nwnews_last_update', today);
+                setLastUpdate(today);
+                alert(`${category.toUpperCase()} 뉴스 수집 및 가공이 성공적으로 완료되었습니다! 🎉`);
             } else {
-                alert('파일을 불러오는데 실패했습니다.');
+                alert(`오류 발생: ${result.error}`);
             }
         } catch (err) {
-            alert('다운로드 중 오류가 발생했습니다.');
+            alert('서버와의 통신에 실패했습니다.');
+        } finally {
+            setLoading(false);
         }
     };
-
-    const handleDelete = async (filename: string) => {
-        if (confirm(`${filename} 파일을 영구 삭제하시겠습니까?`)) {
-            await fetch('/api/files', {
-                method: 'DELETE',
-                headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify({ filename })
-            });
-            fetchFiles();
-        }
-    };
-
-    const handleNotionGC = async () => {
-        // eslint-disable-next-line no-restricted-globals
-        if (confirm('노션에 등록된지 2일(48시간) 이상 지난 뉴스 기사들을 모두 휴지통으로 이동시킵니다. 계속할까요?')) {
-            await fetch('/api/notion-gc', { method: 'POST' });
-            alert('동기화 처리 완료!');
-        }
-    };
-
-    if (!isAuthenticated) {
-        return (
-            <main className="max-w-md mx-auto min-h-[80vh] flex flex-col items-center justify-center p-6 animate-fade-in">
-                <ThemeToggle />
-                <div className="w-full bg-card-bg border border-card-border rounded-2xl p-8 backdrop-blur-md shadow-[0_8px_30px_rgba(0,0,0,0.1)] text-center mt-6">
-                    <h2 className="text-2xl font-bold text-text-main mb-6">관리자 전용 로그인</h2>
-                    <form onSubmit={handleLogin} className="flex flex-col gap-4">
-                        <input
-                            type="text"
-                            placeholder="아이디"
-                            value={userId}
-                            onChange={e => setUserId(e.target.value)}
-                            className="p-3.5 rounded-xl border border-card-border bg-white/5 text-text-main placeholder:text-text-muted outline-none focus:border-accent transition-colors"
-                            autoComplete="off"
-                        />
-                        <input
-                            type="password"
-                            placeholder="비밀번호"
-                            value={password}
-                            onChange={e => setPassword(e.target.value)}
-                            className="p-3.5 rounded-xl border border-card-border bg-white/5 text-text-main placeholder:text-text-muted outline-none focus:border-accent transition-colors"
-                        />
-                        {errorMsg && <p className="text-red-500 text-sm text-left m-0">{errorMsg}</p>}
-                        <button
-                            type="submit"
-                            className="mt-2 w-full bg-accent text-white font-bold py-3.5 rounded-xl shadow-[0_4px_15px_var(--accent-glow)] hover:-translate-y-0.5 transition-all hover:shadow-[0_8px_25px_var(--accent-glow)]"
-                        >
-                            인증하기
-                        </button>
-                        <Link href="/" className="text-sm text-text-muted mt-4 hover:text-accent transition-colors">
-                            ← 메인으로 돌아가기
-                        </Link>
-                    </form>
-                </div>
-            </main>
-        );
-    }
 
     return (
-        <main className="max-w-4xl mx-auto py-16 px-6 sm:px-8 flex flex-col gap-8 animate-fade-in">
-            <header className="text-center mb-4">
-                <h1 className="text-4xl font-extrabold text-text-main mb-3">데이터베이스 및 파일 관리</h1>
-                <p className="text-text-muted text-lg mb-6">수집된 로컬 JSON 데이터와 연동 노션 워크스페이스를 관리합니다.</p>
-                <ThemeToggle />
-                <div className="flex gap-4 justify-center items-center mt-6">
-                    <Link href="/" className="text-accent underline hover:opacity-80">
-                        ← 뉴스 보드 복귀
+        <main className="min-h-screen bg-bg-main py-24 px-8">
+            <div className="max-w-[1000px] mx-auto">
+                <header className="mb-20 text-center">
+                    <h1 className="text-[3rem] font-black bg-gradient-to-r from-accent to-pink-500 bg-clip-text text-transparent mb-4">
+                        ADMIN CONSOLE
+                    </h1>
+                    <p className="text-text-muted text-[1.1rem] opacity-70">
+                        나만 제어할 수 있는 프리미엄 뉴스 가공 센터
+                    </p>
+                    <Link href="/" className="mt-6 inline-block text-accent hover:underline font-bold text-sm">
+                        &larr; 사용자 메인 페이지로 돌아가기
                     </Link>
-                    <span className="text-text-muted">|</span>
-                    <button
-                        onClick={() => setIsAuthenticated(false)}
-                        className="text-red-500 underline hover:opacity-80 font-medium"
-                    >
-                        로그아웃
-                    </button>
+                </header>
+
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    {/* IT 자동화 카드 */}
+                    <section className="bg-card-bg border border-card-border/50 rounded-3xl p-10 shadow-2xl relative overflow-hidden group">
+                        <div className="absolute top-0 left-0 w-2 h-full bg-accent opacity-40" />
+                        <h2 className="text-[1.8rem] font-black text-text-main mb-4">IT Tech Pulse</h2>
+                        <ul className="text-sm text-text-muted mb-8 space-y-2 opacity-80 font-medium">
+                            <li>• Readability: 광고 없는 본문 스크래핑</li>
+                            <li>• TextRank: 수학적 3문장 요약</li>
+                            <li>• Metascraper: 고화질 썸네일 자동 확보</li>
+                            <li>• Keyword: 태그 자동 분석</li>
+                        </ul>
+                        
+                        <button 
+                            onClick={() => handleUpdate('it')}
+                            disabled={loading}
+                            className={`w-full py-5 rounded-2xl font-black text-[1.1rem] transition-all shadow-lg ${
+                                loading 
+                                ? 'bg-zinc-800 text-zinc-500 cursor-not-allowed' 
+                                : 'bg-accent text-white hover:scale-[1.02] hover:shadow-accent/40 lg:active:scale-95'
+                            }`}
+                        >
+                            {loading ? '가공 중...' : '☀️ IT 뉴스 수집 및 정밀 가공'}
+                        </button>
+                    </section>
+
+                    {/* 글로벌 뉴스 카드 */}
+                    <section className="bg-card-bg border border-card-border/50 rounded-3xl p-10 shadow-2xl relative overflow-hidden group">
+                        <div className="absolute top-0 left-0 w-2 h-full bg-pink-500 opacity-40" />
+                        <h2 className="text-[1.8rem] font-black text-text-main mb-4">Global Insight</h2>
+                        <ul className="text-sm text-text-muted mb-8 space-y-2 opacity-80 font-medium">
+                            <li>• US Politics & Economy (🇺🇸)</li>
+                            <li>• Japan News (🇯🇵)</li>
+                            <li>• Europe / Germany (🇩🇪)</li>
+                        </ul>
+                        
+                        <div className="grid grid-cols-3 gap-3">
+                            {['us', 'jp', 'de'].map(lang => (
+                                <button 
+                                    key={lang}
+                                    onClick={() => handleUpdate(lang)}
+                                    disabled={loading}
+                                    className="py-4 bg-zinc-900 border border-card-border/50 rounded-xl font-bold text-xs hover:border-pink-500 hover:text-pink-500 transition-all disabled:opacity-30"
+                                >
+                                    {lang.toUpperCase()} ⚡
+                                </button>
+                            ))}
+                        </div>
+                    </section>
                 </div>
-            </header>
 
-            <div className="bg-card-bg border border-card-border rounded-2xl p-8 backdrop-blur-md shadow-lg">
-                <h2 className="text-2xl font-bold text-text-main mb-2">로컬 뉴스 데이터 (Output)</h2>
-                <div className="text-sm text-text-muted mb-6">서버 스토리지에 캐싱된 JSON 파일 리스트입니다. 필요없는 데이터는 삭제합니다.</div>
-
-                {loading ? <p className="text-text-muted">로딩 중...</p> : (
-                    <ul className="list-none p-0 flex flex-col gap-3">
-                        {files.length === 0 && <p className="p-8 text-center border border-dashed border-card-border rounded-xl text-text-muted">저장된 로컬 백업이 없습니다.</p>}
-                        {files.map(f => (
-                            <li key={f} className="flex justify-between items-center p-4 border border-card-border bg-white/5 rounded-xl hover:border-accent/50 transition-colors">
-                                <span className="text-[1.05rem] text-text-main font-medium">📄 {f}</span>
-                                <div className="flex gap-2">
-                                    <button
-                                        onClick={() => handleDownload(f)}
-                                        className="bg-accent/90 hover:bg-accent text-white border-0 px-4 py-2 rounded-lg font-semibold shadow-md transition-all hover:shadow-accent/30"
-                                    >
-                                        다운로드
-                                    </button>
-                                    <button
-                                        onClick={() => handleDelete(f)}
-                                        className="bg-red-500/90 hover:bg-red-500 text-white border-0 px-4 py-2 rounded-lg font-semibold shadow-md transition-all hover:shadow-red-500/30"
-                                    >
-                                        수동 삭제
-                                    </button>
-                                </div>
-                            </li>
-                        ))}
-                    </ul>
-                )}
-            </div>
-
-            <div className="bg-card-bg border border-card-border rounded-2xl p-8 backdrop-blur-md shadow-lg relative overflow-hidden">
-                <div className="absolute top-0 right-0 w-32 h-32 bg-yellow-500/10 rounded-full blur-3xl -mr-10 -mt-10 pointer-events-none" />
-                <h2 className="text-2xl font-bold text-yellow-500 mb-2">노션 GC (가비지 컬렉터) 강제 구동</h2>
-                <div className="text-sm text-text-muted mb-6">
-                    매일 새벽 2시에 자동 동작하는 GC를 수동 실행합니다. 기준일(과거 2일 이전)의 모든 데이터를 아카이브합니다.
+                <div className="mt-16 text-center">
+                    <p className="text-sm text-text-muted opacity-60 font-medium">
+                        최근 업데이트: {lastUpdate || '기록 없음'}
+                    </p>
+                    <ProgressBar isActive={loading} />
                 </div>
-                <button
-                    onClick={handleNotionGC}
-                    className="border-2 border-yellow-500 text-yellow-500 hover:bg-yellow-500 hover:text-white px-6 py-3 rounded-xl font-bold text-lg transition-all shadow-[0_4px_15px_rgba(234,179,8,0.2)] hover:shadow-[0_8px_25px_rgba(234,179,8,0.4)]"
-                >
-                    🗑️ 오래된 노션 휴지통 비우기
-                </button>
             </div>
         </main>
     );
