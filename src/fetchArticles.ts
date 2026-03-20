@@ -75,3 +75,103 @@ export async function fetchTechArticles() {
     console.log(`[Node 1] ✨ 총 ${allArticles.length}개의 통합 글로벌 기사 큐레이팅 성공!`);
     return allArticles;
 }
+
+/**
+ * 🇺🇸 미국 뉴스 수집 (Fox News / Google News US)
+ */
+export async function fetchUSNews() {
+    const allArticles: any[] = [];
+    console.log('[Node 1-US] 🌐 미국 주요 매체(Fox News, Google News US)에서 기사를 가져옵니다...');
+
+    // 1. Fox News (Latest) 5개
+    try {
+        const parser = new Parser();
+        const feed = await parser.parseURL('http://feeds.foxnews.com/foxnews/latest');
+        if (feed.items && feed.items.length > 0) {
+            const topFeeds = feed.items.slice(0, 5);
+            topFeeds.forEach((item: any) => {
+                allArticles.push({
+                    source: 'Fox News',
+                    title: item.title,
+                    description: item.contentSnippet || item.content || '본문 내용 생략',
+                    url: item.link
+                });
+            });
+            console.log('✅ Fox News 에서 5개 뉴스 수집 완료');
+        }
+    } catch (error) {
+        console.error('❌ Fox News 수집 실패:', error);
+    }
+
+    // 2. Google News US (Politics/Main) 5개 추가 보완
+    try {
+        const parser = new Parser();
+        const feed = await parser.parseURL('https://news.google.com/rss?hl=en-US&gl=US&ceid=US:en');
+        if (feed.items && feed.items.length > 0) {
+            const topFeeds = feed.items.slice(0, 5);
+            topFeeds.forEach((item: any) => {
+                allArticles.push({
+                    source: 'Google News (US)',
+                    title: item.title,
+                    description: item.contentSnippet || item.content || '본문 내용 생략',
+                    url: item.link
+                });
+            });
+            console.log('✅ Google News US 에서 5개 뉴스 수집 완료');
+        }
+    } catch (error) {
+        console.error('❌ Google News US 수집 실패:', error);
+    }
+
+    return allArticles;
+}
+
+/**
+ * 🇯🇵 일본 뉴스 수집 (요미우리 신문 / Google News JP)
+ */
+export async function fetchJPNews() {
+    const allArticles: any[] = [];
+    console.log('[Node 1-JP] 🌐 일본 주요 매체(요미우리, Google News JP)에서 기사를 가져옵니다...');
+
+    // 1. 요미우리 신문 (주요 뉴스) 5개
+    try {
+        const parser = new Parser();
+        const feed = await parser.parseURL('https://www.yomiuri.co.jp/rss/news/main.xml');
+        if (feed.items && feed.items.length > 0) {
+            const topFeeds = feed.items.slice(0, 5);
+            topFeeds.forEach((item: any) => {
+                allArticles.push({
+                    source: 'Yomiuri',
+                    title: item.title,
+                    description: item.contentSnippet || item.content || '본문 내용 생략',
+                    url: item.link
+                });
+            });
+            console.log('✅ 요미우리 신문에서 5개 뉴스 수집 완료');
+        }
+    } catch (error) {
+        console.error('❌ 요미우리 신문 수집 실패:', error);
+    }
+
+    // 2. Google News JP (General) 5개
+    try {
+        const parser = new Parser();
+        const feed = await parser.parseURL('https://news.google.com/rss?hl=ja&gl=JP&ceid=JP:ja');
+        if (feed.items && feed.items.length > 0) {
+            const topFeeds = feed.items.slice(0, 5);
+            topFeeds.forEach((item: any) => {
+                allArticles.push({
+                    source: 'Google News (JP)',
+                    title: item.title,
+                    description: item.contentSnippet || item.content || '본문 내용 생략',
+                    url: item.link
+                });
+            });
+            console.log('✅ Google News JP 에서 5개 뉴스 수집 완료');
+        }
+    } catch (error) {
+        console.error('❌ Google News JP 수집 실패:', error);
+    }
+
+    return allArticles;
+}

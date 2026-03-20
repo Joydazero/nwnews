@@ -1,5 +1,5 @@
 import * as cron from 'node-cron';
-import { fetchTechArticles } from './fetchArticles';
+import { fetchTechArticles, fetchUSNews, fetchJPNews } from './fetchArticles';
 import { summarizeArticles } from './summarizeArticles';
 import { createNotionTechNews } from './createNotionTechNews';
 import { cleanup_old_notion_pages } from './cleanupNotion';
@@ -7,74 +7,100 @@ import { pushDataToGitHub } from './utils/github';
 import * as fs from 'fs';
 import * as path from 'path';
 
-export async function runMainPipeline() {
-    console.log(`\n[${new Date().toISOString()}] Executing Main Pipeline...`);
+/**
+ * 🚀 공통 카테고리 파이프라인 엔진
+ */
+export async function runCategoryPipeline(category: 'it' | 'us' | 'jp') {
+    const categoryUpper = category.toUpperCase();
+    console.log(`\n[${new Date().toISOString()}] Executing ${categoryUpper} Pipeline...`);
+    
     try {
-        const rawArticles = await fetchTechArticles();
-        if (rawArticles.length > 0) {
-            const summarizedArticles = await summarizeArticles(rawArticles);
+        let rawArticles: any[] = [];
+        if (category === 'it') rawArticles = await fetchTechArticles();
+        else if (category === 'us') rawArticles = await fetchUSNews();
+        else if (category === 'jp') rawArticles = await fetchJPNews();
 
-            const dataDir = path.join(process.cwd(), 'data');
-            if (!fs.existsSync(dataDir)) {
-                fs.mkdirSync(dataDir, { recursive: true });
+        if (rawArticles.length > 0) {
+            console.log(`[Node 1-${category.toUpperCase()}] Fetched ${rawArticles.length} raw articles.`);
+            
+            // 1. AI 요약 및 번역 (카테고리별 에디터 역할 부여)
+            const summarizedArticles = await summarizeArticles(rawArticles, category);
+            
+            if (summarizedArticles.length === 0) {
+                console.warn(`⚠️ Summarization returned 0 articles for ${category}.`);
             }
 
-            const filePath = path.join(dataDir, 'news.json');
+            // 2. 로컬 JSON 저장 (it.json, us.json, jp.json)
+            const dataDir = path.join(process.cwd(), 'data');
+            if (!fs.existsSync(dataDir)) fs.mkdirSync(dataDir, { recursive: true });
+
+            const fileName = `${category}.json`;
+            const filePath = path.join(dataDir, fileName);
             const fileData = {
+                category,
                 dateStr: new Date().toISOString().split('T')[0],
                 articles: summarizedArticles
             };
 
             fs.writeFileSync(filePath, JSON.stringify(fileData, null, 2), 'utf8');
-            console.log(`[Success] Pipeline file completed. Output saved to ${filePath}`);
+            console.log(`[Success] ${categoryUpper} file completed: ${filePath}`);
 
-            // Node 3: Notion API Insert
-            await createNotionTechNews(summarizedArticles);
+            // 3. Notion API (기존 IT 기능 유지, 필요 시 US/JP 확장 가능)
+            if (category === 'it') {
+                await createNotionTechNews(summarizedArticles);
+            }
 
-            // Node 4: GitHub DataPush (Vercel Auto-deploy Trigger)
-            console.log("번역 완료, GitHub 저장소에 데이터를 주입합니다.");
-            await pushDataToGitHub(fileData);
+            // 4. GitHub DataPush (실시간 웹사이트 업데이트 트리거)
+            console.log(`[GitHub] ${categoryUpper} 데이터를 주입합니다.`);
+            await pushDataToGitHub(fileData, `data/${fileName}`);
 
             return summarizedArticles;
         } else {
-            console.log('[Notice] No articles found.');
+            console.log(`[Notice] No ${categoryUpper} articles found.`);
             return [];
         }
     } catch (error: any) {
-        console.error('[Error] Pipeline failed:', error.message);
+        console.error(`[Error] ${categoryUpper} Pipeline failed:`, error.message);
         throw error;
     }
 }
 
 /**
- * 🗑️ 워크플로우 2: 가비지 컬렉션 파이프라인 (삭제)
- * Node 0: Trigger (스케줄러 0 2 * * *, 매일 새벽 2시)
+ * ⏰ 스케줄러 등록 (순차적 릴레이 실행)
  */
 export function startSchedulers() {
-    console.log('Main Pipeline Scheduler started. (cron: "0 8 * * *")');
-    cron.schedule('0 8 * * *', runMainPipeline);
+    // 1. IT 뉴스: 매일 오전 8시 00분
+    console.log('IT Pipeline Scheduler: "0 8 * * *"');
+    cron.schedule('0 8 * * *', () => runCategoryPipeline('it'));
 
-    console.log('Garbage Collection Scheduler started. (cron: "0 2 * * *")');
+    // 2. 미국 뉴스: 매일 오전 8시 05분
+    console.log('US Pipeline Scheduler: "5 8 * * *"');
+    cron.schedule('5 8 * * *', () => runCategoryPipeline('us'));
+
+    // 3. 일본 뉴스: 매일 오전 8시 10분
+    console.log('JP Pipeline Scheduler: "10 8 * * *"');
+    cron.schedule('10 8 * * *', () => runCategoryPipeline('jp'));
+
+    // 4. 가비지 컬렉션: 매일 새벽 2시
+    console.log('GC Scheduler: "0 2 * * *"');
     cron.schedule('0 2 * * *', () => {
-        console.log(`\n[${new Date().toISOString()}] Executing Garbage Collection...`);
+        console.log(`\n[${new Date().toISOString()}] Executing GC...`);
         cleanup_old_notion_pages();
     });
 }
 
-// 스크립트 직접 실행 (--run-now)
-if (process.argv.includes('--run-now')) {
-    console.log('Running job immediately for testing... (--run-now flag detected)');
-    (async () => {
-        try {
-            await runMainPipeline();
-            console.log('\n[Preview Result Completed] Check Notion or the output folder!');
-            process.exit(0);
-        } catch (err: any) {
-            console.error('[Preview Error]', err.message);
-            process.exit(1);
-        }
-    })();
-} else if (require.main === module) {
-    // PM2 또는 node src/index.ts로 실행될 때만 스케줄러 등록
-    startSchedulers();
+// 직접 실행 지원 (--run-it, --run-us, --run-jp)
+if (require.main === module) {
+    if (process.argv.includes('--run-it')) {
+        runCategoryPipeline('it').then(() => process.exit(0)).catch(() => process.exit(1));
+    } else if (process.argv.includes('--run-us')) {
+        runCategoryPipeline('us').then(() => process.exit(0)).catch(() => process.exit(1));
+    } else if (process.argv.includes('--run-jp')) {
+        runCategoryPipeline('jp').then(() => process.exit(0)).catch(() => process.exit(1));
+    } else if (process.argv.includes('--run-now')) {
+        // 하위 호환성 (IT 기본 실행)
+        runCategoryPipeline('it').then(() => process.exit(0)).catch(() => process.exit(1));
+    } else {
+        startSchedulers();
+    }
 }

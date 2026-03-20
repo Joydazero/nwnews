@@ -6,10 +6,10 @@ const octokit = new Octokit({ auth: process.env.GITHUB_TOKEN });
 /**
  * AI가 생성한 JSON 데이터를 GitHub 레포지토리에 직접 커밋하는 함수
  */
-export async function pushDataToGitHub(newData: any) {
-    const owner = "Joydazero"; // ❗️여기를 수정해라 (예: verys)
-    const repo = "nwnews";             // ❗️레포지토리 이름
-    const path = "data/news.json"; // 프론트엔드가 읽어갈 데이터 파일 경로
+export async function pushDataToGitHub(newData: any, customPath: string = "data/news.json") {
+    const owner = "Joydazero"; 
+    const repo = "nwnews";             
+    const path = customPath; // 프론트엔드가 읽어갈 데이터 파일 경로
 
     console.log("🌐 [DataOps] GitHub API 통신을 시작합니다...");
 
