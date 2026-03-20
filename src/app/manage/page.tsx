@@ -36,6 +36,28 @@ export default function ManagePage() {
         setLoading(false);
     };
 
+    const handleDownload = async (filename: string) => {
+        try {
+            const res = await fetch(`/api/files?filename=${filename}`);
+            const data = await res.json();
+            if (data.success && data.content) {
+                const blob = new Blob([JSON.stringify(data.content, null, 2)], { type: 'application/json' });
+                const url = URL.createObjectURL(blob);
+                const a = document.createElement('a');
+                a.href = url;
+                a.download = filename;
+                document.body.appendChild(a);
+                a.click();
+                document.body.removeChild(a);
+                URL.revokeObjectURL(url);
+            } else {
+                alert('파일을 불러오는데 실패했습니다.');
+            }
+        } catch (err) {
+            alert('다운로드 중 오류가 발생했습니다.');
+        }
+    };
+
     const handleDelete = async (filename: string) => {
         if (confirm(`${filename} 파일을 영구 삭제하시겠습니까?`)) {
             await fetch('/api/files', {
@@ -123,12 +145,20 @@ export default function ManagePage() {
                         {files.map(f => (
                             <li key={f} className="flex justify-between items-center p-4 border border-card-border bg-white/5 rounded-xl hover:border-accent/50 transition-colors">
                                 <span className="text-[1.05rem] text-text-main font-medium">📄 {f}</span>
-                                <button
-                                    onClick={() => handleDelete(f)}
-                                    className="bg-red-500/90 hover:bg-red-500 text-white border-0 px-4 py-2 rounded-lg font-semibold shadow-md transition-all hover:shadow-red-500/30"
-                                >
-                                    수동 삭제
-                                </button>
+                                <div className="flex gap-2">
+                                    <button
+                                        onClick={() => handleDownload(f)}
+                                        className="bg-accent/90 hover:bg-accent text-white border-0 px-4 py-2 rounded-lg font-semibold shadow-md transition-all hover:shadow-accent/30"
+                                    >
+                                        다운로드
+                                    </button>
+                                    <button
+                                        onClick={() => handleDelete(f)}
+                                        className="bg-red-500/90 hover:bg-red-500 text-white border-0 px-4 py-2 rounded-lg font-semibold shadow-md transition-all hover:shadow-red-500/30"
+                                    >
+                                        수동 삭제
+                                    </button>
+                                </div>
                             </li>
                         ))}
                     </ul>

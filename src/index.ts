@@ -45,6 +45,14 @@ export async function runCategoryPipeline(category: 'it' | 'us' | 'jp') {
             fs.writeFileSync(filePath, JSON.stringify(fileData, null, 2), 'utf8');
             console.log(`[Success] ${categoryUpper} file completed: ${filePath}`);
 
+            // 2.2. 아카이브용 로컬 저장 (output/ 폴더) - 관리자 다운로드용
+            const outputDir = path.join(process.cwd(), 'output');
+            if (!fs.existsSync(outputDir)) fs.mkdirSync(outputDir, { recursive: true });
+            const archiveFileName = `${category}_${fileData.dateStr}.json`;
+            const archiveFilePath = path.join(outputDir, archiveFileName);
+            fs.writeFileSync(archiveFilePath, JSON.stringify(fileData, null, 2), 'utf8');
+            console.log(`[Archive] Saved dated copy: ${archiveFilePath}`);
+
             // 3. Notion API (기존 IT 기능 유지, 필요 시 US/JP 확장 가능)
             if (category === 'it') {
                 await createNotionTechNews(summarizedArticles);

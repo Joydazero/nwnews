@@ -87,6 +87,31 @@ function ManagePage() {
         if (data.success) setFiles(data.files);
         setLoading(false);
     };
+    const handleDownload = async (filename)=>{
+        try {
+            const res = await fetch(`/api/files?filename=${filename}`);
+            const data = await res.json();
+            if (data.success && data.content) {
+                const blob = new Blob([
+                    JSON.stringify(data.content, null, 2)
+                ], {
+                    type: 'application/json'
+                });
+                const url = URL.createObjectURL(blob);
+                const a = document.createElement('a');
+                a.href = url;
+                a.download = filename;
+                document.body.appendChild(a);
+                a.click();
+                document.body.removeChild(a);
+                URL.revokeObjectURL(url);
+            } else {
+                alert('파일을 불러오는데 실패했습니다.');
+            }
+        } catch (err) {
+            alert('다운로드 중 오류가 발생했습니다.');
+        }
+    };
     const handleDelete = async (filename)=>{
         if (confirm(`${filename} 파일을 영구 삭제하시겠습니까?`)) {
             await fetch('/api/files', {
@@ -116,7 +141,7 @@ function ManagePage() {
             children: [
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ThemeToggle$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                     fileName: "[project]/src/app/manage/page.tsx",
-                    lineNumber: 61,
+                    lineNumber: 83,
                     columnNumber: 17
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -127,7 +152,7 @@ function ManagePage() {
                             children: "관리자 전용 로그인"
                         }, void 0, false, {
                             fileName: "[project]/src/app/manage/page.tsx",
-                            lineNumber: 63,
+                            lineNumber: 85,
                             columnNumber: 21
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("form", {
@@ -143,7 +168,7 @@ function ManagePage() {
                                     autoComplete: "off"
                                 }, void 0, false, {
                                     fileName: "[project]/src/app/manage/page.tsx",
-                                    lineNumber: 65,
+                                    lineNumber: 87,
                                     columnNumber: 25
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
@@ -154,7 +179,7 @@ function ManagePage() {
                                     className: "p-3.5 rounded-xl border border-card-border bg-white/5 text-text-main placeholder:text-text-muted outline-none focus:border-accent transition-colors"
                                 }, void 0, false, {
                                     fileName: "[project]/src/app/manage/page.tsx",
-                                    lineNumber: 73,
+                                    lineNumber: 95,
                                     columnNumber: 25
                                 }, this),
                                 errorMsg && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -162,7 +187,7 @@ function ManagePage() {
                                     children: errorMsg
                                 }, void 0, false, {
                                     fileName: "[project]/src/app/manage/page.tsx",
-                                    lineNumber: 80,
+                                    lineNumber: 102,
                                     columnNumber: 38
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -171,7 +196,7 @@ function ManagePage() {
                                     children: "인증하기"
                                 }, void 0, false, {
                                     fileName: "[project]/src/app/manage/page.tsx",
-                                    lineNumber: 81,
+                                    lineNumber: 103,
                                     columnNumber: 25
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
@@ -180,25 +205,25 @@ function ManagePage() {
                                     children: "← 메인으로 돌아가기"
                                 }, void 0, false, {
                                     fileName: "[project]/src/app/manage/page.tsx",
-                                    lineNumber: 87,
+                                    lineNumber: 109,
                                     columnNumber: 25
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/app/manage/page.tsx",
-                            lineNumber: 64,
+                            lineNumber: 86,
                             columnNumber: 21
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/app/manage/page.tsx",
-                    lineNumber: 62,
+                    lineNumber: 84,
                     columnNumber: 17
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/src/app/manage/page.tsx",
-            lineNumber: 60,
+            lineNumber: 82,
             columnNumber: 13
         }, this);
     }
@@ -213,7 +238,7 @@ function ManagePage() {
                         children: "데이터베이스 및 파일 관리"
                     }, void 0, false, {
                         fileName: "[project]/src/app/manage/page.tsx",
-                        lineNumber: 99,
+                        lineNumber: 121,
                         columnNumber: 17
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -221,12 +246,12 @@ function ManagePage() {
                         children: "수집된 로컬 JSON 데이터와 연동 노션 워크스페이스를 관리합니다."
                     }, void 0, false, {
                         fileName: "[project]/src/app/manage/page.tsx",
-                        lineNumber: 100,
+                        lineNumber: 122,
                         columnNumber: 17
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ThemeToggle$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                         fileName: "[project]/src/app/manage/page.tsx",
-                        lineNumber: 101,
+                        lineNumber: 123,
                         columnNumber: 17
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -238,7 +263,7 @@ function ManagePage() {
                                 children: "← 뉴스 보드 복귀"
                             }, void 0, false, {
                                 fileName: "[project]/src/app/manage/page.tsx",
-                                lineNumber: 103,
+                                lineNumber: 125,
                                 columnNumber: 21
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -246,7 +271,7 @@ function ManagePage() {
                                 children: "|"
                             }, void 0, false, {
                                 fileName: "[project]/src/app/manage/page.tsx",
-                                lineNumber: 106,
+                                lineNumber: 128,
                                 columnNumber: 21
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -255,19 +280,19 @@ function ManagePage() {
                                 children: "로그아웃"
                             }, void 0, false, {
                                 fileName: "[project]/src/app/manage/page.tsx",
-                                lineNumber: 107,
+                                lineNumber: 129,
                                 columnNumber: 21
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/app/manage/page.tsx",
-                        lineNumber: 102,
+                        lineNumber: 124,
                         columnNumber: 17
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/app/manage/page.tsx",
-                lineNumber: 98,
+                lineNumber: 120,
                 columnNumber: 13
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -278,7 +303,7 @@ function ManagePage() {
                         children: "로컬 뉴스 데이터 (Output)"
                     }, void 0, false, {
                         fileName: "[project]/src/app/manage/page.tsx",
-                        lineNumber: 117,
+                        lineNumber: 139,
                         columnNumber: 17
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -286,7 +311,7 @@ function ManagePage() {
                         children: "서버 스토리지에 캐싱된 JSON 파일 리스트입니다. 필요없는 데이터는 삭제합니다."
                     }, void 0, false, {
                         fileName: "[project]/src/app/manage/page.tsx",
-                        lineNumber: 118,
+                        lineNumber: 140,
                         columnNumber: 17
                     }, this),
                     loading ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -294,7 +319,7 @@ function ManagePage() {
                         children: "로딩 중..."
                     }, void 0, false, {
                         fileName: "[project]/src/app/manage/page.tsx",
-                        lineNumber: 120,
+                        lineNumber: 142,
                         columnNumber: 28
                     }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
                         className: "list-none p-0 flex flex-col gap-3",
@@ -304,7 +329,7 @@ function ManagePage() {
                                 children: "저장된 로컬 백업이 없습니다."
                             }, void 0, false, {
                                 fileName: "[project]/src/app/manage/page.tsx",
-                                lineNumber: 122,
+                                lineNumber: 144,
                                 columnNumber: 48
                             }, this),
                             files.map((f)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
@@ -318,34 +343,52 @@ function ManagePage() {
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/app/manage/page.tsx",
-                                            lineNumber: 125,
+                                            lineNumber: 147,
                                             columnNumber: 33
                                         }, this),
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                                            onClick: ()=>handleDelete(f),
-                                            className: "bg-red-500/90 hover:bg-red-500 text-white border-0 px-4 py-2 rounded-lg font-semibold shadow-md transition-all hover:shadow-red-500/30",
-                                            children: "수동 삭제"
-                                        }, void 0, false, {
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                            className: "flex gap-2",
+                                            children: [
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                                                    onClick: ()=>handleDownload(f),
+                                                    className: "bg-accent/90 hover:bg-accent text-white border-0 px-4 py-2 rounded-lg font-semibold shadow-md transition-all hover:shadow-accent/30",
+                                                    children: "다운로드"
+                                                }, void 0, false, {
+                                                    fileName: "[project]/src/app/manage/page.tsx",
+                                                    lineNumber: 149,
+                                                    columnNumber: 37
+                                                }, this),
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                                                    onClick: ()=>handleDelete(f),
+                                                    className: "bg-red-500/90 hover:bg-red-500 text-white border-0 px-4 py-2 rounded-lg font-semibold shadow-md transition-all hover:shadow-red-500/30",
+                                                    children: "수동 삭제"
+                                                }, void 0, false, {
+                                                    fileName: "[project]/src/app/manage/page.tsx",
+                                                    lineNumber: 155,
+                                                    columnNumber: 37
+                                                }, this)
+                                            ]
+                                        }, void 0, true, {
                                             fileName: "[project]/src/app/manage/page.tsx",
-                                            lineNumber: 126,
+                                            lineNumber: 148,
                                             columnNumber: 33
                                         }, this)
                                     ]
                                 }, f, true, {
                                     fileName: "[project]/src/app/manage/page.tsx",
-                                    lineNumber: 124,
+                                    lineNumber: 146,
                                     columnNumber: 29
                                 }, this))
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/app/manage/page.tsx",
-                        lineNumber: 121,
+                        lineNumber: 143,
                         columnNumber: 21
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/app/manage/page.tsx",
-                lineNumber: 116,
+                lineNumber: 138,
                 columnNumber: 13
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -355,7 +398,7 @@ function ManagePage() {
                         className: "absolute top-0 right-0 w-32 h-32 bg-yellow-500/10 rounded-full blur-3xl -mr-10 -mt-10 pointer-events-none"
                     }, void 0, false, {
                         fileName: "[project]/src/app/manage/page.tsx",
-                        lineNumber: 139,
+                        lineNumber: 169,
                         columnNumber: 17
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
@@ -363,7 +406,7 @@ function ManagePage() {
                         children: "노션 GC (가비지 컬렉터) 강제 구동"
                     }, void 0, false, {
                         fileName: "[project]/src/app/manage/page.tsx",
-                        lineNumber: 140,
+                        lineNumber: 170,
                         columnNumber: 17
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -371,7 +414,7 @@ function ManagePage() {
                         children: "매일 새벽 2시에 자동 동작하는 GC를 수동 실행합니다. 기준일(과거 2일 이전)의 모든 데이터를 아카이브합니다."
                     }, void 0, false, {
                         fileName: "[project]/src/app/manage/page.tsx",
-                        lineNumber: 141,
+                        lineNumber: 171,
                         columnNumber: 17
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -380,19 +423,19 @@ function ManagePage() {
                         children: "🗑️ 오래된 노션 휴지통 비우기"
                     }, void 0, false, {
                         fileName: "[project]/src/app/manage/page.tsx",
-                        lineNumber: 144,
+                        lineNumber: 174,
                         columnNumber: 17
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/app/manage/page.tsx",
-                lineNumber: 138,
+                lineNumber: 168,
                 columnNumber: 13
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/src/app/manage/page.tsx",
-        lineNumber: 97,
+        lineNumber: 119,
         columnNumber: 9
     }, this);
 }
