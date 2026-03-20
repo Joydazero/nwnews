@@ -33,6 +33,10 @@ export async function runCategoryPipeline(category: 'it' | 'us' | 'jp' | 'de') {
                 console.warn(`⚠️ Summarization returned 0 articles after slice for ${category}.`);
             }
 
+            // #region agent log
+            fetch('http://127.0.0.1:7937/ingest/db7347b1-8844-4ae1-a267-d775b365e441',{method:'POST',headers:{'Content-Type':'application/json','X-Debug-Session-Id':'b562ca'},body:JSON.stringify({sessionId:'b562ca',runId:'pre-debug',hypothesisId:'H1_pipeline_write',location:'src/index.ts:runCategoryPipeline:beforeWrite',message:'about to write data/${category}.json',data:{category,rawArticlesLen:rawArticles.length,summarizedArticlesLen:summarizedArticles.length,finalArticlesLen:finalArticles.length,first:{korean_title:finalArticles?.[0]?.korean_title?String(finalArticles[0].korean_title).slice(0,40):null,summaryType:typeof finalArticles?.[0]?.summary,summaryPreview:typeof finalArticles?.[0]?.summary==='string'?finalArticles[0].summary.slice(0,80):null}} ,timestamp:Date.now()})}).catch(()=>{});
+            // #endregion
+
             // 3. 로컬 JSON 저장
             const dataDir = path.join(process.cwd(), 'data');
             if (!fs.existsSync(dataDir)) fs.mkdirSync(dataDir, { recursive: true });
@@ -47,6 +51,10 @@ export async function runCategoryPipeline(category: 'it' | 'us' | 'jp' | 'de') {
 
             fs.writeFileSync(filePath, JSON.stringify(fileData, null, 2), 'utf8');
             console.log(`[Success] ${categoryUpper} file completed with ${finalArticles.length} articles.`);
+
+            // #region agent log
+            fetch('http://127.0.0.1:7937/ingest/db7347b1-8844-4ae1-a267-d775b365e441',{method:'POST',headers:{'Content-Type':'application/json','X-Debug-Session-Id':'b562ca'},body:JSON.stringify({sessionId:'b562ca',runId:'pre-debug',hypothesisId:'H1_pipeline_write',location:'src/index.ts:runCategoryPipeline:afterWrite',message:'wrote data file',data:{filePath,writtenArticlesLen:finalArticles.length,dateStr:fileData.dateStr,firstSummaryType:typeof finalArticles?.[0]?.summary},timestamp:Date.now()})}).catch(()=>{});
+            // #endregion
 
             // 3.2. 아카이브용 로컬 저장
             const outputDir = path.join(process.cwd(), 'output');

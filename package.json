@@ -16,6 +16,7 @@
   "description": "",
   "devDependencies": {
     "@google/genai": "^1.46.0",
+    "@types/jsdom": "^28.0.1",
     "@types/node": "^25.5.0",
     "@types/react": "^19.2.14",
     "@types/react-dom": "^19.2.3",
@@ -30,8 +31,11 @@
     "typescript": "^5.9.3"
   },
   "dependencies": {
+    "@mozilla/readability": "^0.6.0",
     "@notionhq/client": "^5.13.0",
     "@octokit/rest": "^22.0.1",
+    "google-translate-api-next": "^0.1.0",
+    "jsdom": "^29.0.1",
     "next": "^16.2.0",
     "react": "^19.2.4",
     "react-dom": "^19.2.4",

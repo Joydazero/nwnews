@@ -20,21 +20,34 @@ export default function HomePage() {
     const [articles, setArticles] = useState<Article[]>([]);
     const [loading, setLoading] = useState(false);
     const [fetching, setFetching] = useState(true);
+    const [isUpdated, setIsUpdated] = useState(false);
+    
+    const today = new Date().toISOString().split('T')[0];
 
     useEffect(() => {
+        // 오늘 이미 수집했는지 localStorage 확인
+        const lastUpdate = localStorage.getItem('nwnews_last_update');
+        if (lastUpdate === today) setIsUpdated(true);
+
         setFetching(true);
+
         fetch('/api/data?category=it')
-            .then(res => res.json())
-            .then(result => {
+            .then(async (res) => {
+                const result = await res.json().catch(() => ({}));
+                return result as any;
+            })
+            .then((result) => {
                 if (result.success && result.data) {
                     setArticles(result.data.articles);
                 }
                 setFetching(false);
             })
-            .catch(() => setFetching(false));
+            .catch(() => {
+                setFetching(false);
+            });
     }, []);
 
-    const handleGenerate = async () => {
+    const handleUpdate = async () => {
         setLoading(true);
         try {
             const response = await fetch('/api/generate', {
@@ -44,9 +57,13 @@ export default function HomePage() {
             });
             const result = await response.json();
             if (result.success) {
+                // 2. 로컬 스토리지에 기록 후 버튼 소멸
+                localStorage.setItem('nwnews_last_update', today);
+                setIsUpdated(true);
+                alert('오늘의 뉴스를 성공적으로 수집했습니다! 🎉');
                 window.location.reload();
             } else {
-                alert('뉴스 분석 중 오류 발생: ' + result.error);
+                alert('뉴스 수집 중 오류 발생: ' + result.error);
                 setLoading(false);
             }
         } catch (err) {
@@ -54,6 +71,8 @@ export default function HomePage() {
             setLoading(false);
         }
     };
+
+    const isUpdatedDisplay = isUpdated;
 
     return (
         <main className="max-w-[1200px] mx-auto py-16 px-6 sm:px-10">
@@ -76,13 +95,18 @@ export default function HomePage() {
 
                 <ThemeToggle />
 
-                {!loading && (
+                {!loading && !isUpdatedDisplay && (
                     <button
-                        onClick={handleGenerate}
-                        className="mt-8 px-12 py-4 text-[1.2rem] font-bold text-white bg-accent rounded-xl shadow-[0_4px_25px_var(--accent-glow)] transition-all hover:-translate-y-1 hover:shadow-[0_8px_35px_var(--accent-glow)] outline-none"
+                        onClick={handleUpdate}
+                        className="mt-8 px-12 py-4 text-[1.2rem] font-bold text-white bg-blue-600 rounded-xl shadow-[0_4px_25px_rgba(37,99,235,0.4)] transition-all hover:-translate-y-1 hover:bg-blue-700 outline-none"
                     >
-                        IT 기술 뉴스 실시간 수집 ✨
+                        ☀️ 오늘의 뉴스 수집 시작 (1회 가능)
                     </button>
+                )}
+                {isUpdatedDisplay && !loading && (
+                    <p className="mt-8 text-[1.1rem] font-semibold text-text-muted opacity-80 flex items-center justify-center gap-2">
+                        ✅ 오늘의 수집이 완료되었습니다.
+                    </p>
                 )}
 
                 <ProgressBar isActive={loading} />
@@ -110,7 +134,7 @@ export default function HomePage() {
                 ) : (
                     <div className="text-center py-24 bg-card-bg border border-card-border rounded-2xl">
                         <p className="text-xl text-text-muted mb-4 font-medium">수집된 IT 기사가 없습니다.</p>
-                        <button onClick={handleGenerate} className="text-accent underline">지금 수집하기</button>
+                        <button onClick={handleUpdate} className="text-accent underline">지금 수집하기</button>
                     </div>
                 )}
             </section>

@@ -13,7 +13,15 @@ export interface Article {
 
 export default function ArticleCard({ article, index }: { article: Article; index: number }) {
     const [copied, setCopied] = useState(false);
-    const summaries = article.summary.split('\n').map(s => s.replace(/^\d+\.\s*/, ''));
+    // #region agent log
+    let summaries: string[] = [];
+    try {
+        summaries = (article as any)?.summary?.split?.('\n')?.map((s: string) => s.replace(/^\d+\.\s*/, '')) || [];
+    } catch (err: any) {
+        fetch('http://127.0.0.1:7937/ingest/db7347b1-8844-4ae1-a267-d775b365e441',{method:'POST',headers:{'Content-Type':'application/json','X-Debug-Session-Id':'b562ca'},body:JSON.stringify({sessionId:'b562ca',runId:'pre-debug',hypothesisId:'H4_card_summary_split',location:'src/components/ArticleCard.tsx:summarySplit',message:'failed to compute summaries',data:{summaryType:typeof (article as any)?.summary,summaryPreview:typeof (article as any)?.summary==='string'?(article as any).summary.slice(0,80):null,hasTechKeywords:Array.isArray((article as any)?.tech_keywords),is_aiType:typeof (article as any)?.is_ai,index},timestamp:Date.now()})}).catch(()=>{});
+        throw err;
+    }
+    // #endregion
 
     const handleCopyMarkdown = () => {
         const keywords = article.tech_keywords?.map(k => `#${k}`).join(' ') || '';
